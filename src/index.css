@@ -1,8 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: #000;
+:root {
+    --primary: #1c1c1c;
+    --secondary: #ffffff;
+    --portfolio: #FF3422;
+
+    --font: "Roboto", sans-serif;
+}
+
+::selection {
+    background-color: var(--portfolio);
     color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--primary);
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--secondary);
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--portfolio);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+    background-color: var(--portfolio);
+    border-color: var(--portfolio);
+}
+
+img {
+    filter: grayscale(100%);
 }

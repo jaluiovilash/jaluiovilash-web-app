@@ -1,22 +1,30 @@
 import {
+  Navbar,
   Header,
   Hero,
-  Skills,
+  About_Me,
   Projects,
-  Contact,
-  FAQs,
+  Services,
+  Method,
+  Pricing,
+  CTA,
   Footer
 } from "./container/index";
 
 function App() {
   return (
-    <div className="">
-      <Header />
+    <div className="bg-primary text-secondary">
+      <Navbar />
+      <div className="pt-20">
+        <Header />
+      </div>
       <Hero />
-      <Skills />
+      <About_Me />
       <Projects />
-      <Contact />
-      <FAQs />
+      <Services />
+      <Method />
+      <Pricing />
+      <CTA />
       <Footer />
     </div>
   );

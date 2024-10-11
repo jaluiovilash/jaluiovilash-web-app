@@ -1,7 +1,10 @@
-export { default as Header } from './Header';
-export { default as Hero } from './Hero';
-export { default as Skills } from './Skills';
-export { default as Contact } from './Contact';
-export { default as Projects } from './Projects';
-export { default as FAQs } from './FAQs';
-export { default as Footer } from './Footer';
+export { default as Navbar } from './Navbar/Navbar'
+export { default as Header } from './Header/Header';
+export { default as Hero } from './Hero/Hero';
+export { default as About_Me } from './About_Me/About_Me';
+export { default as Services } from './Services/Services';
+export { default as Method } from './Method/Method';
+export { default as Pricing } from './Pricing/Pricing';
+export { default as Projects } from './Projects/Projects';
+export { default as CTA } from './CTA/CTA';
+export { default as Footer } from './Footer/Footer'
