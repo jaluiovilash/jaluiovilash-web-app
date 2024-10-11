@@ -13,7 +13,7 @@ function ButtonUsage({ title }) {
         color: "#fff",
         fontFamily: "Roboto, sans-serif",
         fontSize: "14px",
-        padding: "15px 40px",
+        padding: "15px 50px",
         borderRadius: "40px"
       }}
     >

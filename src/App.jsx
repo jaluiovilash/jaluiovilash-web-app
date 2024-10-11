@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="bg-primary text-secondary">
       <Navbar />
-      <div className="pt-20">
+      <div className="pt-20 lg:pt-24">
         <Header />
       </div>
       <Hero />
