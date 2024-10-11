@@ -1,4 +1,5 @@
 import { ButtonUsage } from "../../components/index";
+import { lion } from "../../assets/index";
 
 const Pricing = () => {
   return (
@@ -9,10 +10,10 @@ const Pricing = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center items-center text-xl">
+      <div className="flex justify-center items-center text-lg">
         <div className="px-8 text-center">
-          <img src="" alt="" />
-          <h3 className="py-8 text-4xl font-medium">DESIGN</h3>
+          <img src={lion} alt="" className="w-[300px]" />
+          <h3 className="py-8 text-5xl font-medium">DESIGN</h3>
           <ul>
             <li className="border-t py-6 px-16">Designs in Figma</li>
             <li className="border-t py-6 px-16">Weekly reviews</li>
@@ -25,8 +26,8 @@ const Pricing = () => {
         </div>
 
         <div className="px-8 border-x text-center">
-          <img src="" alt="" />
-          <h3 className="py-8 text-4xl font-medium">DESIGN</h3>
+          <img src={lion} alt="" className="w-[300px]" />
+          <h3 className="py-8 text-5xl font-medium">DESIGN</h3>
           <ul>
             <li className="border-t py-6 px-16">Designs in Figma</li>
             <li className="border-t py-6 px-16">Weekly reviews</li>
@@ -39,8 +40,8 @@ const Pricing = () => {
         </div>
 
         <div className="px-8 text-center">
-          <img src="" alt="" />
-          <h3 className="py-8 text-4xl font-medium">DESIGN</h3>
+          <img src={lion} alt="" className="w-[300px]" />
+          <h3 className="py-8 text-5xl font-medium">DESIGN</h3>
           <ul>
             <li className="border-t py-6 px-16">Designs in Figma</li>
             <li className="border-t py-6 px-16">Weekly reviews</li>
