@@ -10,7 +10,7 @@ export default {
         primary: '#1c1c1c',
         secondary: '#FFFFFF',
         light_white: '#f0f8ff',
-        portfolio: '#FF3422',
+        portfolio: '#ff3322',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif']
