@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div className="py-12 sm:py-16 md:py-20 md:px-16 px-6">
-      <h1 className="font-bold font-montserrat text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center leading-tight">
+      <h1 className="font-bold font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center leading-tight">
         CRAFTING SCALABLE SOLUTIONS THAT DRIVE BUSINESS GROWTH
       </h1>
     </div>

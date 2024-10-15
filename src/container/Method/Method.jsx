@@ -3,39 +3,51 @@ import { useState } from "react";
 const processSteps = [
   {
     id: "01",
-    title: "PROJECT DISCOVERY",
+    title: "DEFINING PRODUCT",
     hoverText:
-      "We begin by understanding the scope and goals of your project. A roadmap is created based on your business needs, timeline, and budget."
+      "During the initial client meeting, we discuss the project's purpose and goals. A project plan, timeline, and scope are clearly defined to align expectations."
   },
   {
-    id: "01",
-    title: "PROJECT DISCOVERY",
+    id: "02",
+    title: "RESEARCH",
     hoverText:
-      "We begin by understanding the scope and goals of your project. A roadmap is created based on your business needs, timeline, and budget."
+      "I analyze similar projects, research competitors, and conduct competitive analysis. I also study consumer behavior and market trends to inform the product direction."
   },
   {
-    id: "01",
-    title: "PROJECT DISCOVERY",
+    id: "03",
+    title: "IDEATION",
     hoverText:
-      "We begin by understanding the scope and goals of your project. A roadmap is created based on your business needs, timeline, and budget."
+      "We outline the product's development strategy using personas, scenarios, and storyboards to create a comprehensive vision for the product."
   },
   {
-    id: "01",
-    title: "PROJECT DISCOVERY",
+    id: "04",
+    title: "SKETCHING",
     hoverText:
-      "We begin by understanding the scope and goals of your project. A roadmap is created based on your business needs, timeline, and budget."
+      "I visualize the general layout and create the first low-fidelity wireframe, usually using Figma. This stage helps refine the product structure."
   },
   {
-    id: "01",
-    title: "PROJECT DISCOVERY",
+    id: "05",
+    title: "DEFINING VISUAL MOOD",
     hoverText:
-      "We begin by understanding the scope and goals of your project. A roadmap is created based on your business needs, timeline, and budget."
+      "I develop mood boards and establish the visual style to ensure the product’s aesthetic aligns with the brand and user expectations."
   },
   {
-    id: "01",
-    title: "PROJECT DISCOVERY",
+    id: "06",
+    title: "CREATING PROTOTYPE",
     hoverText:
-      "We begin by understanding the scope and goals of your project. A roadmap is created based on your business needs, timeline, and budget."
+      "A high-fidelity prototype is created with responsive design. I document interactions, states, and styles for a fully functional representation of the product."
+  },
+  {
+    id: "07",
+    title: "USABILITY TESTING",
+    hoverText:
+      "Conduct usability tests, followed by thorough data analysis. Insights from this testing help refine and improve the product’s usability."
+  },
+  {
+    id: "08",
+    title: "DESIGN IMPROVEMENTS",
+    hoverText:
+      "Research and testing data are analyzed to implement design improvements, ensuring the final product is both functional and user-friendly."
   }
 ];
 
@@ -44,7 +56,7 @@ const Method = () => {
 
   return (
     <div id="method" className="scroll-mt-20 border-b">
-      <div className="py-16 border-b text-center">
+      <div className="py-16 text-center">
         <h1 className="font-montserrat text-4xl md:text-6xl font-semibold w-4/5 mx-auto">
           MY DEVELOPMENT PROCESS
         </h1>
@@ -55,25 +67,27 @@ const Method = () => {
           key={step.id}
           className="flex flex-col md:flex-row justify-between items-start md:items-center border-t p-8 md:px-64"
         >
+          {/* Title Section */}
           <div
             role="button"
-            tabIndex={0} // Makes it focusable
+            tabIndex={0}
             className="text-3xl md:text-5xl font-montserrat font-medium hover:text-portfolio cursor-pointer mb-4 md:mb-0"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             onKeyPress={(e) => {
               if (e.key === "Enter") setHoveredIndex(index);
-            }} // Handle keyboard interaction
+            }}
           >
             <span className="text-portfolio">{step.id}</span> {step.title}
           </div>
 
+          {/* Description Section */}
           <div
             className={`md:w-1/3 w-full text-lg transition-opacity duration-500 ease-in-out ${
               hoveredIndex === index || window.innerWidth < 768
                 ? "opacity-100"
                 : "opacity-0"
-            }`}
+            } md:block`}
           >
             <p className="text-secondary">{step.hoverText}</p>
           </div>

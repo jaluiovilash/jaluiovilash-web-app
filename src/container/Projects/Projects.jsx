@@ -1,4 +1,4 @@
-import { lion } from "../../assets";
+import { project1, project2, project3, coming_soon_grey } from "../../assets";
 import { VisitHere } from "../../components/index";
 
 const Projects = () => {
@@ -15,92 +15,117 @@ const Projects = () => {
       <div className="border-b grid grid-cols-1 lg:grid-cols-2 mx-auto">
         {/* Project 01 */}
         <div className="border-b lg:border-r">
-          <h1 className="text-portfolio py-8 px-6 lg:px-12 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end">
+          <h1 className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end">
             01
           </h1>
-          <div className="project_content py-8 px-6 lg:px-12 border-t">
+          <div className="project_content py-8 px-6 lg:px-24 border-t">
             <img
               className="my-6 w-auto h-[300px] object-cover rounded-lg"
-              src={lion}
+              src={project1}
               alt="Project 1"
+              loading="lazy"
             />
-            <a href="/" target="_blank" className="text-xl">
+            <a
+              href="https://github.com/jaluiovilash/MINOR-PROJECT-PU-24.git"
+              target="_blank"
+              className="text-xl"
+            >
               <VisitHere title="Explore Project" />
             </a>
-            <p className="text-xl py-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              tenetur voluptas nesciunt laborum vel, ratione soluta culpa iste,
-              corrupti repellendus animi quis! Ratione, obcaecati? In nihil,
-              eligendi reiciendis explicabo enim facere exercitationem.
+            <h2 className="text-portfolio text-xl font-medium py-4">
+              KisaanBharat
+            </h2>
+            <p className="text-xl py-4">
+              Connecting Indian farmers, enthusiasts, and industry stakeholders
+              for knowledge sharing, collaboration, and growth. Revolutionizing
+              agriculture through digital platforms.
             </p>
           </div>
         </div>
 
         {/* Project 02 */}
         <div className="border-b lg:border-r-0">
-          <h1 className="py-8 px-6 lg:px-12 font-montserrat font-semibold text-7xl md:text-8xl flex">
+          <h1 className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex">
             02
           </h1>
-          <div className="project_content py-8 px-6 lg:px-12 border-t">
-            <a href="/" target="_blank" className="text-xl">
+          <div className="project_content py-8 px-6 lg:px-24 border-t">
+            <a
+              href="https://github.com/jaluiovilash/ChirpNet.git"
+              target="_blank"
+              className="text-xl"
+            >
               <VisitHere title="Explore Project" />
             </a>
-            <p className="text-xl py-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              tenetur voluptas nesciunt laborum vel, ratione soluta culpa iste,
-              corrupti repellendus animi quis! Ratione, obcaecati? In nihil,
-              eligendi reiciendis explicabo enim facere exercitationem.
+            <h2 className="text-portfolio text-xl font-medium py-4">
+              ChirpNet
+            </h2>
+            <p className="text-xl py-4">
+              Twitter clone enabling secure CRUD operations for posts. Built
+              with Django backend and Bootstrap frontend. A demonstration of
+              social media platform development.
             </p>
             <img
               className="my-6 w-auto h-[300px] object-cover rounded-lg"
-              src={lion}
+              src={project2}
               alt="Project 2"
+              loading="lazy"
             />
           </div>
         </div>
 
         {/* Project 03 */}
-        <div className="border-b lg:border-r">
-          <h1 className="text-portfolio py-8 px-6 lg:px-12 font-montserrat font-semibold text-7xl md:text-8xl flex justify-start">
+        <div className="lg:border-r">
+          <h1 className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-start">
             03
           </h1>
-          <div className="project_content py-8 px-6 lg:px-12 border-t">
+          <div className="project_content py-8 px-6 lg:px-24 border-t">
             <img
               className="my-6 w-auto h-[300px] object-cover rounded-lg"
-              src={lion}
+              src={project3}
               alt="Project 3"
+              loading="lazy"
             />
-            <a href="/" target="_blank" className="text-xl">
-              <VisitHere title="Explore Project" />
+
+            <a
+              href="https://github.com/jaluiovilash/RaktSetu-Backend.git"
+              target="_blank"
+              className="text-xl"
+            >
+              <VisitHere title="RaktSetu - Blood Bank Management System Backend" />
             </a>
-            <p className="text-xl py-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              tenetur voluptas nesciunt laborum vel, ratione soluta culpa iste,
-              corrupti repellendus animi quis! Ratione, obcaecati? In nihil,
-              eligendi reiciendis explicabo enim facere exercitationem.
+            <h2 className="text-portfolio text-xl font-medium py-4">
+              Renovated Web App
+            </h2>
+            <p className="text-xl py-4">
+              RaktSetu backend, a Node.js-powered Blood Bank Management System,
+              streamlines donor registrations, blood stock, hospital requests,
+              and emergency notifications using Express and MongoDB for
+              efficient inventory and request handling.
             </p>
           </div>
         </div>
 
         {/* Project 04 */}
         <div className="">
-          <h1 className="py-8 px-6 lg:px-12 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end">
+          <h1 className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end">
             04
           </h1>
-          <div className="project_content py-8 px-6 lg:px-12 border-t">
-            <a href="/" target="_blank" className="text-xl">
-              <VisitHere title="Explore Project" />
+          <div className="project_content py-8 px-6 lg:px-24 border-t">
+            <a href="" target="_blank" className="text-xl">
+              <VisitHere title="Coming Soon..." />
             </a>
+            <h2 className="text-portfolio text-xl font-medium py-4">
+              Renovated Web App
+            </h2>
             <p className="text-xl py-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              tenetur voluptas nesciunt laborum vel, ratione soluta culpa iste,
-              corrupti repellendus animi quis! Ratione, obcaecati? In nihil,
-              eligendi reiciendis explicabo enim facere exercitationem.
+              Ongoing redesign of an outdated web app using React. Soon to be
+              deployed. Transforming legacy systems with modern design.
             </p>
             <img
               className="my-6 w-auto h-[300px] object-cover rounded-lg"
-              src={lion}
+              src={coming_soon_grey}
               alt="Project 4"
+              loading="lazy"
             />
           </div>
         </div>

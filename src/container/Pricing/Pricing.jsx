@@ -1,5 +1,5 @@
 import { ButtonUsage } from "../../components/index";
-import { lion } from "../../assets/index";
+import { square, circle, triangle } from "../../assets/index";
 
 const Pricing = () => {
   return (
@@ -16,24 +16,25 @@ const Pricing = () => {
         {/* Card 1 */}
         <div className="px-8 text-center">
           <img
-            src={lion}
+            src={square}
             alt="Lion image representing Design services"
-            className="w-full max-w-[300px] mx-auto h-auto"
+            className="w-[250px] h-[250px] max-w-[300px] mx-auto"
+            loading="lazy"
           />
           <h3 className="py-8 text-3xl md:text-4xl font-medium">DESIGN</h3>
           <ul>
-            <li className="border-t py-4 md:py-6 px-8 md:px-16">
-              Designs in Figma
+            <li className="border-t py-4 md:py-4 px-8 md:px-12">
+              Tailored web design solutions
             </li>
-            <li className="border-t py-4 md:py-6 px-8 md:px-16">
-              Weekly reviews
+            <li className="border-t py-4 md:py-4 px-8 md:px-12">
+              Regular progress updates
             </li>
-            <li className="border-y py-4 md:py-6 px-8 md:px-16">
-              Ongoing support
+            <li className="border-y py-4 md:py-4 px-8 md:px-12">
+              Responsive and visually appealing
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
-            Rs. 5 000+
+            ₹ 5,000+
           </h4>
           <a
             href="mailto:jaluiovilash@outlook.com?subject=Design Services Inquiry"
@@ -46,20 +47,21 @@ const Pricing = () => {
         {/* Card 2 */}
         <div className="px-8 py-8 text-center border-t border-b md:border-t-0 md:border-b-0 md:border-x">
           <img
-            src={lion}
+            src={circle}
             alt="Lion image representing Development services"
-            className="w-full max-w-[300px] mx-auto h-auto"
+            className="w-[250px] h-[250px] max-w-[300px] mx-auto"
+            loading="lazy"
           />
           <h3 className="py-8 text-3xl md:text-4xl font-medium">DEVELOPMENT</h3>
           <ul>
-            <li className="border-t py-4 md:py-6 px-8 md:px-16">
-              Frontend Development
+            <li className="border-t py-4 md:py-4 px-8 md:px-12">
+              Full website development from scratch
             </li>
-            <li className="border-t py-4 md:py-6 px-8 md:px-16">
-              Backend Integration
+            <li className="border-t py-4 md:py-4 px-8 md:px-12">
+              Implement client-provided designs
             </li>
-            <li className="border-y py-4 md:py-6 px-8 md:px-16">
-              Ongoing support
+            <li className="border-y py-4 md:py-4 px-8 md:px-12">
+              OScalable, secure solutions
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
@@ -76,27 +78,28 @@ const Pricing = () => {
         {/* Card 3 */}
         <div className="px-8 text-center">
           <img
-            src={lion}
+            src={triangle}
             alt="Lion image representing Maintenance services"
-            className="w-full max-w-[300px] mx-auto h-auto"
+            className="w-[250px] h-[250px] max-w-[300px] mx-auto"
+            loading="lazy"
           />
-          <h3 className="py-8 text-3xl md:text-4xl font-medium">MAINTENANCE</h3>
+          <h3 className="py-8 text-3xl md:text-4xl font-medium">GROW</h3>
           <ul>
-            <li className="border-t py-4 md:py-6 px-8 md:px-16">
-              Regular Updates
+            <li className="border-t py-4 md:py-4 px-8 md:px-12">
+              Business development strategies
             </li>
-            <li className="border-t py-4 md:py-6 px-8 md:px-16">
-              Performance Tuning
+            <li className="border-t py-4 md:py-4 px-8 md:px-12">
+              SEO and traffic analytics
             </li>
-            <li className="border-y py-4 md:py-6 px-8 md:px-16">
-              Ongoing support
+            <li className="border-y py-4 md:py-4 px-8 md:px-12">
+              Mentorship and training
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
-            Rs. 7 000+
+            Rs. 0
           </h4>
           <a href="https://calendly.com/ovilashjalui/30min" target="_blank">
-            <ButtonUsage title="BOOK YOUR SESSION NOW" />
+            <ButtonUsage title="BOOK YOUR SESSION" />
           </a>
         </div>
       </div>

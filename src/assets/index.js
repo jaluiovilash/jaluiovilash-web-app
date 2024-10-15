@@ -1,44 +1,50 @@
-import mail from "./mail.png";
-import phone from "./phone.png";
 import product1 from "./product1.png";
 import product2 from "./product2.png";
-import productdesign from "./productdesign.png";
-import developer from "./developer.png";
-import window from "./window.png";
-import deveops from "./deveops.png";
-import faqs from "./faqs.png";
-import frontend from "./frontend.png";
+import project1 from "./project1.png";
+import project2 from "./project2.jpeg";
+import project3 from "./project3.png";
+
 import JO from "./JO.png";
 import lion from "./lion.jpg";
-import lion2 from "./lion2.jpg";
-import lion3 from "./lion-3.jpg";
-import cheetah from "./cheetah.jpg";
 
-import owl from "./owl.jpg";
-import owl_perfect from "./owl-perfect.jpg";
+import landing_page_grey from "./landing_page_grey.png";
+import collaborate_grey from "./collaborate_grey.png";
+import coming_soon_grey from "./coming_soon_grey.png";
+import uiux_grey from "./uiux_grey.png";
 
-import eagle from "./eagle.jpg";
-import eagle2 from "./eagle2.jpg";
+import fswd from "./fswd.jpg";
+import custom from "./uiux_grey.png";
+import api from "./api.png";
+import po from "./po.webp";
+import seo from "./seo.jpg";
+import mentor from "./mentor.webp";
 
+import circle from "./circle.svg";
+import square from "./square.svg";
+import triangle from "./triangle.svg";
 
 export {
-    mail,
-    phone,
     product1,
     product2,
-    productdesign,
-    developer,
-    window,
-    deveops,
-    faqs,
-    frontend,
-    JO,
+    project1,
+    project2,
+    project3,
+
     lion,
-    lion2,
-    lion3,
-    cheetah,
-    owl,
-    owl_perfect,
-    eagle,
-    eagle2,
+    JO,
+
+    landing_page_grey,
+    collaborate_grey,
+    coming_soon_grey,
+    uiux_grey,
+    fswd,
+    custom,
+    api,
+    po,
+    seo,
+    mentor,
+
+    circle,
+    square,
+    triangle,
 };

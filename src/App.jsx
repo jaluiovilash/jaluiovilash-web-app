@@ -13,7 +13,7 @@ import {
 
 function App() {
   return (
-    <div className="bg-primary text-secondary">
+    <div>
       <Navbar />
       <div className="pt-20 lg:pt-24">
         <Header />

@@ -18,17 +18,18 @@ const Hero = () => {
         <h3 className="text-2xl font-montserrat font-medium text-accent">
           &quot;Hello World&quot;
         </h3>
-        <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+        <h1 className="text-3xl md:text-4xl font-medium leading-tight">
           My name is <span className="text-portfolio">Ovilash Jalui</span>, and
           I am a Full Stack Developer.
         </h1>
         <p className="text-lg md:text-xl">
-          I specialize in creating visually stunning and user-friendly digital
-          products such as applications, websites, and other digital platforms.
+          I specialize in creating visually stunning and user-friendly web
+          applications that help businesses thrive in the digital world.
         </p>
         <p className="text-lg md:text-xl">
-          My goal is to design digital experiences that are not only visually
-          appealing but also easy to navigate and intuitive for users.
+          Whether it’s designing custom websites, building MVPs for startups, or
+          renovating outdated sites, my mission is to deliver solutions that
+          reflect both creativity and technical mastery.
         </p>
         <p className="py-12">
           <a

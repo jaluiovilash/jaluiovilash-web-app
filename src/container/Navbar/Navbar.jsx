@@ -2,25 +2,51 @@ import { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { ButtonUsage } from "../../components/index";
 
-const Menu = ({ isMobile }) => (
+const Menu = ({ isMobile, setToggleMenu }) => (
   <>
     <li className="mx-6">
-      <a href="#projects" className="hover:text-accent transition-all">
+      <a
+        href="../../../public/resume/Full-Stack-Developer.pdf"
+        download=""
+        className="hover:text-accent transition-all"
+        onClick={() => isMobile && setToggleMenu(false)}
+      >
+        Resume
+      </a>
+    </li>
+    <li className="mx-6">
+      <a
+        href="#projects"
+        className="hover:text-accent transition-all"
+        onClick={() => isMobile && setToggleMenu(false)}
+      >
         Projects
       </a>
     </li>
     <li className="mx-6">
-      <a href="#services" className="hover:text-accent transition-all">
+      <a
+        href="#services"
+        className="hover:text-accent transition-all"
+        onClick={() => isMobile && setToggleMenu(false)}
+      >
         Services
       </a>
     </li>
     <li className="mx-6">
-      <a href="#method" className="hover:text-accent transition-all">
-        Method
+      <a
+        href="#method"
+        className="hover:text-accent transition-all"
+        onClick={() => isMobile && setToggleMenu(false)}
+      >
+        Work Flow
       </a>
     </li>
     <li className="mx-6">
-      <a href="#pricing" className="hover:text-accent transition-all">
+      <a
+        href="#pricing"
+        className="hover:text-accent transition-all"
+        onClick={() => isMobile && setToggleMenu(false)}
+      >
         Pricing
       </a>
     </li>
@@ -31,8 +57,9 @@ const Menu = ({ isMobile }) => (
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent hover:underline"
+          onClick={() => setToggleMenu(false)}
         >
-          Let's Talk
+          Let&apos;s Talk
         </a>
       ) : (
         <a
@@ -61,7 +88,7 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="hidden md:flex">
         <ul className="flex justify-center items-center text-lg">
-          <Menu />
+          <Menu setToggleMenu={setToggleMenu} />
         </ul>
       </div>
 
@@ -71,13 +98,13 @@ const Navbar = () => {
           <RiCloseLine
             size={27}
             onClick={() => setToggleMenu(false)}
-            className="cursor-pointer text-accent hover:scale-105 transition-transform"
+            className="cursor-pointer text-portfolio hover:scale-105 transition-transform"
           />
         ) : (
           <RiMenu3Line
             size={27}
             onClick={() => setToggleMenu(true)}
-            className="cursor-pointer text-accent hover:scale-105 transition-transform"
+            className="cursor-pointer text-portfolio hover:scale-105 transition-transform"
           />
         )}
       </div>
@@ -86,7 +113,8 @@ const Navbar = () => {
       {toggleMenu && (
         <div className="absolute top-16 right-0 bg-primary p-8 w-[40%] flex justify-center items-center md:hidden z-50 rounded-lg list-none shadow-lg">
           <div className="flex flex-col items-center space-y-4">
-            <Menu isMobile={true} />
+            {/* Pass `setToggleMenu` to the Menu for mobile functionality */}
+            <Menu isMobile={true} setToggleMenu={setToggleMenu} />
           </div>
         </div>
       )}

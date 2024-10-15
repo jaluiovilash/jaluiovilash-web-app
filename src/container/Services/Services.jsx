@@ -1,41 +1,48 @@
 import { useState } from "react";
-import { lion } from "../../assets/index";
+import { fswd, custom, api, po, seo, mentor } from "../../assets/index";
 
 const servicesArr = [
   {
     id: "01",
-    image: lion, // Placeholder image path
-    title: "UI/UX Design",
+    image: fswd,
+    title: "FULL-STACK DEVELOPMENT",
     hoverText:
-      "Designing user-friendly interfaces and enhancing user experiences."
+      "I create secure, scalable, and dynamic applications using technologies like React, Node.js, MongoDB, and Express. My focus is on delivering fast and robust solutions tailored to your business."
   },
   {
     id: "02",
-    image: lion, // Placeholder image path
-    title: "Mobile App Design",
+    image: custom,
+    title: "CUSTOM WEB APP DESIGN",
     hoverText:
-      "Crafting intuitive mobile applications for a seamless user journey."
+      "I design bespoke web applications tailored to meet your unique business needs. Whether it's a startup or an established business, my goal is to help you scale efficiently."
   },
   {
     id: "03",
-    image: lion, // Placeholder image path
-    title: "Landing Page Design UX",
+    image: api,
+    title: "API DEVELOPMENT & INTEGRATION",
     hoverText:
-      "Building high-converting landing pages optimized for user engagement."
+      "I develop and integrate RESTful and GraphQL APIs, ensuring seamless communication between systems and third-party services. Your applications will be more connected, efficient, and powerful."
   },
   {
     id: "04",
-    image: lion, // Placeholder image path
-    title: "Research Website Design",
+    image: po,
+    title: "PERFORMANCE OPTIMIZATION",
     hoverText:
-      "Creating research-oriented websites to deliver content efficiently."
+      "I fine-tune your web applications for optimal performance, boosting speed, security, and scalability. My aim is to keep your business running smoothly as it grows over time."
   },
   {
     id: "05",
-    image: lion, // Placeholder image path
-    title: "Development",
+    image: seo,
+    title: "SEO OPTIMIZATION",
     hoverText:
-      "Developing responsive and scalable web applications tailored to your needs."
+      "I implement effective SEO strategies to enhance your search engine visibility, driving more organic traffic to your website and helping your business rank higher in search results."
+  },
+  {
+    id: "06",
+    image: mentor,
+    title: "MENTORSHIP & TRAINING",
+    hoverText:
+      "I offer personalized mentorship and training sessions for aspiring developers, guiding them through web development principles and best practices, helping them build their careers in tech."
   }
 ];
 
@@ -43,10 +50,10 @@ const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div id="services" className="scroll-mt-20 border-b">
+    <div id="services" className="scroll-mt-20 md:border-b">
       {/* Services Heading */}
       <div className="py-16 border-b text-center">
-        <h1 className="font-montserrat text-4xl md:text-6xl font-semibold w-4/5 mx-auto">
+        <h1 className="font-montserrat text-6xl md:text-7xl font-semibold w-4/5 mx-auto">
           SERVICES
         </h1>
       </div>
@@ -54,46 +61,49 @@ const Services = () => {
       {/* Desktop Version: Left Side - Image, Right Side - Services List */}
       <div className="hidden md:flex flex-row">
         {/* Left Side: Image (Desktop View) */}
-        <div className="md:w-2/5 flex justify-center md:justify-end items-center p-8 md:p-20">
+        <div className="md:w-2/5 h-[600px] flex flex-col justify-start md:justify-center items-center p-8 md:p-20">
           <img
-            className={`w-[450px] transition-transform duration-500 ease-in-out transform ${
+            className={`w-auto h-[350px] bg-white transition-transform duration-500 ease-in-out transform ${
               hoveredIndex !== null
                 ? "rotate-[0deg] scale-100 opacity-100"
-                : "rotate-[30deg] scale-90 opacity-0"
+                : "rotate-[60deg] scale-0 opacity-0"
             }`}
             src={hoveredIndex !== null ? servicesArr[hoveredIndex].image : ""}
             alt=""
+            loading="lazy"
           />
-        </div>
-
-        {/* Right Side: Services List */}
-        <div className="pt-8 pb-16 w-full md:w-3/5 border-t md:border-l px-8">
-          <ul>
-            {servicesArr.map((service, index) => (
-              <li key={service.id}>
-                <h2
-                  className={`hover:text-portfolio text-4xl md:text-5xl font-medium py-4 cursor-pointer transition-transform duration-500 ease-in-out ${
-                    hoveredIndex === index ? "translate-x-16" : "translate-x-0"
-                  }`}
-                  onMouseEnter={() => setHoveredIndex(index)}
-                  onMouseLeave={() => setHoveredIndex(null)}
-                >
-                  {service.title}
-                </h2>
-              </li>
-            ))}
-          </ul>
-
-          {/* Hover Text */}
           <p
-            className={`text-xl pt-16 transition-all duration-500 ease-in-out transform ${
-              hoveredIndex !== null
-                ? "opacity-100 translate-x-16"
-                : "opacity-0 translate-x-0"
+            className={`text-xl mt-16 text-center transition-all duration-700 ease-in-out transform ${
+              hoveredIndex !== null ? "opacity-100" : "opacity-0"
             }`}
           >
             {hoveredIndex !== null ? servicesArr[hoveredIndex].hoverText : ""}
           </p>
+        </div>
+
+        {/* Right Side: Services List */}
+        <div className="pt-8 pb-16 w-full md:w-3/5 md:border-l px-8">
+          <ul className="space-y-2">
+            {servicesArr.map((service, index) => (
+              <li
+                key={service.id}
+                className="relative flex flex-col justify-start items-start"
+                style={{ height: "auto" }}
+              >
+                <span
+                  className={`hover:text-portfolio text-4xl md:text-4xl font-normal my-5 cursor-pointer transition-all duration-700 ease-in-out`}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                  style={{
+                    paddingLeft: hoveredIndex === index ? "4rem" : "0rem",
+                    transition: "padding-left 0.5s ease-in-out"
+                  }}
+                >
+                  {service.title}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

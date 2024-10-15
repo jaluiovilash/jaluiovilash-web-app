@@ -7,7 +7,7 @@
 :root {
     --primary: #1c1c1c;
     --secondary: #ffffff;
-    --portfolio: #FF3422;
+    --portfolio: #ff3322;
 
     --font: "Roboto", sans-serif;
 }
@@ -27,6 +27,7 @@
 body {
     font-family: var(--font);
     background-color: var(--primary);
+    color: #fff;
     overflow-x: hidden;
 }
 
@@ -66,4 +67,6 @@ button:hover {
 
 img {
     filter: grayscale(100%);
+    pointer-events: none;
+    user-select: none;
 }
