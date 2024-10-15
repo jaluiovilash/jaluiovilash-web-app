@@ -53,7 +53,7 @@ const Services = () => {
     <div id="services" className="scroll-mt-20 md:border-b">
       {/* Services Heading */}
       <div className="py-16 border-b text-center">
-        <h1 className="font-montserrat text-6xl md:text-7xl font-semibold w-4/5 mx-auto">
+        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
           SERVICES
         </h1>
       </div>
@@ -63,17 +63,17 @@ const Services = () => {
         {/* Left Side: Image (Desktop View) */}
         <div className="md:w-2/5 h-[600px] flex flex-col justify-start md:justify-center items-center p-8 md:p-20">
           <img
-            className={`w-auto h-[350px] bg-white transition-transform duration-500 ease-in-out transform ${
+            className={`w-auto h-[350px] rounded-lg transition-transform duration-500 ease-in-out ${
               hoveredIndex !== null
-                ? "rotate-[0deg] scale-100 opacity-100"
+                ? "rotate-0 scale-100 opacity-100"
                 : "rotate-[60deg] scale-0 opacity-0"
             }`}
             src={hoveredIndex !== null ? servicesArr[hoveredIndex].image : ""}
-            alt=""
-            loading="lazy"
+            alt={hoveredIndex !== null ? servicesArr[hoveredIndex].title : ""}
+            loading="lazy" // Lazy loading for performance
           />
           <p
-            className={`text-xl mt-16 text-center transition-all duration-700 ease-in-out transform ${
+            className={`text-xl mt-16 text-center transition-opacity duration-700 ease-in-out ${
               hoveredIndex !== null ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -88,7 +88,6 @@ const Services = () => {
               <li
                 key={service.id}
                 className="relative flex flex-col justify-start items-start"
-                style={{ height: "auto" }}
               >
                 <span
                   className={`hover:text-portfolio text-4xl md:text-4xl font-normal my-5 cursor-pointer transition-all duration-700 ease-in-out`}
@@ -98,6 +97,7 @@ const Services = () => {
                     paddingLeft: hoveredIndex === index ? "4rem" : "0rem",
                     transition: "padding-left 0.5s ease-in-out"
                   }}
+                  aria-label={`Service: ${service.title}`} // Added for accessibility
                 >
                   {service.title}
                 </span>
@@ -110,7 +110,7 @@ const Services = () => {
       {/* Mobile View: Card Layout (width < 400px) */}
       <div className="md:hidden">
         <div className="flex flex-col">
-          {servicesArr.map((service, index) => (
+          {servicesArr.map((service) => (
             <div
               key={service.id}
               className="border-b p-6 flex flex-col items-center"

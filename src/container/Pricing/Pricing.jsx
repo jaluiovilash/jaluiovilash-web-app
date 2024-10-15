@@ -17,7 +17,7 @@ const Pricing = () => {
         <div className="px-8 text-center">
           <img
             src={square}
-            alt="Lion image representing Design services"
+            alt="Illustration representing design solutions"
             className="w-[250px] h-[250px] max-w-[300px] mx-auto"
             loading="lazy"
           />
@@ -39,6 +39,7 @@ const Pricing = () => {
           <a
             href="mailto:jaluiovilash@outlook.com?subject=Design Services Inquiry"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <ButtonUsage title="CONTACT ME" />
           </a>
@@ -48,7 +49,7 @@ const Pricing = () => {
         <div className="px-8 py-8 text-center border-t border-b md:border-t-0 md:border-b-0 md:border-x">
           <img
             src={circle}
-            alt="Lion image representing Development services"
+            alt="Illustration representing development services"
             className="w-[250px] h-[250px] max-w-[300px] mx-auto"
             loading="lazy"
           />
@@ -61,15 +62,16 @@ const Pricing = () => {
               Implement client-provided designs
             </li>
             <li className="border-y py-4 md:py-4 px-8 md:px-12">
-              OScalable, secure solutions
+              Scalable, secure solutions
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
-            Rs. 10 000+
+            ₹ 10,000+
           </h4>
           <a
             href="mailto:jaluiovilash@outlook.com?subject=Development Services Inquiry"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <ButtonUsage title="CONTACT ME" />
           </a>
@@ -79,7 +81,7 @@ const Pricing = () => {
         <div className="px-8 text-center">
           <img
             src={triangle}
-            alt="Lion image representing Maintenance services"
+            alt="Illustration representing growth services"
             className="w-[250px] h-[250px] max-w-[300px] mx-auto"
             loading="lazy"
           />
@@ -96,10 +98,14 @@ const Pricing = () => {
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
-            Rs. 0
+            ₹ 17,000+
           </h4>
-          <a href="https://calendly.com/ovilashjalui/30min" target="_blank">
-            <ButtonUsage title="BOOK YOUR SESSION" />
+          <a
+            href="https://calendly.com/ovilashjalui/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ButtonUsage title="BOOK YOUR SESSION FOR FREE" />
           </a>
         </div>
       </div>

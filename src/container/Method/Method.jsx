@@ -53,6 +53,11 @@ const processSteps = [
 
 const Method = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [clickedIndex, setClickedIndex] = useState(null); // For mobile toggle
+
+  const handleClick = (index) => {
+    setClickedIndex(clickedIndex === index ? null : index); // Toggle text visibility on click
+  };
 
   return (
     <div id="method" className="scroll-mt-20 border-b">
@@ -65,28 +70,28 @@ const Method = () => {
       {processSteps.map((step, index) => (
         <div
           key={step.id}
-          className="flex flex-col md:flex-row justify-between items-start md:items-center border-t p-8 md:px-64"
+          className="flex flex-col md:flex-row justify-between items-start md:items-center border-t p-8 md:px-64 transition-transform duration-300 ease-in-out hover:scale-105"
+          onClick={() => handleClick(index)} // Enable click interaction on mobile
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
         >
           {/* Title Section */}
           <div
             role="button"
             tabIndex={0}
-            className="text-3xl md:text-5xl font-montserrat font-medium hover:text-portfolio cursor-pointer mb-4 md:mb-0"
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            onKeyPress={(e) => {
-              if (e.key === "Enter") setHoveredIndex(index);
-            }}
+            className="text-3xl md:text-5xl font-montserrat font-medium hover:text-portfolio cursor-pointer mb-4 md:mb-0 transition-colors duration-300 ease-in-out"
           >
             <span className="text-portfolio">{step.id}</span> {step.title}
           </div>
 
           {/* Description Section */}
           <div
-            className={`md:w-1/3 w-full text-lg transition-opacity duration-500 ease-in-out ${
-              hoveredIndex === index || window.innerWidth < 768
-                ? "opacity-100"
-                : "opacity-0"
+            className={`md:w-1/3 w-full text-lg transition-all duration-500 ease-in-out transform ${
+              hoveredIndex === index ||
+              window.innerWidth < 768 ||
+              clickedIndex === index
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-2"
             } md:block`}
           >
             <p className="text-secondary">{step.hoverText}</p>

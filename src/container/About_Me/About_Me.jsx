@@ -1,8 +1,4 @@
-import {
-  square,
-  landing_page_grey,
-  collaborate_grey
-} from "../../assets/index";
+import { square, collaborate_grey, about_us } from "../../assets/index";
 import { ButtonUsage } from "../../components/index";
 
 const About_Me = () => {
@@ -22,8 +18,8 @@ const About_Me = () => {
         {/* Right Section (Image) */}
         <div className="right lg:w-2/5 w-full flex justify-center items-center p-6 lg:p-16 lg:border-t-0 lg:border-l lg:border-b-0">
           <img
-            className="w-[full] h-[400px] object-cover rounded-lg shadow-md"
-            src={landing_page_grey}
+            className="w-full h-[400px] object-cover rounded-lg shadow-md"
+            src={about_us}
             alt="Lion image"
             loading="lazy"
           />

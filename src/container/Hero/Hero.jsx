@@ -3,9 +3,9 @@ import { VisitHere } from "../../components/index";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row border-b">
       {/* Left Section (Image) */}
-      <div className="border-t md:border-t md:border-b md:border-r p-8 md:p-16 w-full md:w-2/5">
+      <div className="w-full md:w-2/5 border-b md:border-b-0 md:border-r p-8 md:p-16">
         <img
           className="w-full h-auto object-cover rounded-lg shadow-lg"
           src={lion}
@@ -14,7 +14,7 @@ const Hero = () => {
       </div>
 
       {/* Right Section (Text) */}
-      <div className="border-b md:border-t md:border-b p-8 md:p-16 w-full md:w-3/5 text-xl space-y-6">
+      <div className="w-full md:w-3/5 p-8 md:p-16 text-lg md:text-xl space-y-6">
         <h3 className="text-2xl font-montserrat font-medium text-accent">
           &quot;Hello World&quot;
         </h3>

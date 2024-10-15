@@ -59,7 +59,7 @@ const Menu = ({ isMobile, setToggleMenu }) => (
           className="text-accent hover:underline"
           onClick={() => setToggleMenu(false)}
         >
-          Let&apos;s Talk
+          Let's Talk
         </a>
       ) : (
         <a
@@ -79,7 +79,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center p-5 md:px-10 border-b bg-primary fixed top-0 w-full z-50">
-      <h1 className="text-5xl font-semibold font-montserrat tracking-wide">
+      <h1 className="text-3xl md:text-5xl font-semibold font-montserrat tracking-wide">
         <a href="/" className="hover:text-accent transition-all">
           JO
         </a>
@@ -111,7 +111,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {toggleMenu && (
-        <div className="absolute top-16 right-0 bg-primary p-8 w-[40%] flex justify-center items-center md:hidden z-50 rounded-lg list-none shadow-lg">
+        <div className="absolute top-16 right-0 bg-primary p-8 w-[60%] md:w-[40%] flex justify-center items-center md:hidden z-50 rounded-lg list-none shadow-lg">
           <div className="flex flex-col items-center space-y-4">
             {/* Pass `setToggleMenu` to the Menu for mobile functionality */}
             <Menu isMobile={true} setToggleMenu={setToggleMenu} />

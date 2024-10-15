@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="scroll-mt-20" id="projects">
       {/* Project Title */}
       <div className="py-16 border-b text-center">
-        <h1 className="font-montserrat text-6xl md:text-7xl font-semibold w-3/5 mx-auto">
+        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto">
           PROJECTS
         </h1>
       </div>
@@ -85,7 +85,6 @@ const Projects = () => {
               alt="Project 3"
               loading="lazy"
             />
-
             <a
               href="https://github.com/jaluiovilash/RaktSetu-Backend.git"
               target="_blank"
@@ -94,7 +93,7 @@ const Projects = () => {
               <VisitHere title="RaktSetu - Blood Bank Management System Backend" />
             </a>
             <h2 className="text-portfolio text-xl font-medium py-4">
-              Renovated Web App
+              RaktSetu - Backend on Nodejs
             </h2>
             <p className="text-xl py-4">
               RaktSetu backend, a Node.js-powered Blood Bank Management System,
