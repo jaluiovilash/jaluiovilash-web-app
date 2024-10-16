@@ -53,7 +53,10 @@ const Services = () => {
     <div id="services" className="scroll-mt-20 md:border-b">
       {/* Services Heading */}
       <div className="py-16 border-b text-center">
-        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
+        <h1
+          className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto"
+          data-aos="zoom-in"
+        >
           SERVICES
         </h1>
       </div>

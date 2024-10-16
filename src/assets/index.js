@@ -1,5 +1,5 @@
-import product1 from "./product1.png";
-import product2 from "./product2.png";
+import shoe_product from "./shoe_product.png";
+import console_product from "./console_product.png";
 import project1 from "./project1.png";
 import project2 from "./project2.png";
 import project3 from "./project3.png";
@@ -24,8 +24,8 @@ import square from "./square.svg";
 import triangle from "./triangle.svg";
 
 export {
-    product1,
-    product2,
+    shoe_product,
+    console_product,
     project1,
     project2,
     project3,

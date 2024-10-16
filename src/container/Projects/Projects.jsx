@@ -8,8 +8,7 @@ const Projects = () => {
       <div className="py-16 border-b text-center">
         <h1
           className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos="zoom-in"
         >
           PROJECTS
         </h1>
@@ -19,11 +18,7 @@ const Projects = () => {
       <div className="border-b grid grid-cols-1 lg:grid-cols-2 mx-auto">
         {/* Project 01 */}
         <div className="border-b lg:border-r">
-          <h1
-            className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
+          <h1 className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end">
             01
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
@@ -61,11 +56,7 @@ const Projects = () => {
 
         {/* Project 02 */}
         <div className="border-b lg:border-r-0">
-          <h1
-            className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
+          <h1 className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex">
             02
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
@@ -102,12 +93,8 @@ const Projects = () => {
         </div>
 
         {/* Project 03 */}
-        <div className="lg:border-r">
-          <h1
-            className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-start"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
+        <div className="border-b lg:border-r">
+          <h1 className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-start">
             03
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
@@ -145,12 +132,8 @@ const Projects = () => {
         </div>
 
         {/* Project 04 */}
-        <div className="">
-          <h1
-            className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
+        <div className="border-b lg:border-r-0">
+          <h1 className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end">
             04
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">

@@ -6,7 +6,10 @@ const Pricing = () => {
     <div id="pricing" className="scroll-mt-20">
       {/* Title Section */}
       <div className="py-16 text-center">
-        <h1 className="font-montserrat text-4xl md:text-6xl lg:text-7xl font-semibold w-4/5 md:w-3/5 mx-auto">
+        <h1
+          className="font-montserrat text-4xl md:text-6xl lg:text-7xl font-semibold w-4/5 md:w-3/5 mx-auto"
+          data-aos="zoom-in"
+        >
           PRICING
         </h1>
       </div>

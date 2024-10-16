@@ -1,7 +1,14 @@
-import { useState } from "react";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { useState, lazy, Suspense } from "react";
 import { ButtonUsage } from "../../components/index";
 import ResumePDF from "../../assets/Full-Stack-Developer.pdf";
+
+// Lazy load the icons
+const RiMenu3Line = lazy(() =>
+  import("react-icons/ri").then((module) => ({ default: module.RiMenu3Line }))
+);
+const RiCloseLine = lazy(() =>
+  import("react-icons/ri").then((module) => ({ default: module.RiCloseLine }))
+);
 
 const Menu = ({ isMobile, setToggleMenu }) => (
   <>
@@ -95,19 +102,21 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden flex">
-        {toggleMenu ? (
-          <RiCloseLine
-            size={27}
-            onClick={() => setToggleMenu(false)}
-            className="cursor-pointer text-portfolio hover:scale-105 transition-transform"
-          />
-        ) : (
-          <RiMenu3Line
-            size={27}
-            onClick={() => setToggleMenu(true)}
-            className="cursor-pointer text-portfolio hover:scale-105 transition-transform"
-          />
-        )}
+        <Suspense fallback={<div>Loading...</div>}>
+          {toggleMenu ? (
+            <RiCloseLine
+              size={27}
+              onClick={() => setToggleMenu(false)}
+              className="cursor-pointer text-portfolio hover:scale-105 transition-transform"
+            />
+          ) : (
+            <RiMenu3Line
+              size={27}
+              onClick={() => setToggleMenu(true)}
+              className="cursor-pointer text-portfolio hover:scale-105 transition-transform"
+            />
+          )}
+        </Suspense>
       </div>
 
       {/* Mobile Dropdown Menu */}
