@@ -122,14 +122,14 @@ const Projects = () => {
               target="_blank"
               className="text-xl"
             >
-              <VisitHere title="RaktSetu - Blood Bank Management System Backend" />
+              <VisitHere title="Explore Project" />
             </a>
             <h2
               className="text-portfolio text-xl font-medium py-4"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              RaktSetu - Backend on Nodejs
+              RaktSetu - Blood Bank Management System Backend
             </h2>
             <p
               className="text-xl py-4"
