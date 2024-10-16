@@ -1,13 +1,26 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { square, collaborate_grey, about_us } from "../../assets/index";
 import { ButtonUsage } from "../../components/index";
 
 const About_Me = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
+
   return (
     <div className="about">
       <div className="flex flex-col lg:flex-row">
         {/* Left Section (Text) */}
         <div className="left lg:w-3/5 w-full py-8 lg:py-16 px-6 lg:px-28 border-b lg:border-b-0">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed lg:leading-[1.6] font-montserrat">
+          <p
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed lg:leading-[1.6] font-montserrat"
+            data-aos="fade-up"
+          >
             EMPOWERING BUSINESSES WITH TECHNOLOGY. Development isn&apos;t just
             about writing code—it&apos;s about creating value and delivering
             results that matter. I focus on building applications that are fast,
@@ -20,7 +33,7 @@ const About_Me = () => {
           <img
             className="w-full h-[400px] object-cover rounded-lg shadow-md"
             src={about_us}
-            alt="Lion image"
+            alt="me image"
           />
         </div>
       </div>
@@ -33,6 +46,7 @@ const About_Me = () => {
             src={collaborate_grey}
             alt="CTA Image"
             className="w-[390px] h-[390px] object-cover rounded-lg shadow-md"
+            data-aos="fade-right"
           />
         </div>
 
@@ -42,11 +56,15 @@ const About_Me = () => {
             src={square}
             alt="Centered Image"
             className="w-[250px] h-[250px]"
+            data-aos="zoom-in"
           />
         </div>
 
         {/* Text & Button Section */}
-        <div className="md:w-3/6 w-full flex flex-col justify-center items-start p-6 md:p-16 md:border-b-0">
+        <div
+          className="md:w-3/6 w-full flex flex-col justify-center items-start p-6 md:p-16 md:border-b-0"
+          data-aos="fade-left"
+        >
           <p className="my-6 text-base sm:text-lg">
             &quot;Let’s collaborate and bring your digital vision to life,
             transforming ideas into solutions that drive success and

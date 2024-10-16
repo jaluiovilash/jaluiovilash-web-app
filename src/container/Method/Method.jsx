@@ -53,10 +53,10 @@ const processSteps = [
 
 const Method = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [clickedIndex, setClickedIndex] = useState(null); // For mobile toggle
+  const [clickedIndex, setClickedIndex] = useState(null);
 
   const handleClick = (index) => {
-    setClickedIndex(clickedIndex === index ? null : index); // Toggle text visibility on click
+    setClickedIndex(clickedIndex === index ? null : index);
   };
 
   return (
@@ -71,7 +71,7 @@ const Method = () => {
         <div
           key={step.id}
           className="flex flex-col md:flex-row justify-between items-start md:items-center border-t p-8 md:px-64 transition-transform duration-300 ease-in-out hover:scale-105"
-          onClick={() => handleClick(index)} // Enable click interaction on mobile
+          onClick={() => handleClick(index)}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >

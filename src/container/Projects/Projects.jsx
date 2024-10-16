@@ -6,7 +6,11 @@ const Projects = () => {
     <div className="scroll-mt-20" id="projects">
       {/* Project Title */}
       <div className="py-16 border-b text-center">
-        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto">
+        <h1
+          className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           PROJECTS
         </h1>
       </div>
@@ -15,7 +19,11 @@ const Projects = () => {
       <div className="border-b grid grid-cols-1 lg:grid-cols-2 mx-auto">
         {/* Project 01 */}
         <div className="border-b lg:border-r">
-          <h1 className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end">
+          <h1
+            className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             01
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
@@ -32,10 +40,18 @@ const Projects = () => {
             >
               <VisitHere title="Explore Project" />
             </a>
-            <h2 className="text-portfolio text-xl font-medium py-4">
+            <h2
+              className="text-portfolio text-xl font-medium py-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               KisaanBharat
             </h2>
-            <p className="text-xl py-4">
+            <p
+              className="text-xl py-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               Connecting Indian farmers, enthusiasts, and industry stakeholders
               for knowledge sharing, collaboration, and growth. Revolutionizing
               agriculture through digital platforms.
@@ -45,7 +61,11 @@ const Projects = () => {
 
         {/* Project 02 */}
         <div className="border-b lg:border-r-0">
-          <h1 className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex">
+          <h1
+            className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             02
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
@@ -56,10 +76,18 @@ const Projects = () => {
             >
               <VisitHere title="Explore Project" />
             </a>
-            <h2 className="text-portfolio text-xl font-medium py-4">
+            <h2
+              className="text-portfolio text-xl font-medium py-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               ChirpNet
             </h2>
-            <p className="text-xl py-4">
+            <p
+              className="text-xl py-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               Twitter clone enabling secure CRUD operations for posts. Built
               with Django backend and Bootstrap frontend. A demonstration of
               social media platform development.
@@ -75,7 +103,11 @@ const Projects = () => {
 
         {/* Project 03 */}
         <div className="lg:border-r">
-          <h1 className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-start">
+          <h1
+            className="text-portfolio py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-start"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             03
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
@@ -92,10 +124,18 @@ const Projects = () => {
             >
               <VisitHere title="RaktSetu - Blood Bank Management System Backend" />
             </a>
-            <h2 className="text-portfolio text-xl font-medium py-4">
+            <h2
+              className="text-portfolio text-xl font-medium py-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               RaktSetu - Backend on Nodejs
             </h2>
-            <p className="text-xl py-4">
+            <p
+              className="text-xl py-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               RaktSetu backend, a Node.js-powered Blood Bank Management System,
               streamlines donor registrations, blood stock, hospital requests,
               and emergency notifications using Express and MongoDB for
@@ -106,17 +146,29 @@ const Projects = () => {
 
         {/* Project 04 */}
         <div className="">
-          <h1 className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end">
+          <h1
+            className="py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl flex justify-end"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             04
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
             <a href="" target="_blank" className="text-xl">
               <VisitHere title="Coming Soon..." />
             </a>
-            <h2 className="text-portfolio text-xl font-medium py-4">
+            <h2
+              className="text-portfolio text-xl font-medium py-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               Renovated Web App
             </h2>
-            <p className="text-xl py-8">
+            <p
+              className="text-xl py-8"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               Ongoing redesign of an outdated web app using React. Soon to be
               deployed. Transforming legacy systems with modern design.
             </p>
