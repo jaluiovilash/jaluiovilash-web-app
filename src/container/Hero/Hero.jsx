@@ -19,8 +19,7 @@ const Hero = () => {
           &quot;Hello World&quot;
         </h3>
         <h1 className="text-3xl md:text-4xl font-medium leading-tight">
-          My name is <span className="text-portfolio">Ovilash Jalui</span>, and
-          I am a Full Stack Developer.
+          My name is Ovilash Jalui, and I am a Full Stack Developer.
         </h1>
         <p className="text-lg md:text-xl">
           I specialize in creating visually stunning and user-friendly web
@@ -31,7 +30,7 @@ const Hero = () => {
           renovating outdated sites, my mission is to deliver solutions that
           reflect both creativity and technical mastery.
         </p>
-        <p className="py-12">
+        <div className="py-12">
           <a
             href="https://www.linkedin.com/in/jaluiovilash/"
             target="_blank"
@@ -39,7 +38,7 @@ const Hero = () => {
           >
             <VisitHere title="Say hii!" />
           </a>
-        </p>
+        </div>
       </div>
     </div>
   );

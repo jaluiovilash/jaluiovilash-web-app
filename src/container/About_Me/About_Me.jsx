@@ -21,7 +21,6 @@ const About_Me = () => {
             className="w-full h-[400px] object-cover rounded-lg shadow-md"
             src={about_us}
             alt="Lion image"
-            loading="lazy"
           />
         </div>
       </div>

@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { ButtonUsage } from "../../components/index";
+import ResumePDF from "../../assets/Full-Stack-Developer.pdf";
 
 const Menu = ({ isMobile, setToggleMenu }) => (
   <>
     <li className="mx-6">
       <a
-        href="../../../public/resume/Full-Stack-Developer.pdf"
+        href={ResumePDF}
         download=""
         className="hover:text-accent transition-all"
         onClick={() => isMobile && setToggleMenu(false)}
@@ -59,7 +60,7 @@ const Menu = ({ isMobile, setToggleMenu }) => (
           className="text-accent hover:underline"
           onClick={() => setToggleMenu(false)}
         >
-          Let's Talk
+          Let&apos;s Talk
         </a>
       ) : (
         <a
