@@ -1,7 +1,18 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+
 import { project1, project2, project3, coming_soon_grey } from "../../assets";
 import { VisitHere } from "../../components/index";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
+
   return (
     <div className="scroll-mt-20" id="projects">
       {/* Project Title */}
@@ -26,7 +37,6 @@ const Projects = () => {
               className="my-6 w-auto h-[300px] object-cover rounded-lg"
               src={project1}
               alt="Project 1"
-              loading="lazy"
             />
             <a
               href="https://github.com/jaluiovilash/MINOR-PROJECT-PU-24.git"
@@ -35,18 +45,8 @@ const Projects = () => {
             >
               <VisitHere title="Explore Project" />
             </a>
-            <h2
-              className="text-portfolio text-xl font-medium py-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              KisaanBharat
-            </h2>
-            <p
-              className="text-xl py-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+            <h2 className="text-xl font-medium py-4">KisaanBharat</h2>
+            <p className="text-xl py-4" data-aos="fade-up">
               Connecting Indian farmers, enthusiasts, and industry stakeholders
               for knowledge sharing, collaboration, and growth. Revolutionizing
               agriculture through digital platforms.
@@ -67,18 +67,8 @@ const Projects = () => {
             >
               <VisitHere title="Explore Project" />
             </a>
-            <h2
-              className="text-portfolio text-xl font-medium py-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              ChirpNet
-            </h2>
-            <p
-              className="text-xl py-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+            <h2 className="text-xl font-medium py-4">ChirpNet</h2>
+            <p className="text-xl py-4" data-aos="fade-up">
               Twitter clone enabling secure CRUD operations for posts. Built
               with Django backend and Bootstrap frontend. A demonstration of
               social media platform development.
@@ -111,18 +101,10 @@ const Projects = () => {
             >
               <VisitHere title="Explore Project" />
             </a>
-            <h2
-              className="text-portfolio text-xl font-medium py-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+            <h2 className="text-xl font-medium py-4">
               RaktSetu - Blood Bank Management System Backend
             </h2>
-            <p
-              className="text-xl py-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+            <p className="text-xl py-4" data-aos="fade-up">
               RaktSetu backend, a Node.js-powered Blood Bank Management System,
               streamlines donor registrations, blood stock, hospital requests,
               and emergency notifications using Express and MongoDB for
@@ -140,18 +122,8 @@ const Projects = () => {
             <a href="" target="_blank" className="text-xl">
               <VisitHere title="Coming Soon..." />
             </a>
-            <h2
-              className="text-portfolio text-xl font-medium py-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              Renovated Web App
-            </h2>
-            <p
-              className="text-xl py-8"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+            <h2 className="text-xl font-medium py-4">Renovated Web App</h2>
+            <p className="text-xl py-8" data-aos="fade-up">
               Ongoing redesign of an outdated web app using React. Soon to be
               deployed. Transforming legacy systems with modern design.
             </p>

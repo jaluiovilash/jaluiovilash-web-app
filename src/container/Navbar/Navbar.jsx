@@ -107,27 +107,31 @@ const Navbar = () => {
             <RiCloseLine
               size={27}
               onClick={() => setToggleMenu(false)}
-              className="cursor-pointer text-portfolio hover:scale-105 transition-transform"
+              className={`cursor-pointer text-portfolio transform transition-transform duration-200 ${
+                toggleMenu ? "rotate-90" : "rotate-0"
+              } hover:scale-110`}
             />
           ) : (
             <RiMenu3Line
               size={27}
               onClick={() => setToggleMenu(true)}
-              className="cursor-pointer text-portfolio hover:scale-105 transition-transform"
+              className="cursor-pointer text-portfolio transition-transform duration-500 hover:scale-110"
             />
           )}
         </Suspense>
       </div>
 
       {/* Mobile Dropdown Menu */}
-      {toggleMenu && (
-        <div className="absolute top-16 right-0 bg-primary p-8 w-[60%] md:w-[40%] flex justify-center items-center md:hidden z-50 rounded-lg list-none shadow-lg">
-          <div className="flex flex-col items-center space-y-4">
-            {/* Pass `setToggleMenu` to the Menu for mobile functionality */}
-            <Menu isMobile={true} setToggleMenu={setToggleMenu} />
-          </div>
+      <div
+        className={`absolute top-16 right-0 bg-primary p-8 w-[60%] md:w-[40%] flex justify-center items-center md:hidden z-50 rounded-lg list-none shadow-lg transition-all duration-500 ease-in-out transform ${
+          toggleMenu ? "translate-y-0 opacity-100" : "-translate-y-16 opacity-0"
+        }`}
+        style={{ visibility: toggleMenu ? "visible" : "hidden" }}
+      >
+        <div className="flex flex-col items-center space-y-4">
+          <Menu isMobile={true} setToggleMenu={setToggleMenu} />
         </div>
-      )}
+      </div>
     </div>
   );
 };

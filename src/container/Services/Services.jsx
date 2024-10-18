@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 import { fswd, custom, api, po, seo, mentor } from "../../assets/index";
 
 const servicesArr = [
@@ -49,6 +51,13 @@ const servicesArr = [
 const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
+
   return (
     <div id="services" className="scroll-mt-20 md:border-b">
       {/* Services Heading */}
@@ -73,7 +82,7 @@ const Services = () => {
             }`}
             src={hoveredIndex !== null ? servicesArr[hoveredIndex].image : ""}
             alt={hoveredIndex !== null ? servicesArr[hoveredIndex].title : ""}
-            loading="lazy" // Lazy loading for performance
+            loading="lazy"
           />
           <p
             className={`text-xl mt-16 text-center transition-opacity duration-700 ease-in-out ${
@@ -91,6 +100,7 @@ const Services = () => {
               <li
                 key={service.id}
                 className="relative flex flex-col justify-start items-start"
+                data-aos="fade-left"
               >
                 <span
                   className={`hover:text-portfolio text-4xl md:text-4xl font-normal my-5 cursor-pointer transition-all duration-700 ease-in-out`}
@@ -100,7 +110,7 @@ const Services = () => {
                     paddingLeft: hoveredIndex === index ? "4rem" : "0rem",
                     transition: "padding-left 0.5s ease-in-out"
                   }}
-                  aria-label={`Service: ${service.title}`} // Added for accessibility
+                  aria-label={`Service: ${service.title}`}
                 >
                   {service.title}
                 </span>
@@ -117,6 +127,7 @@ const Services = () => {
             <div
               key={service.id}
               className="border-b p-6 flex flex-col items-center"
+              data-aos="fade-up"
             >
               {/* Service Image (Increased width for mobile view) */}
               <img

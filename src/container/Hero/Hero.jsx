@@ -33,23 +33,15 @@ const Hero = () => {
         </h3>
         <h1
           className="text-3xl md:text-4xl font-medium leading-tight"
-          data-aos="flip-down"
+          data-aos="fade-up"
         >
           My name is Ovilash Jalui, and I am a Full Stack Developer.
         </h1>
-        <p
-          className="text-lg md:text-xl"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <p className="text-lg md:text-xl" data-aos="fade-up">
           I specialize in creating visually stunning and user-friendly web
           applications that help businesses thrive in the digital world.
         </p>
-        <p
-          className="text-lg md:text-xl"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <p className="text-lg md:text-xl" data-aos="fade-up">
           Whether it’s designing custom websites, building MVPs for startups, or
           renovating outdated sites, my mission is to deliver solutions that
           reflect both creativity and technical mastery.
