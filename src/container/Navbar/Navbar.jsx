@@ -24,6 +24,18 @@ const Menu = ({ isMobile, setToggleMenu }) => (
     </li>
     <li className="mx-6">
       <a
+        href="https://github.com/jaluiovilash"
+        download=""
+        className="hover:text-accent transition-all"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => isMobile && setToggleMenu(false)}
+      >
+        GitHub
+      </a>
+    </li>
+    <li className="mx-6">
+      <a
         href="#projects"
         className="hover:text-accent transition-all"
         onClick={() => isMobile && setToggleMenu(false)}
