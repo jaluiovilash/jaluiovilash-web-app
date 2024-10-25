@@ -22,7 +22,7 @@ const CTA = () => {
       </section>
 
       {/* Second Section */}
-      <section className="py-12 px-8 md:pr-52 flex justify-center items-center">
+      <section className="py-12 px-8 md:pr-52 flex justify-start md:justify-center items-center">
         <h2
           className="text-portfolio text-2xl md:text-6xl font-semibold"
           data-aos="flip-up"
@@ -32,8 +32,11 @@ const CTA = () => {
       </section>
 
       {/* Third Section */}
-      <section className="py-12 px-8 md:px-52 flex justify-between items-center border-y">
-        <h2 className="text-2xl md:text-6xl font-semibold" data-aos="flip-up">
+      <section className="py-12 px-8 md:px-52 flex flex-col md:flex-row justify-between items-start border-y">
+        <h2
+          className="text-2xl md:text-6xl font-semibold md:mb-0 mb-10"
+          data-aos="flip-up"
+        >
           LET&apos;S DO IT TOGETHER!
         </h2>
         <a

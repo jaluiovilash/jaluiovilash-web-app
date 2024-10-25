@@ -18,6 +18,7 @@ const Hero = () => {
       <div className="w-full md:w-2/5 border-b md:border-b-0 md:border-r p-8 md:p-16">
         <img
           className="w-full h-auto object-cover rounded-lg shadow-lg"
+          data-aos="zoom-in"
           src={lion}
           alt="hero"
         />
@@ -26,7 +27,7 @@ const Hero = () => {
       {/* Right Section (Text) */}
       <div className="w-full md:w-3/5 p-8 md:p-16 text-lg md:text-xl space-y-6">
         <h3
-          className="text-2xl font-montserrat font-medium text-accent"
+          className="text-xl font-montserrat font-medium text-accent"
           data-aos="fade-up"
         >
           &quot;Hello World&quot;

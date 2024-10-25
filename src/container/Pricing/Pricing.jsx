@@ -2,7 +2,7 @@ import { ButtonUsage } from "../../components/index";
 import { square, circle, triangle } from "../../assets/index";
 import { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 
 const Pricing = () => {
   useEffect(() => {
@@ -66,7 +66,7 @@ const Pricing = () => {
             className="w-[250px] h-[250px] max-w-[300px] mx-auto"
             loading="lazy"
           />
-          <h3 className="py-8 text-3xl md:text-4xl font-medium">DEVELOPMENT</h3>
+          <h3 className="py-8 text-3xl md:text-4xl font-medium">BUILD</h3>
           <ul>
             <li className="border-t py-4 md:py-4 px-8 md:px-12">
               Full website development from scratch

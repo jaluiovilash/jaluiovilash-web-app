@@ -62,8 +62,8 @@ const About_Me = () => {
         </div>
 
         {/* Text & Button Section */}
-        <div className="md:w-3/6 w-full flex flex-col justify-center items-start p-6 md:p-16 md:border-b-0">
-          <p className="my-6 text-base sm:text-lg" data-aos="zoom-in-down">
+        <div className="md:w-3/6 w-full flex flex-col justify-end items-start p-6 md:p-16 md:border-b-0">
+          <p className="my-6 text-base sm:text-lg" data-aos="zoom-in">
             &quot;Let’s collaborate and bring your digital vision to life,
             transforming ideas into solutions that drive success and
             growth!&quot;

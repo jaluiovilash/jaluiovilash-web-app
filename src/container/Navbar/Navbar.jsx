@@ -2,7 +2,6 @@ import { useState, lazy, Suspense } from "react";
 import { ButtonUsage } from "../../components/index";
 import ResumePDF from "../../assets/Full-Stack-Developer.pdf";
 
-// Lazy load the icons
 const RiMenu3Line = lazy(() =>
   import("react-icons/ri").then((module) => ({ default: module.RiMenu3Line }))
 );
