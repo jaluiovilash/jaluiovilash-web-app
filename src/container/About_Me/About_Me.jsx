@@ -57,13 +57,12 @@ const About_Me = () => {
             src={square}
             alt="Centered Image"
             className="w-full max-w-[250px] h-auto"
-            data-aos="zoom-in"
           />
         </div>
 
         {/* Text & Button Section */}
         <div className="md:w-3/6 w-full flex flex-col justify-end items-start p-6 md:p-16 md:border-b-0">
-          <p className="my-6 text-base sm:text-lg" data-aos="zoom-in">
+          <p className="my-6 text-base sm:text-lg">
             &quot;Let’s collaborate and bring your digital vision to life,
             transforming ideas into solutions that drive success and
             growth!&quot;

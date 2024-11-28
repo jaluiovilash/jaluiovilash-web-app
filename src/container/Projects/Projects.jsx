@@ -39,17 +39,20 @@ const Projects = () => {
               alt="Project 1"
             />
             <a
-              href="https://github.com/jaluiovilash/MINOR-PROJECT-PU-24.git"
+              href="https://apple-iphone15.web.app/"
               target="_blank"
               className="text-xl"
             >
               <VisitHere title="Explore Project" />
             </a>
-            <h2 className="text-xl font-medium py-4">KisaanBharat</h2>
+            <h2 className="text-xl font-medium py-4">
+              iPhone 15 Website Clone
+            </h2>
             <p className="text-xl py-4" data-aos="fade-up">
-              Connecting Indian farmers, enthusiasts, and industry stakeholders
-              for knowledge sharing, collaboration, and growth. Revolutionizing
-              agriculture through digital platforms.
+              This is a clone of Apple&apos;s iPhone 15 Pro website using
+              React.js and TailwindCSS. It highlights the effective use of GSAP
+              (Greensock Animations) and Three.js for displaying iPhone 15 Pro
+              models in various colors and shapes.
             </p>
           </div>
         </div>
@@ -119,7 +122,7 @@ const Projects = () => {
             04
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
-            <a href="" target="_blank" className="text-xl">
+            <a href="/#projects" target="_blank" className="text-xl">
               <VisitHere title="Coming Soon..." />
             </a>
             <h2 className="text-xl font-medium py-4">Renovated Web App</h2>

@@ -6,51 +6,63 @@ import "aos/dist/aos.css"; // Import AOS styles
 const processSteps = [
   {
     id: "01",
-    title: "DEFINING PRODUCT",
+    title: "CLIENT VISION",
     hoverText:
-      "During the initial client meeting, we discuss the project's purpose and goals. A project plan, timeline, and scope are clearly defined to align expectations."
+      "In the first client meeting, I focus on understanding their business goals, target audience, and project objectives. A clear project plan, scope, and timeline are agreed upon to ensure alignment."
   },
   {
     id: "02",
-    title: "RESEARCH",
+    title: "MARKET RESEARCH",
     hoverText:
-      "I analyze similar projects, research competitors, and conduct competitive analysis. I also study consumer behavior and market trends to inform the product direction."
+      "I dive deep into competitor analysis, market trends, and user behavior to understand the market landscape and to help shape the product’s direction."
   },
   {
     id: "03",
-    title: "IDEATION",
+    title: "STRATEGY DESIGN",
     hoverText:
-      "We outline the product's development strategy using personas, scenarios, and storyboards to create a comprehensive vision for the product."
+      "I develop a strategy by outlining user personas, use cases, and potential user journeys to visualize the product’s key features and functionalities."
   },
   {
     id: "04",
-    title: "SKETCHING",
+    title: "WIREFRAME CREATION",
     hoverText:
-      "I visualize the general layout and create the first low-fidelity wireframe, usually using Figma. This stage helps refine the product structure."
+      "I build low-fidelity wireframes that map out the product structure and functionality. Using Figma or other design tools, I focus on usability and the overall user experience."
   },
   {
     id: "05",
-    title: "DEFINING VISUAL MOOD",
+    title: "VISUAL DESIGN",
     hoverText:
-      "I develop mood boards and establish the visual style to ensure the product’s aesthetic aligns with the brand and user expectations."
+      "I establish the visual style by creating mood boards and designing high-fidelity UI elements. This stage ensures the design matches the brand's identity and appeals to the target audience."
   },
   {
     id: "06",
-    title: "CREATING PROTOTYPE",
+    title: "PROTOTYPE BUILD",
     hoverText:
-      "A high-fidelity prototype is created with responsive design. I document interactions, states, and styles for a fully functional representation of the product."
+      "I create an interactive, high-fidelity prototype that simulates the final product. This includes defining responsive layouts, UI interactions, and refining the product’s look and feel."
   },
   {
     id: "07",
-    title: "USABILITY TESTING",
+    title: "USER TESTING",
     hoverText:
-      "Conduct usability tests, followed by thorough data analysis. Insights from this testing help refine and improve the product’s usability."
+      "I conduct usability testing with real users and analyze the results. The feedback collected helps refine the user interface and improves the overall product experience."
   },
   {
     id: "08",
-    title: "DESIGN IMPROVEMENTS",
+    title: "ITERATIVE IMPROVEMENTS",
     hoverText:
-      "Research and testing data are analyzed to implement design improvements, ensuring the final product is both functional and user-friendly."
+      "Based on testing results and client feedback, I implement design and functionality improvements to enhance the product’s usability and effectiveness."
+  },
+  {
+    id: "09",
+    title: "LAUNCH PREP",
+    hoverText:
+      "After the final prototype is approved, I prepare the product for deployment. I ensure that the site or application is optimized for performance and ready for launch."
+  },
+  {
+    id: "10",
+    title: "POST-LAUNCH",
+    hoverText:
+      "Once the project is live, I provide ongoing maintenance, updates, and support. I also assist with digital marketing, SEO, and social media strategy to help grow the product's presence."
   }
 ];
 

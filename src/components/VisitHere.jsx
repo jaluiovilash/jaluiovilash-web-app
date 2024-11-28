@@ -8,7 +8,7 @@ const MdDoubleArrow = lazy(() =>
 const VisitHere = ({ title }) => {
   return (
     <div className="flex justify-start items-center">
-      <span className="mr-2">{title}</span>
+      <span className="mr-2 text-xl">{title}</span>
       <Suspense fallback={<div>Loading...</div>}>
         <MdDoubleArrow className="animate-wiggleX text-portfolio" />
       </Suspense>

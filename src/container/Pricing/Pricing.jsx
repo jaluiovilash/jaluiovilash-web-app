@@ -37,13 +37,13 @@ const Pricing = () => {
           <h3 className="py-8 text-3xl md:text-4xl font-medium">DESIGN</h3>
           <ul>
             <li className="border-t py-4 md:py-4 px-8 md:px-12">
-              Tailored web design solutions
+              Designs via Figma
             </li>
             <li className="border-t py-4 md:py-4 px-8 md:px-12">
-              Regular progress updates
+              Weekly feedback
             </li>
             <li className="border-y py-4 md:py-4 px-8 md:px-12">
-              Responsive and visually appealing
+              Dedicated support
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
@@ -69,17 +69,17 @@ const Pricing = () => {
           <h3 className="py-8 text-3xl md:text-4xl font-medium">BUILD</h3>
           <ul>
             <li className="border-t py-4 md:py-4 px-8 md:px-12">
-              Full website development from scratch
+              Fully operational website
             </li>
             <li className="border-t py-4 md:py-4 px-8 md:px-12">
-              Implement client-provided designs
+              Weekly project reviews
             </li>
             <li className="border-y py-4 md:py-4 px-8 md:px-12">
-              Scalable, secure solutions
+              Support and maintenance ongoing
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
-            ₹ 10,000+
+            ₹ 25,000+
           </h4>
           <a
             href="mailto:jaluiovilash@outlook.com?subject=Development Services Inquiry"
@@ -107,18 +107,18 @@ const Pricing = () => {
               SEO and traffic analytics
             </li>
             <li className="border-y py-4 md:py-4 px-8 md:px-12">
-              Mentorship and training
+              Content and ad campaigns
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
-            ₹ 17,000+
+            ₹ 45,000+
           </h4>
           <a
             href="https://calendly.com/ovilashjalui/30min"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonUsage title="BOOK YOUR SESSION FOR FREE" />
+            <ButtonUsage title="BOOK YOUR SESSION" />
           </a>
         </div>
       </div>

@@ -25,35 +25,27 @@ const Hero = () => {
       </div>
 
       {/* Right Section (Text) */}
-      <div className="w-full md:w-3/5 p-8 md:p-16 text-lg md:text-xl space-y-6">
-        <h3
-          className="text-xl font-montserrat font-medium text-accent"
-          data-aos="fade-up"
-        >
-          &quot;Hello World&quot;
-        </h3>
-        <h1
-          className="text-3xl md:text-4xl font-medium leading-tight"
-          data-aos="fade-up"
-        >
+      <div className="w-full md:w-[800px] text-accent p-8 md:p-16 text-xl space-y-6">
+        <h3 data-aos="fade-up">Hello!</h3>
+        <h1 className="leading-tight text-xl" data-aos="fade-up">
           My name is Ovilash Jalui, and I am a Full Stack Developer.
         </h1>
-        <p className="text-lg md:text-xl" data-aos="fade-up">
-          I specialize in creating visually stunning and user-friendly web
-          applications that help businesses thrive in the digital world.
+        <p data-aos="fade-up">
+          I specialize in creating visually stunning and user-friendly digital
+          products such as applications, websites, and other digital platforms.
         </p>
-        <p className="text-lg md:text-xl" data-aos="fade-up">
+        <p data-aos="fade-up">
           Whether it’s designing custom websites, building MVPs for startups, or
           renovating outdated sites, my mission is to deliver solutions that
           reflect both creativity and technical mastery.
         </p>
-        <div className="py-12">
+        <div className="py-8 w-1/2 md:w-1/6">
           <a
             href="https://www.linkedin.com/in/jaluiovilash/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <VisitHere title="Say hii!" />
+            <VisitHere title="Say Hi!" />
           </a>
         </div>
       </div>

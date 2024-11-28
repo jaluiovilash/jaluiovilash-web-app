@@ -16,7 +16,7 @@ const Header = () => {
         className="font-bold font-montserrat text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-center leading-tight"
         data-aos="zoom-in"
       >
-        CRAFTING SCALABLE SOLUTIONS THAT DRIVE BUSINESS GROWTH
+        CRAFTING SCALABLE WEB SOLUTIONS THAT DRIVE BUSINESS GROWTH
       </h1>
     </div>
   );

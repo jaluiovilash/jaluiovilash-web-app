@@ -17,8 +17,8 @@ function ButtonUsage({ title }) {
         },
         color: "#fff",
         fontFamily: "Roboto, sans-serif",
-        fontSize: isMobile ? "16px" : "18px",
-        padding: isMobile ? "10px 30px" : "16px 50px",
+        fontSize: isMobile ? "14px" : "16px",
+        padding: isMobile ? "8px 30px" : "10px 50px",
         borderRadius: "40px",
         textTransform: "none"
       }}

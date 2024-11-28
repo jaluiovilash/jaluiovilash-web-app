@@ -5,68 +5,68 @@
 @tailwind utilities;
 
 :root {
-    --primary: #1c1c1c;
-    --secondary: #ffffff;
-    --portfolio: #ff3322;
+  --primary: #1c1c1c;
+  --secondary: #ffffff;
+  --portfolio: #ff3322;
 
-    --font: "Roboto", sans-serif;
+  --font: "Roboto", sans-serif;
 }
 
 ::selection {
-    background-color: var(--portfolio);
-    color: #fff;
+  background-color: var(--portfolio);
+  color: #fff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font);
-    background-color: var(--primary);
-    color: #fff;
-    overflow-x: hidden;
+  font-family: var(--font);
+  background-color: var(--primary);
+  color: #fff;
+  overflow-x: hidden;
 }
 
 a {
-    color: var(--secondary);
-    transition: color 0.3s;
-    text-decoration: none;
+  color: var(--secondary);
+  transition: color 0.3s;
+  text-decoration: none;
 }
 
 a:hover {
-    color: var(--portfolio);
+  color: var(--portfolio);
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 button {
-    border-radius: 8px;
-    border: 1px solid #fff;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: background-color 0.25s, border-color 0.25s;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
 }
 
 button:hover {
-    background-color: var(--portfolio);
-    border-color: var(--portfolio);
+  background-color: var(--portfolio);
+  border-color: var(--portfolio);
 }
 
 img {
-    filter: grayscale(100%);
-    pointer-events: none;
-    user-select: none;
+  filter: grayscale(100%);
+  pointer-events: none;
+  user-select: none;
 }
