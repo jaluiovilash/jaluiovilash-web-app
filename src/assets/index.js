@@ -18,6 +18,7 @@ import api from "./api.png";
 import po from "./po.webp";
 import seo from "./seo.webp";
 import mentor from "./mentor.webp";
+import dgtl from "./DGTL.jpg";
 
 import circle from "./circle.svg";
 import square from "./square.svg";
@@ -43,6 +44,7 @@ export {
     po,
     seo,
     mentor,
+    dgtl,
 
     circle,
     square,

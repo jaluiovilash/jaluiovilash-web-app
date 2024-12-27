@@ -54,7 +54,7 @@ const Pricing = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonUsage title="CONTACT ME" />
+            <ButtonUsage title="CONTACT NOW" />
           </a>
         </div>
 
@@ -79,14 +79,14 @@ const Pricing = () => {
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
-            ₹ 25,000+
+            ₹ 15,000+
           </h4>
           <a
             href="mailto:jaluiovilash@outlook.com?subject=Development Services Inquiry"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonUsage title="CONTACT ME" />
+            <ButtonUsage title="GET IN TOUCH" />
           </a>
         </div>
 
@@ -111,14 +111,14 @@ const Pricing = () => {
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
-            ₹ 45,000+
+            ₹ 25,000+
           </h4>
           <a
             href="https://calendly.com/ovilashjalui/30min"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonUsage title="BOOK YOUR SESSION" />
+            <ButtonUsage title="SCHEDULE NOW" />
           </a>
         </div>
       </div>

@@ -1,13 +1,7 @@
-import { useState, lazy, Suspense } from "react";
+import { useState } from "react";
 import { ButtonUsage } from "../../components/index";
 import ResumePDF from "../../assets/Full-Stack-Developer.pdf";
-
-const RiMenu3Line = lazy(() =>
-  import("react-icons/ri").then((module) => ({ default: module.RiMenu3Line }))
-);
-const RiCloseLine = lazy(() =>
-  import("react-icons/ri").then((module) => ({ default: module.RiCloseLine }))
-);
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri"; // Import icons directly
 
 const Menu = ({ isMobile, setToggleMenu }) => (
   <>
@@ -97,7 +91,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="flex justify-between items-center p-5 md:px-10 border-b bg-primary fixed top-0 w-full z-50">
+    <div className="flex justify-between items-center p-6 md:p-5 md:px-10 border-b bg-primary fixed top-0 w-full z-50">
       <h1 className="text-3xl md:text-5xl font-semibold font-montserrat tracking-wide">
         <a href="/" className="hover:text-accent transition-all">
           JO
@@ -113,23 +107,21 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden flex">
-        <Suspense fallback={<div>Loading...</div>}>
-          {toggleMenu ? (
-            <RiCloseLine
-              size={27}
-              onClick={() => setToggleMenu(false)}
-              className={`cursor-pointer text-portfolio transform transition-transform duration-200 ${
-                toggleMenu ? "rotate-90" : "rotate-0"
-              } hover:scale-110`}
-            />
-          ) : (
-            <RiMenu3Line
-              size={27}
-              onClick={() => setToggleMenu(true)}
-              className="cursor-pointer text-portfolio transition-transform duration-500 hover:scale-110"
-            />
-          )}
-        </Suspense>
+        {toggleMenu ? (
+          <RiCloseLine
+            size={27}
+            onClick={() => setToggleMenu(false)}
+            className={`cursor-pointer text-portfolio transform transition-transform duration-200 ${
+              toggleMenu ? "rotate-90" : "rotate-0"
+            } hover:scale-110`}
+          />
+        ) : (
+          <RiMenu3Line
+            size={27}
+            onClick={() => setToggleMenu(true)}
+            className="cursor-pointer text-portfolio transition-transform duration-500 hover:scale-110"
+          />
+        )}
       </div>
 
       {/* Mobile Dropdown Menu */}

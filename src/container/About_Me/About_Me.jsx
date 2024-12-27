@@ -56,7 +56,7 @@ const About_Me = () => {
           <img
             src={square}
             alt="Centered Image"
-            className="w-full max-w-[250px] h-auto"
+            className="w-full max-w-[200px] h-auto"
           />
         </div>
 
@@ -72,7 +72,7 @@ const About_Me = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonUsage title="BOOK YOUR FIRST MEET" />
+            <ButtonUsage title="SCHEDULE YOUR FIRST MEET" />
           </a>
         </div>
       </div>

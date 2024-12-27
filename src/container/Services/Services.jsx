@@ -1,50 +1,50 @@
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS CSS
-import { fswd, custom, api, po, seo, mentor } from "../../assets/index";
+import { fswd, custom, api, po, seo, dgtl } from "../../assets/index";
 
 const servicesArr = [
   {
     id: "01",
     image: fswd,
-    title: "FULL-STACK DEVELOPMENT",
+    title: "CUSTOM UX/UI DESIGN",
     hoverText:
-      "I create secure, scalable, and dynamic applications using technologies like React, Node.js, MongoDB, and Express. My focus is on delivering fast and robust solutions tailored to your business."
+      "We create easy-to-use and attractive designs that match your brand and make your website or app enjoyable for users."
   },
   {
     id: "02",
     image: custom,
-    title: "CUSTOM WEB APP DESIGN",
+    title: "INTERACTIVE FRONT-END SOLUTIONS",
     hoverText:
-      "I design bespoke web applications tailored to meet your unique business needs. Whether it's a startup or an established business, my goal is to help you scale efficiently."
+      "We build fast and responsive websites that look great and work perfectly on all devices, like phones, tablets, and computers."
   },
   {
     id: "03",
     image: api,
-    title: "API DEVELOPMENT & INTEGRATION",
+    title: "SCALABLE BACK-END ARCHITECTURE",
     hoverText:
-      "I develop and integrate RESTful and GraphQL APIs, ensuring seamless communication between systems and third-party services. Your applications will be more connected, efficient, and powerful."
+      "We set up strong and secure systems to make sure your website or app runs smoothly and can grow with your business."
   },
   {
     id: "04",
     image: po,
-    title: "PERFORMANCE OPTIMIZATION",
+    title: "STARTUP MVP DEVELOPMENT",
     hoverText:
-      "I fine-tune your web applications for optimal performance, boosting speed, security, and scalability. My aim is to keep your business running smoothly as it grows over time."
+      "We help startups by quickly creating a basic version of their product to test ideas and show them to users."
   },
   {
     id: "05",
     image: seo,
-    title: "SEO OPTIMIZATION",
+    title: "END-TO-END FULL-STACK DEVELOPMENT",
     hoverText:
-      "I implement effective SEO strategies to enhance your search engine visibility, driving more organic traffic to your website and helping your business rank higher in search results."
+      "We handle everything from design to coding for your website or app, making sure it works perfectly from start to finish."
   },
   {
     id: "06",
-    image: mentor,
-    title: "MENTORSHIP & TRAINING",
+    image: dgtl,
+    title: "DIGITAL MARKETING & STRATEGY",
     hoverText:
-      "I offer personalized mentorship and training sessions for aspiring developers, guiding them through web development principles and best practices, helping them build their careers in tech."
+      "We help your business grow online with smart strategies, including managing social media, creating content, and improving SEO."
   }
 ];
 

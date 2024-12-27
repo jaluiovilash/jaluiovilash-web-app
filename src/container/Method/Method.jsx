@@ -6,63 +6,45 @@ import "aos/dist/aos.css"; // Import AOS styles
 const processSteps = [
   {
     id: "01",
-    title: "CLIENT VISION",
+    title: "CLIENT INSIGHT",
     hoverText:
-      "In the first client meeting, I focus on understanding their business goals, target audience, and project objectives. A clear project plan, scope, and timeline are agreed upon to ensure alignment."
+      "We dive deep into understanding your goals, target audience, and project needs to build a solution tailored to your vision."
   },
   {
     id: "02",
-    title: "MARKET RESEARCH",
+    title: "PROJECT PLANNING",
     hoverText:
-      "I dive deep into competitor analysis, market trends, and user behavior to understand the market landscape and to help shape the product’s direction."
+      "We create a strategic roadmap, outlining objectives, timelines, budgets, and the best technologies to ensure project success."
   },
   {
     id: "03",
-    title: "STRATEGY DESIGN",
+    title: "DESIGN CREATION",
     hoverText:
-      "I develop a strategy by outlining user personas, use cases, and potential user journeys to visualize the product’s key features and functionalities."
+      "We develop interactive wireframes and detailed mockups, shaping the visual identity and user experience of your solution."
   },
   {
     id: "04",
-    title: "WIREFRAME CREATION",
+    title: "CONTENT DEVELOPMENT",
     hoverText:
-      "I build low-fidelity wireframes that map out the product structure and functionality. Using Figma or other design tools, I focus on usability and the overall user experience."
+      "We craft engaging and high-quality content, including text, images, and media, that resonates with your target audience."
   },
   {
     id: "05",
-    title: "VISUAL DESIGN",
+    title: "CODE EXECUTION",
     hoverText:
-      "I establish the visual style by creating mood boards and designing high-fidelity UI elements. This stage ensures the design matches the brand's identity and appeals to the target audience."
+      "We build a robust, scalable, and responsive web solution with clean and efficient code, ensuring top-notch performance."
   },
   {
     id: "06",
-    title: "PROTOTYPE BUILD",
+    title: "QUALITY TESTING",
     hoverText:
-      "I create an interactive, high-fidelity prototype that simulates the final product. This includes defining responsive layouts, UI interactions, and refining the product’s look and feel."
+      "We rigorously test the application to ensure flawless functionality, refining it based on feedback for a perfect final product."
   },
   {
     id: "07",
-    title: "USER TESTING",
+    title: "FINAL LAUNCH",
     hoverText:
-      "I conduct usability testing with real users and analyze the results. The feedback collected helps refine the user interface and improves the overall product experience."
-  },
-  {
-    id: "08",
-    title: "ITERATIVE IMPROVEMENTS",
-    hoverText:
-      "Based on testing results and client feedback, I implement design and functionality improvements to enhance the product’s usability and effectiveness."
-  },
-  {
-    id: "09",
-    title: "LAUNCH PREP",
-    hoverText:
-      "After the final prototype is approved, I prepare the product for deployment. I ensure that the site or application is optimized for performance and ready for launch."
-  },
-  {
-    id: "10",
-    title: "POST-LAUNCH",
-    hoverText:
-      "Once the project is live, I provide ongoing maintenance, updates, and support. I also assist with digital marketing, SEO, and social media strategy to help grow the product's presence."
+      "We seamlessly launch your project and provide ongoing support, maintenance, and updates to keep it optimized and successful."
   }
 ];
 
@@ -95,7 +77,7 @@ const Method = () => {
       {processSteps.map((step, index) => (
         <div
           key={step.id}
-          className="flex flex-col md:flex-row justify-between items-start md:items-center border-t p-8 md:px-64 transition-transform duration-300 ease-in-out hover:scale-105"
+          className="flex flex-col md:flex-row justify-between items-start md:items-center border-t p-8 md:p-6 md:px-64 transition-transform duration-300 ease-in-out hover:scale-105"
           onClick={() => handleClick(index)}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}

@@ -8,7 +8,7 @@ import { VisitHere } from "../../components/index";
 const Projects = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500, // Set a shorter duration for faster animations
       once: true
     });
   }, []);
@@ -48,7 +48,11 @@ const Projects = () => {
             <h2 className="text-xl font-medium py-4">
               iPhone 15 Website Clone
             </h2>
-            <p className="text-xl py-4" data-aos="fade-up">
+            <p
+              className="descp text-xl py-4"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               This is a clone of Apple&apos;s iPhone 15 Pro website using
               React.js and TailwindCSS. It highlights the effective use of GSAP
               (Greensock Animations) and Three.js for displaying iPhone 15 Pro
@@ -71,7 +75,11 @@ const Projects = () => {
               <VisitHere title="Explore Project" />
             </a>
             <h2 className="text-xl font-medium py-4">ChirpNet</h2>
-            <p className="text-xl py-4" data-aos="fade-up">
+            <p
+              className="descp text-xl py-4"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               Twitter clone enabling secure CRUD operations for posts. Built
               with Django backend and Bootstrap frontend. A demonstration of
               social media platform development.
@@ -107,7 +115,11 @@ const Projects = () => {
             <h2 className="text-xl font-medium py-4">
               RaktSetu - Blood Bank Management System Backend
             </h2>
-            <p className="text-xl py-4" data-aos="fade-up">
+            <p
+              className="descp text-xl py-4"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               RaktSetu backend, a Node.js-powered Blood Bank Management System,
               streamlines donor registrations, blood stock, hospital requests,
               and emergency notifications using Express and MongoDB for
@@ -126,7 +138,11 @@ const Projects = () => {
               <VisitHere title="Coming Soon..." />
             </a>
             <h2 className="text-xl font-medium py-4">Renovated Web App</h2>
-            <p className="text-xl py-8" data-aos="fade-up">
+            <p
+              className="descp text-xl py-4"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               Ongoing redesign of an outdated web app using React. Soon to be
               deployed. Transforming legacy systems with modern design.
             </p>
