@@ -100,9 +100,9 @@ const Contact = () => {
       <div className="navbar">
         <Navbar />
       </div>
-      <div id="contact" className="py-12 sm:py-16 md:py-20 pt-20 lg:pt-36">
+      <div id="contact" className="py-14 sm:py-16 md:py-20 pt-20 lg:pt-36">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full sm:max-w-[620px] md:max-w-[1060px] lg:max-w-[1200px] xl:max-w-[1400px]">
-          <h2 className="text-arka text-center text-lg font-semibold py-2 mb-10">
+          <h2 className="text-arka text-center text-lg font-medium py-2 mb-10">
             Contact Us
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -141,7 +141,7 @@ const Contact = () => {
                     htmlFor="name"
                     className="block text-lg font-medium mb-1"
                   >
-                    Full Name*
+                    Full Name<span className="text-portfolio">*</span>
                   </label>
                   <input
                     type="text"
@@ -159,7 +159,7 @@ const Contact = () => {
                     htmlFor="email"
                     className="block text-lg font-medium mb-1"
                   >
-                    Email*
+                    Email<span className="text-portfolio">*</span>
                   </label>
                   <input
                     type="email"
@@ -177,7 +177,7 @@ const Contact = () => {
                     htmlFor="phone"
                     className="block text-lg font-medium mb-1"
                   >
-                    Phone*
+                    Phone<span className="text-portfolio">*</span>
                   </label>
                   <input
                     type="tel"
@@ -195,7 +195,7 @@ const Contact = () => {
                     htmlFor="message"
                     className="block text-lg font-medium mb-1"
                   >
-                    Message*
+                    Message<span className="text-portfolio">*</span>
                   </label>
                   <textarea
                     id="message"

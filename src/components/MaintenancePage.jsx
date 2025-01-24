@@ -1,7 +1,7 @@
 const MaintenancePage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-black-100 to-black-300">
-      <div className="max-w-md p-8 text-center bg-white rounded-2xl shadow-xl">
+      <div className="max-w-md p-8 text-center bg-white md:rounded-2xl shadow-xl">
         {/* Icon */}
         <div className="flex justify-center mb-6">
           <div className="p-4 bg-blue-100 rounded-full">
@@ -30,7 +30,7 @@ const MaintenancePage = () => {
         {/* 404 Image */}
         <div className="flex justify-center mb-6">
           <img
-            src="https://img.freepik.com/free-vector/404-error-with-tired-person-concept-illustration_114360-7899.jpg?t=st=1737698544~exp=1737702144~hmac=536716466bcaeef895de4938c7466adc12774835c5619a6ea33529c234beac6d&w=740" // Replace this with your image URL
+            src="https://img.freepik.com/free-vector/404-error-with-tired-person-concept-illustration_114360-7899.jpg?t=st=1737698544~exp=1737702144~hmac=536716466bcaeef895de4938c7466adc12774835c5619a6ea33529c234beac6d&w=740"
             alt="404 Not Found"
             className="w-auto h-46 object-contain"
           />

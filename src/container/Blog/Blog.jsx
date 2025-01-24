@@ -20,7 +20,7 @@ function Blogs() {
           publications(first: 1) {
             edges {
               node {
-                posts(first: 12, after: "${cursor || ""}") {
+                posts(first: 3, after: "${cursor || ""}") {
                   edges {
                     node {
                       title
@@ -169,7 +169,7 @@ function Blogs() {
       {hasNextPage && !loading && (
         <button
           onClick={() => fetchBlogs(endCursor)}
-          className="flex items-center px-6 py-3 bg-blue-100 hover:bg-blue-200 rounded-md mx-auto mt-8"
+          className="flex items-center px-6 py-3 border-0 text-white hover:text-white bg-orange-600 hover:bg-orange-400 rounded-md mx-auto mt-8"
         >
           {loading ? "Loading..." : "Show More"}
         </button>
