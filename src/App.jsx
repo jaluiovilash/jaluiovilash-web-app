@@ -8,26 +8,47 @@ import {
   Method,
   Pricing,
   CTA,
-  Footer
+  Footer,
+  Blog,
+  Contact,
+  Ethics,
+  Terms,
+  Privacy
 } from "./container/index";
 
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+const App = () => {
   return (
-    <div>
-      <Navbar />
-      <div className="pt-20 lg:pt-24">
-        <Header />
-      </div>
-      <Hero />
-      <About_Me />
-      <Projects />
-      <Services />
-      <Method />
-      <Pricing />
-      <CTA />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Navbar />
+              <div className="pt-20 lg:pt-24">
+                <Header />
+              </div>
+              <Hero />
+              <About_Me />
+              <Projects />
+              <Services />
+              <Method />
+              <Pricing />
+              <CTA />
+              <Footer />
+            </div>
+          }
+        />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/ethics" element={<Ethics />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

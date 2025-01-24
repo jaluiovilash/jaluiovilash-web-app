@@ -1,17 +1,10 @@
-import { lazy, Suspense } from "react";
+import { MdDoubleArrow } from "react-icons/md";
 
-// Lazy load the MdDoubleArrow icon
-const MdDoubleArrow = lazy(() =>
-  import("react-icons/md").then((module) => ({ default: module.MdDoubleArrow }))
-);
-
-const VisitHere = ({ title }) => {
+const VisitHere = ({ title, className }) => {
   return (
-    <div className="flex justify-start items-center">
-      <span className="mr-2 text-xl">{title}</span>
-      <Suspense fallback={<div>Loading...</div>}>
-        <MdDoubleArrow className="animate-wiggleX text-portfolio" />
-      </Suspense>
+    <div className={`flex justify-start items-center ${className}`}>
+      <span className="mr-2">{title}</span>
+      <MdDoubleArrow className="animate-wiggleX text-portfolio" />
     </div>
   );
 };

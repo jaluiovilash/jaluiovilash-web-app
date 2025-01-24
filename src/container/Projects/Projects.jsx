@@ -1,26 +1,12 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
-
 import { project1, project2, project3, coming_soon_grey } from "../../assets";
 import { VisitHere } from "../../components/index";
 
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 500, // Set a shorter duration for faster animations
-      once: true
-    });
-  }, []);
-
   return (
     <div className="scroll-mt-20" id="projects">
       {/* Project Title */}
       <div className="py-16 border-b text-center">
-        <h1
-          className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto"
-          data-aos="zoom-in"
-        >
+        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto">
           PROJECTS
         </h1>
       </div>
@@ -41,6 +27,7 @@ const Projects = () => {
             <a
               href="https://apple-iphone15.web.app/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-xl"
             >
               <VisitHere title="Explore Project" />
@@ -48,11 +35,7 @@ const Projects = () => {
             <h2 className="text-xl font-medium py-4">
               iPhone 15 Website Clone
             </h2>
-            <p
-              className="descp text-xl py-4"
-              data-aos="fade-up"
-              data-aos-duration="500"
-            >
+            <p className="descp text-xl py-4">
               This is a clone of Apple&apos;s iPhone 15 Pro website using
               React.js and TailwindCSS. It highlights the effective use of GSAP
               (Greensock Animations) and Three.js for displaying iPhone 15 Pro
@@ -70,16 +53,13 @@ const Projects = () => {
             <a
               href="https://github.com/jaluiovilash/ChirpNet.git"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-xl"
             >
               <VisitHere title="Explore Project" />
             </a>
             <h2 className="text-xl font-medium py-4">ChirpNet</h2>
-            <p
-              className="descp text-xl py-4"
-              data-aos="fade-up"
-              data-aos-duration="500"
-            >
+            <p className="descp text-xl py-4">
               Twitter clone enabling secure CRUD operations for posts. Built
               with Django backend and Bootstrap frontend. A demonstration of
               social media platform development.
@@ -108,6 +88,7 @@ const Projects = () => {
             <a
               href="https://github.com/jaluiovilash/RaktSetu-Backend.git"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-xl"
             >
               <VisitHere title="Explore Project" />
@@ -115,11 +96,7 @@ const Projects = () => {
             <h2 className="text-xl font-medium py-4">
               RaktSetu - Blood Bank Management System Backend
             </h2>
-            <p
-              className="descp text-xl py-4"
-              data-aos="fade-up"
-              data-aos-duration="500"
-            >
+            <p className="descp text-xl py-4">
               RaktSetu backend, a Node.js-powered Blood Bank Management System,
               streamlines donor registrations, blood stock, hospital requests,
               and emergency notifications using Express and MongoDB for
@@ -134,15 +111,16 @@ const Projects = () => {
             04
           </h1>
           <div className="project_content py-8 px-6 lg:px-24 border-t">
-            <a href="/#projects" target="_blank" className="text-xl">
+            <a
+              href="/#projects"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl"
+            >
               <VisitHere title="Coming Soon..." />
             </a>
             <h2 className="text-xl font-medium py-4">Renovated Web App</h2>
-            <p
-              className="descp text-xl py-4"
-              data-aos="fade-up"
-              data-aos-duration="500"
-            >
+            <p className="descp text-xl py-4">
               Ongoing redesign of an outdated web app using React. Soon to be
               deployed. Transforming legacy systems with modern design.
             </p>

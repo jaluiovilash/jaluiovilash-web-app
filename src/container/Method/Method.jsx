@@ -1,7 +1,4 @@
 import { useState } from "react";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 
 const processSteps = [
   {
@@ -49,13 +46,6 @@ const processSteps = [
 ];
 
 const Method = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }, []);
-
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [clickedIndex, setClickedIndex] = useState(null);
 
@@ -66,10 +56,7 @@ const Method = () => {
   return (
     <div id="method" className="scroll-mt-20 border-b">
       <div className="py-16 text-center">
-        <h1
-          className="font-montserrat text-4xl md:text-6xl font-semibold w-4/5 mx-auto"
-          data-aos="zoom-in"
-        >
+        <h1 className="font-montserrat text-4xl md:text-6xl font-semibold w-4/5 mx-auto">
           MY DEVELOPMENT PROCESS
         </h1>
       </div>

@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS CSS
+import { useState } from "react";
 import { fswd, custom, api, po, seo, dgtl } from "../../assets/index";
 
 const servicesArr = [
@@ -51,21 +49,11 @@ const servicesArr = [
 const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }, []);
-
   return (
     <div id="services" className="scroll-mt-20 md:border-b">
       {/* Services Heading */}
       <div className="py-16 border-b text-center">
-        <h1
-          className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto"
-          data-aos="zoom-in"
-        >
+        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
           SERVICES
         </h1>
       </div>
@@ -100,7 +88,6 @@ const Services = () => {
               <li
                 key={service.id}
                 className="relative flex flex-col justify-start items-start"
-                data-aos="fade-left"
               >
                 <span
                   className={`hover:text-portfolio text-4xl md:text-4xl font-normal my-5 cursor-pointer transition-all duration-700 ease-in-out`}
@@ -127,7 +114,6 @@ const Services = () => {
             <div
               key={service.id}
               className="border-b p-6 flex flex-col items-center"
-              data-aos="fade-up"
             >
               {/* Service Image (Increased width for mobile view) */}
               <img

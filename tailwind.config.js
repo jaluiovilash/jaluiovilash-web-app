@@ -6,14 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        time_roman: ['"Times New Roman"', "serif"],
+        montserrat: ['Montserrat', 'sans-serif']
+      },
       colors: {
         primary: '#1c1c1c',
         secondary: '#FFFFFF',
         light_white: '#f0f8ff',
         portfolio: '#ff3322',
-      },
-      fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif']
       },
       keyframes: {
         wiggleX: {

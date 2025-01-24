@@ -8,8 +8,9 @@ const Menu = ({ isMobile, setToggleMenu }) => (
     <li className="mx-6">
       <a
         href={ResumePDF}
-        download=""
+        download="Full-Stack-Developer.pdf"
         className="hover:text-accent transition-all"
+        rel="noopener noreferrer"
         onClick={() => isMobile && setToggleMenu(false)}
       >
         Resume
@@ -18,7 +19,6 @@ const Menu = ({ isMobile, setToggleMenu }) => (
     <li className="mx-6">
       <a
         href="https://github.com/jaluiovilash"
-        download=""
         className="hover:text-accent transition-all"
         target="_blank"
         rel="noopener noreferrer"
@@ -72,7 +72,7 @@ const Menu = ({ isMobile, setToggleMenu }) => (
           className="text-accent hover:underline"
           onClick={() => setToggleMenu(false)}
         >
-          Let&apos;s Talk
+          Let's Talk
         </a>
       ) : (
         <a
@@ -111,14 +111,14 @@ const Navbar = () => {
           <RiCloseLine
             size={27}
             onClick={() => setToggleMenu(false)}
-            className={`cursor-pointer text-portfolio transform transition-transform duration-200 ${
-              toggleMenu ? "rotate-90" : "rotate-0"
-            } hover:scale-110`}
+            aria-label="Close menu"
+            className="cursor-pointer text-portfolio transform transition-transform duration-200 hover:scale-110"
           />
         ) : (
           <RiMenu3Line
             size={27}
             onClick={() => setToggleMenu(true)}
+            aria-label="Open menu"
             className="cursor-pointer text-portfolio transition-transform duration-500 hover:scale-110"
           />
         )}
@@ -135,6 +135,14 @@ const Navbar = () => {
           <Menu isMobile={true} setToggleMenu={setToggleMenu} />
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-50 md:hidden ${
+          toggleMenu ? "block" : "hidden"
+        }`}
+        onClick={() => setToggleMenu(false)}
+      ></div>
     </div>
   );
 };

@@ -8,3 +8,8 @@ export { default as Pricing } from './Pricing/Pricing';
 export { default as Projects } from './Projects/Projects';
 export { default as CTA } from './CTA/CTA';
 export { default as Footer } from './Footer/Footer'
+export { default as Blog } from './Blog/Blog'
+export { default as Contact } from './Contact/Contact'
+export { default as Ethics } from './Ethics/Ethics'
+export { default as Privacy } from './Privacy/Privacy'
+export { default as Terms } from './Terms/Terms'

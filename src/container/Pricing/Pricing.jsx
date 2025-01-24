@@ -1,25 +1,12 @@
 import { ButtonUsage } from "../../components/index";
 import { square, circle, triangle } from "../../assets/index";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Pricing = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }, []);
-
   return (
     <div id="pricing" className="scroll-mt-20">
       {/* Title Section */}
       <div className="py-16 text-center">
-        <h1
-          className="font-montserrat text-4xl md:text-6xl lg:text-7xl font-semibold w-4/5 md:w-3/5 mx-auto"
-          data-aos="zoom-in"
-        >
+        <h1 className="font-montserrat text-4xl md:text-6xl lg:text-7xl font-semibold w-4/5 md:w-3/5 mx-auto">
           PRICING
         </h1>
       </div>
@@ -43,7 +30,7 @@ const Pricing = () => {
               Weekly feedback
             </li>
             <li className="border-y py-4 md:py-4 px-8 md:px-12">
-              Dedicated support
+              Design & Code
             </li>
           </ul>
           <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
