@@ -100,9 +100,9 @@ const Contact = () => {
       <div className="navbar">
         <Navbar />
       </div>
-      <div id="contact" className="py-14 sm:py-16 md:py-20 pt-20 lg:pt-36">
+      <div id="contact" className="py-14 sm:py-16 md:py-20 pt-28 lg:pt-36">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full sm:max-w-[620px] md:max-w-[1060px] lg:max-w-[1200px] xl:max-w-[1400px]">
-          <h2 className="text-arka text-center text-lg font-medium py-2 mb-10">
+          <h2 className="text-arka text-center text-lg font-medium py-2 md:mb-10">
             Contact Us
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
