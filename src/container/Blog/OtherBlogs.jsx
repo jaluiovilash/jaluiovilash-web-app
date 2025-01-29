@@ -93,9 +93,9 @@ function OtherBlogs() {
   }, []);
 
   return (
-    <div className="container mx-auto px-12 py-16">
+    <div className="container mx-auto px-12 py-14 sm:py-16 md:py-20 pt-28 lg:pt-36">
       <h1 className="text-3xl md:text-5xl font-medium text-center mb-10">
-        Explore More: Dive into Knowledge
+        Insights & Inspiration: Discover the Latest Blogs
       </h1>
 
       {loading && blogs.length === 0 ? (

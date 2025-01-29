@@ -93,10 +93,8 @@ function LatestBlogs() {
   }, []);
 
   return (
-    <div className="container mx-auto px-12 py-14 sm:py-16 md:py-20 pt-28 lg:pt-36">
-      <h1 className="text-5xl font-semibold text-center mb-10">
-        Insights & Inspiration: Discover the Latest Blogs
-      </h1>
+    <div className="container mx-auto px-12 ">
+      <h1 className="text-5xl font-semibold text-center mb-10"></h1>
 
       {loading && blogs.length === 0 ? (
         // Loading state
@@ -122,7 +120,7 @@ function LatestBlogs() {
                   <span className="text-gray-600">No Cover Image</span>
                 </div>
               )}
-              <div className="p-5 flex-grow flex flex-col">
+              <div className="p-5 fle x-grow flex flex-col">
                 {/* Blog title */}
                 <a
                   href={`https://jaluiovilashblogs.hashnode.dev/${blog.node.slug}`}

@@ -25,35 +25,32 @@ const Footer = () => {
           <a
             href="/blog"
             target="_blank"
-            className="text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
+            className="mx-0 md:mx-4 text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
           >
             Blogs
           </a>
           <a
             href="/contact"
             target="_blank"
-            className="text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
+            className="mx-0 md:mx-4 text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
           >
             Contact
           </a>
           <a
             href="/ethics"
-            target="_blank"
-            className="text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
+            className="mx-0 md:mx-4 text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
           >
             Ethics
           </a>
           <a
             href="/terms"
-            target="_blank"
-            className="text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
+            className="mx-0 md:mx-4 text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
           >
             Terms
           </a>
           <a
             href="/privacy"
-            target="_blank"
-            className="text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
+            className="mx-0 md:mx-4 text-sm sm:text-base text-gray-400 font-montserrat font-medium hover:text-portfolio transition duration-300 mb-2 sm:mb-0"
           >
             Privacy
           </a>
