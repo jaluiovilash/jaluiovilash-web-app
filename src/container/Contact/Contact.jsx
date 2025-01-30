@@ -57,7 +57,7 @@ const Contact = () => {
     }
 
     try {
-      const docRef = await addDoc(collection(db, "contacts"), {
+      await addDoc(collection(db, "contacts"), {
         fullName: formData.name,
         email: formData.email,
         phone: formData.phone,

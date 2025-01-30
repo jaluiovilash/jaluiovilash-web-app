@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { animateWithGsap } from "../../utils/animations"; // Update with your actual path
+import { animateWithGsap } from "../../utils/animations";
 
 const Header = () => {
   const headerRef = useRef(null);

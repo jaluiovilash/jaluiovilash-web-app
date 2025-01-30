@@ -64,26 +64,26 @@ const Method = () => {
       {processSteps.map((step, index) => (
         <div
           key={step.id}
-          className="flex flex-col md:flex-row justify-between items-start md:items-center border-t p-8 md:p-6 md:px-64 transition-transform duration-300 ease-in-out hover:scale-105"
+          className="flex flex-col md:flex-row justify-between items-start md:items-center border-t p-8 md:p-6 md:px-64 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
           onClick={() => handleClick(index)}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
+          role="button"
+          tabIndex={0}
+          aria-label={`Step ${step.id}: ${step.title}`}
         >
           {/* Title Section */}
-          <div
-            role="button"
-            tabIndex={0}
-            className="text-3xl md:text-5xl font-montserrat font-medium hover:text-portfolio cursor-pointer mb-4 md:mb-0 transition-colors duration-300 ease-in-out"
-          >
+          <div className="text-3xl md:text-5xl font-montserrat font-medium hover:text-portfolio transition-colors duration-300 ease-in-out mb-4 md:mb-0">
             <span className="text-portfolio">{step.id}</span> {step.title}
           </div>
 
           {/* Description Section */}
           <div
             className={`md:w-1/3 w-full text-lg transition-all duration-500 ease-in-out transform ${
-              hoveredIndex === index ||
-              window.innerWidth < 768 ||
-              clickedIndex === index
+              // Show description by default on mobile/tablet and on click or hover on desktop
+              window.innerWidth < 768 || clickedIndex === index
+                ? "opacity-100 translate-y-0"
+                : hoveredIndex === index || clickedIndex === index
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 -translate-y-2"
             } md:block`}

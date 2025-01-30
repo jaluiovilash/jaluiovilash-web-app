@@ -11,124 +11,130 @@ const Privacy = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl font-medium mb-6">Privacy Policy</h1>
           <p className="mb-4 text-light_white">
-            Welcome to my portfolio website. This Privacy Policy explains how I
-            collect, use, and protect your information when you interact with
-            this site. By using this website, you agree to the practices
-            described in this policy.
+            Welcome to my portfolio website. This Privacy Policy outlines the
+            types of information I collect, how I use it, and the steps I take
+            to protect your privacy. By using this website, you consent to the
+            practices described in this policy.
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">
             Information I Collect
           </h2>
           <p className="mb-4">
-            - <span className="font-medium">Personal Information:</span> If you
-            contact me via email or forms, I may collect your name, email
-            address, and any other details you provide.
-            <br />- <span className="font-medium">Usage Data:</span>{" "}
-            Non-personal information such as browser type, device information,
-            and pages visited may be collected to improve the website.
-            <br />- <span className="font-medium">Technical Data:</span>{" "}
-            Information like IP addresses and error logs may be gathered to
-            enhance the site's security and performance.
+            - <span className="font-medium">Personal Information:</span> When
+            you contact me via email or forms, I collect personal details such
+            as your name, email address, and any additional information you
+            choose to provide.
+            <br />- <span className="font-medium">Usage Data:</span> I collect
+            non-personal information such as browser type, device information,
+            pages visited, and time spent on the site to improve user experience
+            and analyze site performance.
+            <br />- <span className="font-medium">Technical Data:</span> To
+            enhance security and performance, I may gather data like IP
+            addresses, device identifiers, and error logs.
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">
             How I Use Your Information
           </h2>
           <p className="mb-4">
-            - To respond to your inquiries or requests in a timely and
+            - To respond to your inquiries and requests in a timely and
             personalized manner.
-            <br />
-            - To analyze website performance and improve user experience by
-            identifying trends and areas for enhancement.
-            <br />
-            - To ensure the website remains secure and protected from
-            unauthorized access or cyber threats.
-            <br />- To send occasional updates or notifications about changes to
-            this website, with your consent.
+            <br />- To analyze and improve the website’s performance, ensuring
+            an optimized user experience.
+            <br />- To secure the website, prevent unauthorized access, and
+            protect against cyber threats.
+            <br />- To send updates or notifications regarding changes or
+            improvements to this website (with your consent).
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">
             Sharing Your Information
           </h2>
           <p className="mb-4">
-            I value your privacy. Your personal information will not be sold,
-            traded, or shared with third parties unless required by law or with
-            your explicit consent. However, I may use trusted third-party
-            services for website analytics, hosting, or communication purposes.
-            These providers are obligated to protect your data and use it solely
-            for the agreed purposes.
+            Your privacy is important to me. I do not sell, trade, or share your
+            personal information with third parties, except as required by law
+            or with your explicit consent. However, I may use third-party
+            service providers for website analytics, hosting, or communication
+            purposes. These providers are required to maintain the
+            confidentiality and security of your data.
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">Cookies</h2>
           <p className="mb-4">
-            This site may use cookies to enhance your browsing experience.
-            Cookies are small files stored on your device that help me analyze
-            site traffic and improve functionality. These cookies may include:
+            This website uses cookies to enhance your browsing experience.
+            Cookies are small files stored on your device that help analyze site
+            traffic, improve functionality, and remember your preferences. Types
+            of cookies include:
           </p>
           <ul className="list-disc pl-6 mb-4">
             <li>
               <span className="font-medium">Essential Cookies:</span> Necessary
-              for the website to function properly.
+              for basic website functionality.
             </li>
             <li>
-              <span className="font-medium">Performance Cookies:</span> Help
-              monitor website performance and user behavior.
+              <span className="font-medium">Performance Cookies:</span> Monitor
+              website performance and user interactions.
             </li>
             <li>
               <span className="font-medium">Functional Cookies:</span> Enable
-              features such as saving your preferences or login information.
+              features like saved preferences or login information.
             </li>
           </ul>
           <p className="mb-4">
-            You can disable cookies in your browser settings. However, doing so
-            may limit the functionality of some website features.
+            You can manage or disable cookies through your browser settings, but
+            please note that doing so may impact certain website features.
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">Third-Party Links</h2>
           <p className="mb-4">
-            My portfolio may contain links to third-party websites. These links
-            are provided for your convenience and reference. Please note that I
-            am not responsible for the privacy practices or content of these
-            external sites. I recommend reviewing their policies before sharing
-            information or engaging with them.
+            This website may contain links to external websites for your
+            convenience. I am not responsible for the privacy practices or
+            content of these third-party sites. Please review their privacy
+            policies before sharing any personal information with them.
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">Security Measures</h2>
           <p className="mb-4">
-            I take the security of your information seriously and implement
-            industry-standard measures to safeguard it. These measures include
-            data encryption, secure servers, and regular updates to website
-            systems to prevent vulnerabilities. While I strive to protect your
-            data, no online transmission is entirely secure, and I cannot
-            guarantee absolute security.
+            I take your privacy seriously and implement industry-standard
+            security measures to protect your data. These include encryption,
+            secure servers, and regular system updates. However, while I make
+            every effort to secure your data, no online transmission is
+            completely secure, and I cannot guarantee absolute safety.
+          </p>
+
+          <h2 className="text-2xl font-medium mt-6 mb-4">Data Retention</h2>
+          <p className="mb-4">
+            I retain your personal data only for as long as necessary to fulfill
+            the purposes outlined in this Privacy Policy. When your data is no
+            longer needed, it will be securely deleted or anonymized, unless
+            legal obligations require its retention.
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">Your Rights</h2>
           <p className="mb-4">
             You have the right to access, update, or delete your personal
-            information collected on this site. To exercise these rights, please
-            contact me using the details provided on the site. Additionally, you
-            have the right to:
+            information at any time. You can also withdraw consent for data
+            processing. To exercise these rights, please contact me using the
+            details provided on this website. Additionally, you have the right
+            to:
           </p>
           <ul className="list-disc pl-6 mb-4">
-            <li>Withdraw your consent for data processing at any time.</li>
             <li>Request a copy of your personal data in a portable format.</li>
+            <li>Object to or restrict processing of your personal data.</li>
             <li>
-              Raise concerns or file a complaint with your local data protection
-              authority.
+              File a complaint with your local data protection authority if you
+              believe your rights have been violated.
             </li>
           </ul>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">Children's Privacy</h2>
           <p className="mb-4">
-            This website is not directed at children under the age of 13, and I
-            do not knowingly collect personal information from them. If I become
-            aware that a child under 13 has provided personal information, I
-            will take immediate steps to delete it. Parents or guardians are
-            encouraged to monitor their children's online activities and contact
-            me if they believe their child has shared personal information on
-            this site.
+            This website is not intended for children under the age of 13, and I
+            do not knowingly collect personal information from them. If you
+            believe that a child under 13 has provided personal information,
+            please contact me immediately, and I will take steps to delete such
+            information.
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">
@@ -136,21 +142,22 @@ const Privacy = () => {
           </h2>
           <p className="mb-4">
             I may update this Privacy Policy from time to time to reflect
-            changes in legal requirements or website practices. Any updates will
-            be posted on this page with a revised "Last Updated" date. I
-            encourage you to review this policy periodically to stay informed
-            about how your information is handled.
+            changes in legal requirements, technology, or website practices. Any
+            updates will be posted on this page with a revised "Last Updated"
+            date. I encourage you to review this policy periodically to stay
+            informed about how your information is handled.
           </p>
 
           <h2 className="text-2xl font-medium mt-6 mb-4">Contact</h2>
           <p className="mb-4">
             If you have any questions, concerns, or requests regarding this
-            Privacy Policy, feel free to reach out to me using the contact form
-            on my website or email me directly at [your-email@example.com].
+            Privacy Policy, please don't hesitate to contact me through the
+            contact form on my website or email me directly at
+            [your-email@example.com].
           </p>
 
           <p className="text-sm text-light_white mt-6">
-            Last updated: January 25, 2025
+            Last updated: January 30, 2025
           </p>
         </div>
       </div>

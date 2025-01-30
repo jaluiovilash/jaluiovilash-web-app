@@ -3,89 +3,49 @@ import { ButtonUsage } from "../../components/index";
 import ResumePDF from "../../assets/Full-Stack-Developer.pdf";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri"; // Import icons directly
 
-const Menu = ({ isMobile, setToggleMenu }) => (
-  <>
-    <li className="mx-6">
-      <a
-        href={ResumePDF}
-        download="Full-Stack-Developer.pdf"
-        className="hover:text-accent transition-all"
-        rel="noopener noreferrer"
-        onClick={() => isMobile && setToggleMenu(false)}
-      >
-        Resume
-      </a>
-    </li>
-    <li className="mx-6">
-      <a
-        href="https://github.com/jaluiovilash"
-        className="hover:text-accent transition-all"
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => isMobile && setToggleMenu(false)}
-      >
-        GitHub
-      </a>
-    </li>
-    <li className="mx-6">
-      <a
-        href="#projects"
-        className="hover:text-accent transition-all"
-        onClick={() => isMobile && setToggleMenu(false)}
-      >
-        Projects
-      </a>
-    </li>
-    <li className="mx-6">
-      <a
-        href="#services"
-        className="hover:text-accent transition-all"
-        onClick={() => isMobile && setToggleMenu(false)}
-      >
-        Services
-      </a>
-    </li>
-    <li className="mx-6">
-      <a
-        href="#method"
-        className="hover:text-accent transition-all"
-        onClick={() => isMobile && setToggleMenu(false)}
-      >
-        Work Flow
-      </a>
-    </li>
-    <li className="mx-6">
-      <a
-        href="#pricing"
-        className="hover:text-accent transition-all"
-        onClick={() => isMobile && setToggleMenu(false)}
-      >
-        Pricing
-      </a>
-    </li>
-    <li className="mx-6">
-      {isMobile ? (
-        <a
-          href="https://calendly.com/ovilashjalui/30min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-accent hover:underline"
-          onClick={() => setToggleMenu(false)}
-        >
-          Let's Talk
-        </a>
-      ) : (
-        <a
-          href="https://calendly.com/ovilashjalui/30min"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ButtonUsage title="Let's Talk" />
-        </a>
-      )}
-    </li>
-  </>
-);
+const Menu = ({ isMobile, setToggleMenu }) => {
+  const menuItems = [
+    { name: "Resume", href: ResumePDF, isDownload: true, isNewTab: true },
+    {
+      name: "GitHub",
+      href: "https://github.com/jaluiovilash",
+      isDownload: false,
+      isNewTab: true
+    },
+    { name: "Projects", href: "#projects", isDownload: false, isNewTab: false },
+    { name: "Services", href: "#services", isDownload: false, isNewTab: false },
+    { name: "Work Flow", href: "#method", isDownload: false, isNewTab: false },
+    { name: "Pricing", href: "#pricing", isDownload: false, isNewTab: false },
+    {
+      name: "Let's Talk",
+      href: "https://calendly.com/ovilashjalui/30min",
+      isDownload: false,
+      isButton: true,
+      isNewTab: true
+    }
+  ];
+
+  return (
+    <>
+      {menuItems.map((item, index) => (
+        <li key={index} className="mx-6">
+          <a
+            href={item.href}
+            download={item.isDownload ? "Full-Stack-Developer.pdf" : undefined}
+            className={`hover:text-accent transition-all ${
+              item.isButton ? "text-accent hover:underline" : ""
+            }`}
+            target={item.isNewTab ? "_blank" : "_self"}
+            rel="noopener noreferrer"
+            onClick={() => isMobile && setToggleMenu(false)} // Close the menu on mobile when a link is clicked
+          >
+            {item.isButton ? <ButtonUsage title={item.name} /> : item.name}
+          </a>
+        </li>
+      ))}
+    </>
+  );
+};
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -110,14 +70,14 @@ const Navbar = () => {
         {toggleMenu ? (
           <RiCloseLine
             size={27}
-            onClick={() => setToggleMenu(false)}
+            onClick={() => setToggleMenu(false)} // Close the menu on click
             aria-label="Close menu"
             className="cursor-pointer text-portfolio transform transition-transform duration-200 hover:scale-110"
           />
         ) : (
           <RiMenu3Line
             size={27}
-            onClick={() => setToggleMenu(true)}
+            onClick={() => setToggleMenu(true)} // Open the menu on click
             aria-label="Open menu"
             className="cursor-pointer text-portfolio transition-transform duration-500 hover:scale-110"
           />

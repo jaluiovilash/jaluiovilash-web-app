@@ -40,9 +40,9 @@ const servicesArr = [
   {
     id: "06",
     image: dgtl,
-    title: "DIGITAL MARKETING & STRATEGY",
+    title: "AI/ML ENGINEERING",
     hoverText:
-      "We help your business grow online with smart strategies, including managing social media, creating content, and improving SEO."
+      "We build AI/ML solutions, optimize models, and work with deep learning frameworks for real-world applications."
   }
 ];
 
