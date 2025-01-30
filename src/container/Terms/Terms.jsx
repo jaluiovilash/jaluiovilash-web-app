@@ -9,7 +9,7 @@ const Terms = () => {
       </div>
       <div className="bg-primary text-secondary font-montserrat p-8 py-14 sm:py-16 md:py-20 pt-28 lg:pt-36">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-accent">
+          <h1 className="text-4xl md:text-5xl font-medium mb-6 text-accent">
             Terms and Conditions
           </h1>
           <p className="mb-6 text-light_white leading-relaxed text-lg">
@@ -22,7 +22,7 @@ const Terms = () => {
 
           <div className="space-y-6">
             {/* 1. Use of Website */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               1. Use of Website
             </h2>
             <p className="text-light_white leading-relaxed">
@@ -34,7 +34,7 @@ const Terms = () => {
             </p>
 
             {/* 2. Intellectual Property */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               2. Intellectual Property
             </h2>
             <p className="text-light_white leading-relaxed">
@@ -47,7 +47,7 @@ const Terms = () => {
             </p>
 
             {/* 3. User Responsibilities */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               3. User Responsibilities
             </h2>
             <p className="text-light_white leading-relaxed">
@@ -58,7 +58,7 @@ const Terms = () => {
             </p>
 
             {/* 4. Limitation of Liability */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               4. Limitation of Liability
             </h2>
             <p className="text-light_white leading-relaxed">
@@ -70,7 +70,7 @@ const Terms = () => {
             </p>
 
             {/* 5. Third-Party Links */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               5. Third-Party Links
             </h2>
             <p className="text-light_white leading-relaxed">
@@ -82,7 +82,7 @@ const Terms = () => {
             </p>
 
             {/* 6. Modifications to Terms */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               6. Modifications to Terms
             </h2>
             <p className="text-light_white leading-relaxed">
@@ -94,7 +94,7 @@ const Terms = () => {
             </p>
 
             {/* 7. Privacy and Data Protection */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               7. Privacy and Data Protection
             </h2>
             <p className="text-light_white leading-relaxed">
@@ -104,7 +104,7 @@ const Terms = () => {
             </p>
 
             {/* 8. Governing Law */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               8. Governing Law
             </h2>
             <p className="text-light_white leading-relaxed">
@@ -115,7 +115,7 @@ const Terms = () => {
             </p>
 
             {/* 9. Contact Information */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-accent">
+            <h2 className="text-2xl md:text-3xl font-medium text-accent">
               9. Contact Information
             </h2>
             <p className="text-light_white leading-relaxed">

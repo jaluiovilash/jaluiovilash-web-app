@@ -1,45 +1,45 @@
 import { useState } from "react";
-import { fswd, custom, api, po, seo, dgtl } from "../../assets/index";
+import { ui_ux, front, bck, mvp, fswd, ai_ml } from "../../assets/index";
 
 const servicesArr = [
   {
     id: "01",
-    image: fswd,
+    image: ui_ux,
     title: "CUSTOM UX/UI DESIGN",
     hoverText:
       "We create easy-to-use and attractive designs that match your brand and make your website or app enjoyable for users."
   },
   {
     id: "02",
-    image: custom,
+    image: front,
     title: "INTERACTIVE FRONT-END SOLUTIONS",
     hoverText:
       "We build fast and responsive websites that look great and work perfectly on all devices, like phones, tablets, and computers."
   },
   {
     id: "03",
-    image: api,
+    image: bck,
     title: "SCALABLE BACK-END ARCHITECTURE",
     hoverText:
       "We set up strong and secure systems to make sure your website or app runs smoothly and can grow with your business."
   },
   {
     id: "04",
-    image: po,
+    image: mvp,
     title: "STARTUP MVP DEVELOPMENT",
     hoverText:
       "We help startups by quickly creating a basic version of their product to test ideas and show them to users."
   },
   {
     id: "05",
-    image: seo,
+    image: fswd,
     title: "END-TO-END FULL-STACK DEVELOPMENT",
     hoverText:
       "We handle everything from design to coding for your website or app, making sure it works perfectly from start to finish."
   },
   {
     id: "06",
-    image: dgtl,
+    image: ai_ml,
     title: "AI/ML ENGINEERING",
     hoverText:
       "We build AI/ML solutions, optimize models, and work with deep learning frameworks for real-world applications."
@@ -63,7 +63,7 @@ const Services = () => {
         {/* Left Side: Image (Desktop View) */}
         <div className="md:w-2/5 h-[600px] flex flex-col justify-start md:justify-center items-center p-8 md:p-20">
           <img
-            className={`w-auto h-[350px] rounded-lg transition-transform duration-500 ease-in-out ${
+            className={`w-auto h-[400px] rounded-lg transition-transform duration-500 ease-in-out ${
               hoveredIndex !== null
                 ? "rotate-0 scale-100 opacity-100"
                 : "rotate-[60deg] scale-0 opacity-0"

@@ -9,16 +9,14 @@ import lion from "./lion.jpg";
 
 import collaborate_grey from "./collaborate_grey.png";
 import coming_soon_grey from "./coming_soon_grey.png";
-import uiux_grey from "./uiux_grey.png";
 import about_us from "./about_us.jpg";
 
-import fswd from "./fswd.webp";
-import custom from "./uiux_grey.png";
-import api from "./api.png";
-import po from "./po.webp";
-import seo from "./seo.webp";
-import mentor from "./mentor.webp";
-import dgtl from "./DGTL.jpg";
+import ui_ux from "./ui_ux.jpg";
+import front from "./front.jpg";
+import bck from "./bck.avif";
+import mvp from "./mvp.jpg";
+import fswd from "./fswd.jpg";
+import ai_ml from "./ai_ml.jpg";
 
 import circle from "./circle.svg";
 import square from "./square.svg";
@@ -36,15 +34,13 @@ export {
 
     collaborate_grey,
     coming_soon_grey,
-    uiux_grey,
     about_us,
+    ui_ux,
+    front,
+    bck,
+    mvp,
     fswd,
-    custom,
-    api,
-    po,
-    seo,
-    mentor,
-    dgtl,
+    ai_ml,
 
     circle,
     square,

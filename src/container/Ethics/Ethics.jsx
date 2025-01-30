@@ -9,7 +9,7 @@ const Ethics = () => {
       </div>
       <div className="bg-primary text-secondary font-montserrat p-8 py-14 sm:py-16 md:py-20 pt-28 lg:pt-36">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Code of Ethics</h1>
+          <h1 className="text-4xl font-medium mb-6">Code of Ethics</h1>
           <p className="mb-6 text-light_white">
             As a Full Stack Developer and professional, I am committed to
             upholding the highest standards of ethical conduct in my work. This
@@ -17,7 +17,7 @@ const Ethics = () => {
             decisions in all aspects of my projects and interactions.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Integrity</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Integrity</h2>
           <p className="mb-6">
             I strive to maintain honesty and transparency in all my dealings.
             Whether collaborating with clients, colleagues, or other
@@ -25,7 +25,7 @@ const Ethics = () => {
             accountability, and clear communication.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Respect</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Respect</h2>
           <p className="mb-6">
             I respect the ideas, values, and contributions of everyone I work
             with. By fostering an inclusive and supportive environment, I aim to
@@ -33,7 +33,7 @@ const Ethics = () => {
             unique strengths of each individual.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Quality</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Quality</h2>
           <p className="mb-6">
             I am committed to delivering high-quality solutions that meet the
             needs of my clients and end-users. By maintaining rigorous
@@ -41,7 +41,7 @@ const Ethics = () => {
             skills, I aim to exceed expectations in every project.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">
+          <h2 className="text-2xl font-medium mt-6 mb-4">
             Privacy and Security
           </h2>
           <p className="mb-6">
@@ -51,7 +51,7 @@ const Ethics = () => {
             clients, users, and the broader community.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Innovation</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Innovation</h2>
           <p className="mb-6">
             I embrace creativity and innovation in my work, leveraging
             cutting-edge technologies and techniques to deliver impactful
@@ -60,7 +60,7 @@ const Ethics = () => {
             opportunities for growth.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Responsibility</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Responsibility</h2>
           <p className="mb-6">
             I take responsibility for the outcomes of my work and strive to make
             a positive impact. Whether it’s ensuring accessibility, minimizing
@@ -68,7 +68,7 @@ const Ethics = () => {
             meaningfully to the world and promote sustainability.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Collaboration</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Collaboration</h2>
           <p className="mb-6">
             I believe in the power of teamwork and collaboration. By working
             closely with clients, partners, and other professionals, I aim to
@@ -76,7 +76,7 @@ const Ethics = () => {
             fostering an environment of mutual trust and respect.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">
+          <h2 className="text-2xl font-medium mt-6 mb-4">
             Continuous Learning
           </h2>
           <p className="mb-6">
@@ -86,7 +86,7 @@ const Ethics = () => {
             possible solutions to my clients.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Fairness</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Fairness</h2>
           <p className="mb-6">
             I adhere to principles of fairness and equality in all my work. I
             avoid biases and ensure that my actions and decisions are impartial,
@@ -95,7 +95,7 @@ const Ethics = () => {
           </p>
 
           {/* New Section - Sustainability */}
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Sustainability</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Sustainability</h2>
           <p className="mb-6">
             I am dedicated to promoting sustainable practices, both in the
             digital world and in my personal life. By considering the
@@ -105,7 +105,7 @@ const Ethics = () => {
           </p>
 
           {/* New Section - Community Engagement */}
-          <h2 className="text-2xl font-semibold mt-6 mb-4">
+          <h2 className="text-2xl font-medium mt-6 mb-4">
             Community Engagement
           </h2>
           <p className="mb-6">
@@ -114,7 +114,7 @@ const Ethics = () => {
             to give back, share knowledge, and foster a sense of shared purpose.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6 mb-4">Conclusion</h2>
+          <h2 className="text-2xl font-medium mt-6 mb-4">Conclusion</h2>
           <p className="mb-6">
             This Code of Ethics serves as a foundation for my professional
             conduct. By adhering to these principles, I aim to build strong

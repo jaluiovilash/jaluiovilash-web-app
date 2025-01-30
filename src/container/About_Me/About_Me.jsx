@@ -19,7 +19,7 @@ const About_Me = () => {
         {/* Right Section (Image) */}
         <div className="right lg:w-2/5 mx-auto w-full flex justify-center items-center p-6 lg:p-16 lg:border-t-0 lg:border-l lg:border-b-0">
           <img
-            className="w-full h-[350px] md:h-[400px] object-cover rounded-lg"
+            className="w-[350px] md:w-[450px] h-auto object-cover rounded-lg"
             src={about_us}
             alt="About Us"
           />
