@@ -13,9 +13,9 @@ const Projects = () => {
     {
       id: 2,
       image: project2,
-      link: "https://github.com/jaluiovilash/ChirpNet.git",
-      title: "ChirpNet",
-      description: `Twitter clone enabling secure CRUD operations for posts. Built with Django backend and Bootstrap frontend. A demonstration of social media platform development.`
+      link: "https://brainwave-in.web.app/",
+      title: "Brainwave",
+      description: `Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.`
     },
     {
       id: 3,
@@ -27,9 +27,9 @@ const Projects = () => {
     {
       id: 4,
       image: coming_soon_grey,
-      link: "/#projects",
+      link: "https://colossalcodes.vercel.app/",
       title: "Renovated Web App",
-      description: `Ongoing redesign of an outdated web app using React. Soon to be deployed. Transforming legacy systems with modern design.`
+      description: `Ongoing redesign of an edtech web app using NextJS. Soon to be deployed. Transforming legacy systems with modern design.`
     }
   ];
 
