@@ -2,7 +2,9 @@ export { default as Navbar } from './Navbar/Navbar'
 export { default as Header } from './Header/Header';
 export { default as Hero } from './Hero/Hero';
 export { default as About_Me } from './About_Me/About_Me';
+export { default as ClientCounts } from './ClientCounts/ClientCounts';
 export { default as Services } from './Services/Services';
+export { default as SkillSet } from './SkillSet/SkillSet';
 export { default as Method } from './Method/Method';
 export { default as Pricing } from './Pricing/Pricing';
 export { default as Projects } from './Projects/Projects';

@@ -9,7 +9,7 @@ const Ethics = () => {
       </div>
       <div className="bg-primary text-secondary font-montserrat p-8 py-14 sm:py-16 md:py-20 pt-28 lg:pt-36">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-medium mb-6">Code of Ethics</h1>
+          <h1 className="text-5xl font-medium mb-6">Code of Ethics</h1>
           <p className="mb-6 text-light_white">
             As a Full Stack Developer and professional, I am committed to
             upholding the highest standards of ethical conduct in my work. This

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="flex flex-col lg:flex-row justify-center items-center border-t">
@@ -13,49 +15,36 @@ const Footer = () => {
         {/* Contact Email */}
         <div className="mail lg:mr-14 px-6 py-4 border-t lg:border-t-0">
           <a
-            href="mailto:jaluiovilash@outlook.com"
+            href="mailto:ovilashjalui@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg sm:text-xl hover:text-portfolio transition duration-300"
           >
-            jaluiovilash@outlook.com
+            ovilashjalui@gmail.com
           </a>
         </div>
 
         {/* Footer Links */}
-        <div className="flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-6 px-4 lg:px-0 py-4">
-          <a
-            href="/blog"
-            target="_blank"
-            className="text-sm sm:text-base text-gray-500 font-montserrat font-medium hover:text-portfolio transition duration-300"
-          >
+        <div className="flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-6 px-4 lg:px-0 py-4 text-sm sm:text-base font-2 font-base hover:text-portfolio">
+          <Link to="/blogs" target="_blank">
             Blogs
-          </a>
-          <a
-            href="/contact"
-            target="_blank"
-            className="text-sm sm:text-base text-gray-500 font-montserrat font-medium hover:text-portfolio transition duration-300"
-          >
+          </Link>
+
+          <Link to="/contact" target="_blank">
             Contact
-          </a>
-          <a
-            href="/ethics"
-            className="text-sm sm:text-base text-gray-500 font-montserrat font-medium hover:text-portfolio transition duration-300"
-          >
+          </Link>
+
+          <Link to="/ethics" target="_blank">
             Ethics
-          </a>
-          <a
-            href="/terms"
-            className="text-sm sm:text-base text-gray-500 font-montserrat font-medium hover:text-portfolio transition duration-300"
-          >
+          </Link>
+
+          <Link to="/terms" target="_blank">
             Terms
-          </a>
-          <a
-            href="/privacy"
-            className="text-sm sm:text-base text-gray-500 font-montserrat font-medium hover:text-portfolio transition duration-300"
-          >
+          </Link>
+
+          <Link to="/privacy" target="_blank">
             Privacy
-          </a>
+          </Link>
         </div>
       </section>
     </footer>

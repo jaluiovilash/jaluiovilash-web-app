@@ -1,5 +1,6 @@
 import { project1, project2, project3, coming_soon_grey } from "../../assets";
 import { VisitHere } from "../../components/index";
+import { BlurText } from "../../components/react-bits";
 
 const Projects = () => {
   const projectDetails = [
@@ -15,7 +16,7 @@ const Projects = () => {
       image: project2,
       link: "https://brainwave-in.web.app/",
       title: "Brainwave",
-      description: `Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.`
+      description: `A sleek React.js and Tailwind CSS website showcasing modern UI/UX with seamless animations and exceptional user experience, setting a high standard and serving as inspiration for future applications and websites.`
     },
     {
       id: 3,
@@ -38,7 +39,12 @@ const Projects = () => {
       {/* Project Title */}
       <div className="py-16 border-b text-center">
         <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto">
-          PROJECTS
+          <BlurText
+            text="PROJECTS"
+            delay={50}
+            animateBy="words"
+            direction="top"
+          />
         </h1>
       </div>
 
@@ -52,7 +58,7 @@ const Projects = () => {
             }`}
           >
             <h1
-              className={`py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl ${
+              className={`py-8 px-6 lg:px-24 font-arial font-semibold text-7xl md:text-8xl ${
                 index % 2 === 0
                   ? "text-portfolio flex justify-end"
                   : "text-white flex justify-start"

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BlurText } from "../../components/react-bits";
 
 const processSteps = [
   {
@@ -57,7 +58,12 @@ const Method = () => {
     <div id="method" className="scroll-mt-20 border-b">
       <div className="py-16 text-center">
         <h1 className="font-montserrat text-4xl md:text-6xl font-semibold w-4/5 mx-auto">
-          MY DEVELOPMENT PROCESS
+          <BlurText
+            text="MY DEVELOPMENT PROCESS"
+            delay={50}
+            animateBy="words"
+            direction="top"
+          />
         </h1>
       </div>
 
@@ -73,7 +79,7 @@ const Method = () => {
           aria-label={`Step ${step.id}: ${step.title}`}
         >
           {/* Title Section */}
-          <div className="text-3xl md:text-5xl font-montserrat font-medium hover:text-portfolio transition-colors duration-300 ease-in-out mb-4 md:mb-0">
+          <div className="text-3xl md:text-5xl font-2 font-medium hover:text-portfolio transition-colors duration-300 ease-in-out mb-4 md:mb-0">
             <span className="text-portfolio">{step.id}</span> {step.title}
           </div>
 

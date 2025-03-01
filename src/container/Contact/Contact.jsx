@@ -109,10 +109,10 @@ const Contact = () => {
             {/* Left Section */}
             <div className="flex flex-col justify-start gap-10">
               <div className="location font-[800] max-w-full md:max-w-[400px] my-8">
-                <p className="text-[2.5rem] sm:text-[3.5rem] md:text-[4rem] mb-8 leading-snug font-time_roman">
+                <p className="text-[2.5rem] sm:text-[3.5rem] md:text-[4rem] mb-8 leading-snug font-times">
                   Got a project in mind? Let&apos;s bring it to life together.
                 </p>
-                <p className="text-gray-500 text-[1.5rem] sm:text-2xl font-time_roman">
+                <p className="text-gray-500 text-[1.5rem] sm:text-2xl font-times">
                   &quot;Your vision, our expertise — let&apos;s make it
                   happen.&quot;
                 </p>
@@ -122,10 +122,10 @@ const Contact = () => {
                   Need Assistance? We&apos;re Here to Help!
                 </p>
                 <a
-                  href="mailto:jaluiovilash@outlook.com"
+                  href="mailto:ovilashjalui@gmail.com"
                   className="text-gray-500 break-all font-sans text-xl"
                 >
-                  jaluiovilash@outlook.com
+                  ovilashjalui@gmail.com
                 </a>
               </div>
             </div>

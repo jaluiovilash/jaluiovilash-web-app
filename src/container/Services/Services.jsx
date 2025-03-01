@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ui_ux, front, bck, mvp, fswd, ai_ml } from "../../assets/index";
+import { BlurText } from "../../components/react-bits";
 
 const servicesArr = [
   {
@@ -54,7 +55,12 @@ const Services = () => {
       {/* Services Heading */}
       <div className="py-16 border-b text-center">
         <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
-          SERVICES
+          <BlurText
+            text="SERVICES"
+            delay={50}
+            animateBy="words"
+            direction="top"
+          />
         </h1>
       </div>
 
@@ -63,7 +69,7 @@ const Services = () => {
         {/* Left Side: Image (Desktop View) */}
         <div className="md:w-2/5 h-[600px] flex flex-col justify-start md:justify-center items-center p-8 md:p-20">
           <img
-            className={`w-auto h-[400px] rounded-lg transition-transform duration-500 ease-in-out ${
+            className={`grayscale w-auto h-[350px] rounded-lg transition-transform duration-500 ease-in-out ${
               hoveredIndex !== null
                 ? "rotate-0 scale-100 opacity-100"
                 : "rotate-[60deg] scale-0 opacity-0"
@@ -117,7 +123,7 @@ const Services = () => {
             >
               {/* Service Image (Increased width for mobile view) */}
               <img
-                className="w-auto h-[250px] object-cover mb-4"
+                className="w-auto h-[250px] object-cover mb-4 grayscale"
                 src={service.image}
                 alt={service.title}
               />

@@ -12,13 +12,13 @@ function ButtonUsage({ title }) {
       sx={{
         backgroundColor: "#FF3422",
         "&:hover": {
-          color: "#000",
+          color: "#FF3422",
           backgroundColor: "#fff"
         },
         color: "#fff",
         fontFamily: "Roboto, sans-serif",
         fontSize: isMobile ? "14px" : "16px",
-        padding: isMobile ? "8px 30px" : "10px 50px",
+        padding: isMobile ? "9px 40px" : "10px 50px",
         borderRadius: "40px",
         textTransform: "none"
       }}
