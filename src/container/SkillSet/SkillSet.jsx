@@ -25,8 +25,8 @@ const skills = [
 
 const SkillSet = () => {
   return (
-    <div className="py-16 flex items-center w-full flex-col border-b">
-      <h1 className="font-montserrat text-4xl md:text-6xl font-semibold w-4/5 mx-auto text-center">
+    <div className="py-12 flex items-center w-full flex-col border-b border-gray-700">
+      <h1 className="font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold w-11/12 sm:w-4/5 mx-auto text-center">
         <BlurText
           text="SKILLSETS"
           delay={50}
@@ -34,13 +34,15 @@ const SkillSet = () => {
           direction="top"
         />
       </h1>
-      <div className="flex flex-row flex-wrap mt-6 items-center justify-center gap-x-2 w-full p-8 md:px-64">
+
+      <div className="flex flex-wrap justify-center gap-3 w-full p-6 sm:p-8 md:px-24 lg:px-48">
         {skills.map((skill, index) => (
-          <div key={index}>
-            <div className="text-white hover:text-portfolio cursor-pointer border-2 border-gray-400 border-opacity-40 rounded-full px-6 py-2 my-2 flex items-center justify-center transition-all duration-500 hover:scale-105 hover:shadow-lg hover:border-portfolio hover:bg-transparent">
-              <h1 className="text-center text-base md:text-lg font-medium">
-                {skill}
-              </h1>
+          <div
+            key={index}
+            className="transition-transform duration-300 hover:scale-105"
+          >
+            <div className="text-white border border-gray-500 border-opacity-50 rounded-full px-5 py-2 text-sm sm:text-base md:text-lg font-medium hover:text-portfolio hover:border-portfolio hover:shadow-lg hover:bg-transparent cursor-pointer">
+              {skill}
             </div>
           </div>
         ))}
