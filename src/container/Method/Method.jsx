@@ -58,12 +58,7 @@ const Method = () => {
     <div id="method" className="scroll-mt-20 border-b">
       <div className="py-16 text-center">
         <h1 className="font-montserrat text-4xl md:text-6xl font-semibold w-4/5 mx-auto">
-          <BlurText
-            text="MY DEVELOPMENT PROCESS"
-            delay={50}
-            animateBy="words"
-            direction="top"
-          />
+          MY DEVELOPMENT PROCESS
         </h1>
       </div>
 

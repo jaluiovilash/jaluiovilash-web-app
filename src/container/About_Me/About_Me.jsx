@@ -1,6 +1,6 @@
 import { square, collaborate_grey, about_us } from "../../assets/index";
 import { ButtonUsage } from "../../components/index";
-import { FadeContent, ScrollReveal } from "../../components/react-bits/index";
+import { FadeContent } from "../../components/react-bits/index";
 
 const About_Me = () => {
   return (
@@ -9,18 +9,11 @@ const About_Me = () => {
       <div className="flex flex-col lg:flex-row">
         {/* Left Section (Text) */}
         <div className="left lg:w-3/5 w-full py-8 lg:py-16 px-6 lg:px-28 border-b lg:border-b-0">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-relaxed lg:leading-[1.6] font-montserrat text-light_white">
-            <ScrollReveal
-              baseOpacity={0}
-              enableBlur={true}
-              baseRotation={5}
-              blurStrength={10}
-            >
-              Empowering businesses with technology. Development isn&apos;t just
-              about writing code—it&apos;s about creating value and delivering
-              results that matter. I focus on building applications that are
-              fast, secure, and optimized for growth.
-            </ScrollReveal>
+          <p className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-relaxed lg:leading-[1.6] font-montserrat text-light_white">
+            Empowering businesses with technology. Development isn&apos;t just
+            about writing code, it&apos;s about creating value and delivering
+            results that matter. I focus on building applications that are fast,
+            secure, and optimized for growth.
           </p>
         </div>
 

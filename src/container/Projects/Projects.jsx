@@ -39,12 +39,7 @@ const Projects = () => {
       {/* Project Title */}
       <div className="py-16 border-b text-center">
         <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto">
-          <BlurText
-            text="PROJECTS"
-            delay={50}
-            animateBy="words"
-            direction="top"
-          />
+          PROJECTS
         </h1>
       </div>
 

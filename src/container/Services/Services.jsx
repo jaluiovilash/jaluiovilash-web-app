@@ -55,12 +55,7 @@ const Services = () => {
       {/* Services Heading */}
       <div className="py-16 border-b text-center">
         <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
-          <BlurText
-            text="SERVICES"
-            delay={50}
-            animateBy="words"
-            direction="top"
-          />
+          SERVICES
         </h1>
       </div>
 

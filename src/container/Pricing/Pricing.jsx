@@ -48,12 +48,7 @@ const Pricing = () => {
       {/* Title Section */}
       <div className="py-16 text-center">
         <h1 className="font-2 text-4xl md:text-6xl lg:text-7xl font-semibold w-4/5 md:w-3/5 mx-auto">
-          <BlurText
-            text="PRICING"
-            delay={50}
-            animateBy="words"
-            direction="top"
-          />
+          PRICING
         </h1>
       </div>
 

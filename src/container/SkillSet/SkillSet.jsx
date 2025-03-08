@@ -1,5 +1,3 @@
-import { BlurText } from "../../components/react-bits";
-
 const skills = [
   "React JS",
   "Next JS",
@@ -25,14 +23,9 @@ const skills = [
 
 const SkillSet = () => {
   return (
-    <div className="py-12 flex items-center w-full flex-col border-b border-gray-700">
-      <h1 className="font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold w-11/12 sm:w-4/5 mx-auto text-center">
-        <BlurText
-          text="SKILLSETS"
-          delay={50}
-          animateBy="words"
-          direction="top"
-        />
+    <div className="flex items-center w-full flex-col border-b">
+      <h1 className="py-16 text-center font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
+        SKILLSETS
       </h1>
 
       <div className="flex flex-wrap justify-center gap-3 w-full p-6 sm:p-8 md:px-24 lg:px-48">
