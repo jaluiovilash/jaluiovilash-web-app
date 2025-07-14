@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ui_ux, front, bck, mvp, fswd, ai_ml } from "../../assets/index";
-import { BlurText } from "../../components/react-bits";
 
 const servicesArr = [
   {
@@ -13,14 +12,14 @@ const servicesArr = [
   {
     id: "02",
     image: front,
-    title: "INTERACTIVE FRONT-END SOLUTIONS",
+    title: "FRONTEND SOLUTIONS",
     hoverText:
       "We build fast and responsive websites that look great and work perfectly on all devices, like phones, tablets, and computers."
   },
   {
     id: "03",
     image: bck,
-    title: "SCALABLE BACK-END ARCHITECTURE",
+    title: "BACKEND ARCHITECTURE",
     hoverText:
       "We set up strong and secure systems to make sure your website or app runs smoothly and can grow with your business."
   },
@@ -34,16 +33,16 @@ const servicesArr = [
   {
     id: "05",
     image: fswd,
-    title: "END-TO-END FULL-STACK DEVELOPMENT",
+    title: "SOFTWARE DEVELOPMENT",
     hoverText:
       "We handle everything from design to coding for your website or app, making sure it works perfectly from start to finish."
   },
   {
     id: "06",
     image: ai_ml,
-    title: "AI/ML ENGINEERING",
+    title: "CLOUD ENGINEERING",
     hoverText:
-      "We build AI/ML solutions, optimize models, and work with deep learning frameworks for real-world applications."
+      "We design, build, and manage scalable cloud infrastructures using AWS and GCP — ensuring performance, security, and reliability for your applications."
   }
 ];
 
@@ -107,7 +106,6 @@ const Services = () => {
           </ul>
         </div>
       </div>
-
       {/* Mobile View: Card Layout (width < 400px) */}
       <div className="md:hidden">
         <div className="flex flex-col">

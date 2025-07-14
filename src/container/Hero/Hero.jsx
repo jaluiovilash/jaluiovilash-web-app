@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Left Section (Image) */}
       <div className="w-full md:w-2/5 border-b md:border-b-0 md:border-r p-8 md:p-16">
         <img
-          className="hero-img sm:w-2/3 md:w-4/5 mx-auto h-auto object-cover rounded-lg shadow-lg"
+          className="hero-img sm:w-2/3 md:w-4/5 mx-auto h-auto object-cover rounded-lg shadow-lg filter grayscale hover:grayscale-0 transition duration-300"
           src={tornado}
           alt="hero"
         />

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BlurText } from "../../components/react-bits";
 
 const processSteps = [
   {
@@ -75,7 +74,8 @@ const Method = () => {
         >
           {/* Title Section */}
           <div className="text-3xl md:text-5xl font-2 font-medium hover:text-portfolio transition-colors duration-300 ease-in-out mb-4 md:mb-0">
-            <span className="text-portfolio">{step.id}</span> {step.title}
+            <span className="text-portfolio font-semibold">{step.id}</span>{" "}
+            {step.title}
           </div>
 
           {/* Description Section */}

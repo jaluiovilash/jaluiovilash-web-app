@@ -1,7 +1,7 @@
 import shoe_product from "./shoe_product.jpg";
 import console_product from "./console_product.jpg";
 import project1 from "./project1.jpg";
-import project2 from "./project2.jpg";
+import project2 from "./project2.png";
 import project3 from "./project3.jpg";
 
 import lion from "./lion.jpg";
@@ -20,7 +20,7 @@ import ai_ml from "./ai_ml.jpg";
 import circle from "./circle.svg";
 import square from "./square.svg";
 import triangle from "./triangle.svg";
-import tornado from "./tornado.svg";
+import tornado from "./tornado.jpg";
 
 export {
     shoe_product,

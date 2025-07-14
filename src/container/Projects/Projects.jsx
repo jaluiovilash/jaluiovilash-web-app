@@ -1,6 +1,5 @@
 import { project1, project2, project3, coming_soon_grey } from "../../assets";
 import { VisitHere } from "../../components/index";
-import { BlurText } from "../../components/react-bits";
 
 const Projects = () => {
   const projectDetails = [
@@ -14,9 +13,9 @@ const Projects = () => {
     {
       id: 2,
       image: project2,
-      link: "https://brainwave-in.web.app/",
-      title: "Brainwave",
-      description: `A sleek React.js and Tailwind CSS website showcasing modern UI/UX with seamless animations and exceptional user experience, setting a high standard and serving as inspiration for future applications and websites.`
+      link: "https://github.com/jaluiovilash/supportdesk",
+      title: "SupportDesk - A Ticketing System",
+      description: `SupportDesk is a final year college project—a MERN stack ticketing system with role-based authentication, allowing users to create tickets and admins to manage, update, or delete them efficiently.`
     },
     {
       id: 3,
@@ -29,8 +28,8 @@ const Projects = () => {
       id: 4,
       image: coming_soon_grey,
       link: "https://colossalcodes.vercel.app/",
-      title: "Renovated Web App",
-      description: `Ongoing redesign of an edtech web app using NextJS. Soon to be deployed. Transforming legacy systems with modern design.`
+      title: "ColossalCodes",
+      description: `ColossalCodes is a hub for devs exploring TypeScript, Rust & future tech. Learn with tutorials, real-world projects & trend insights. Explore more on our upcoming site. Subscribe now and level up your coding game!`
     }
   ];
 
@@ -53,7 +52,7 @@ const Projects = () => {
             }`}
           >
             <h1
-              className={`py-8 px-6 lg:px-24 font-arial font-semibold text-7xl md:text-8xl ${
+              className={`py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl ${
                 index % 2 === 0
                   ? "text-portfolio flex justify-end"
                   : "text-white flex justify-start"

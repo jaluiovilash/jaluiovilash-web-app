@@ -4,8 +4,6 @@ export { default as Hero } from './Hero/Hero';
 export { default as About_Me } from './About_Me/About_Me';
 export { default as ClientCounts } from './ClientCounts/ClientCounts';
 export { default as Services } from './Services/Services';
-// export { default as ServicesCards } from './Services/ServicesCards';
-export { default as SkillSet } from './SkillSet/SkillSet';
 export { default as Method } from './Method/Method';
 export { default as Pricing } from './Pricing/Pricing';
 export { default as Projects } from './Projects/Projects';

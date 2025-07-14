@@ -6,7 +6,6 @@ import {
   ClientCounts,
   Projects,
   Services,
-  SkillSet,
   Method,
   Pricing,
   CTA,
@@ -36,7 +35,6 @@ const App = () => {
               <About_Me />
               <ClientCounts />
               <Projects />
-              {/* <SkillSet /> */}
               <Services />
               <Method />
               <Pricing />
