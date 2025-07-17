@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ui_ux, front, bck, mvp, fswd, ai_ml } from "../../assets/index";
+import { ui_ux, front, bck, mvp, sde, cloud } from "../../assets/index";
 
 const servicesArr = [
   {
@@ -32,14 +32,14 @@ const servicesArr = [
   },
   {
     id: "05",
-    image: fswd,
+    image: sde,
     title: "SOFTWARE DEVELOPMENT",
     hoverText:
       "We handle everything from design to coding for your website or app, making sure it works perfectly from start to finish."
   },
   {
     id: "06",
-    image: ai_ml,
+    image: cloud,
     title: "CLOUD ENGINEERING",
     hoverText:
       "We design, build, and manage scalable cloud infrastructures using AWS and GCP — ensuring performance, security, and reliability for your applications."

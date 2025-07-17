@@ -10,10 +10,10 @@ const About_Me = () => {
         {/* Left Section (Text) */}
         <div className="left lg:w-3/5 w-full py-8 lg:py-16 px-6 lg:px-28 border-b lg:border-b-0">
           <p className="text-xl sm:text-3xl md:text-4xl lg:text-[39px] font-semibold leading-relaxed lg:leading-[1.6] font-montserrat text-light_white">
-            I empower businesses with technology. For me, development isn’t just
-            about coding — it’s about creating value, solving real problems, and
-            delivering results. I build fast, secure, and scalable applications
-            designed to support growth and long-term success.
+            Empowering businesses with technology. Development isn&apos;t just
+            about writing code, it&apos;s about creating value and delivering
+            results that matter. I focus on building applications that are fast,
+            secure, and optimized for growth.
           </p>
         </div>
 

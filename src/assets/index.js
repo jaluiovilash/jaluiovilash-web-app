@@ -10,12 +10,12 @@ import collaborate_grey from "./collaborate_grey.png";
 import coming_soon_grey from "./coming_soon_grey.png";
 import about_us from "./about_us.png";
 
-import ui_ux from "./ui_ux.jpg";
+import ui_ux from "./ui_ux.png";
 import front from "./front.jpg";
-import bck from "./bck.avif";
-import mvp from "./mvp.jpg";
-import fswd from "./fswd.jpg";
-import ai_ml from "./ai_ml.jpg";
+import bck from "./bck.jpg";
+import mvp from "./mvp.avif";
+import sde from "./sde.jpg";
+import cloud from "./cloud.jpg";
 
 import circle from "./circle.svg";
 import square from "./square.svg";
@@ -38,8 +38,8 @@ export {
     front,
     bck,
     mvp,
-    fswd,
-    ai_ml,
+    sde,
+    cloud,
 
     circle,
     square,

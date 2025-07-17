@@ -6,10 +6,14 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 const menuItems = [
   { name: "Resume", to: ResumePDF, isExternal: true, isDownload: true },
+  {
+    name: "Source Code",
+    to: "https://github.com/jaluiovilash/jaluiovilash-web-app/",
+    isExternal: true
+  },
   { name: "GitHub", to: "https://github.com/jaluiovilash", isExternal: true },
   { name: "Projects", to: "/#projects" },
   { name: "Services", to: "/#services" },
-  { name: "Work Flow", to: "/#method" },
   { name: "Pricing", to: "/#pricing" },
   {
     name: "Let's Talk",
