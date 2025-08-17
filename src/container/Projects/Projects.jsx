@@ -9,7 +9,7 @@ const Projects = () => {
       link: "https://apple-iphone15.web.app/",
       code: "https://github.com/jaluiovilash/iphone15-website",
       title: "iPhone 15 Website Clone",
-      description: `This is a clone of Apple’s iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP (Greensock Animations) and Three.js for displaying iPhone 15 Pro models in various colors and shapes.`
+      description: `This is a clone of Apple’s iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP (Greensock Animations) and Three.js for displaying iPhone 15 Pro models in various colors and shapes.`,
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Projects = () => {
       link: "https://jo-supportdesk.vercel.app/",
       code: "https://github.com/jaluiovilash/supportdesk",
       title: "SupportDesk - A Ticketing System",
-      description: `SupportDesk is a final year college project—a MERN stack ticketing system with role-based authentication, allowing users to create tickets and admins to manage, update, or delete them efficiently.`
+      description: `SupportDesk is a final year college project—a MERN stack ticketing system with role-based authentication, allowing users to create tickets and admins to manage, update, or delete them efficiently.`,
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const Projects = () => {
       link: "https://github.com/jaluiovilash/RaktSetu-Backend.git",
       code: "https://github.com/jaluiovilash/RaktSetu-Backend.git",
       title: "RaktSetu - Blood Bank Management System Backend",
-      description: `RaktSetu backend, a Node.js-powered Blood Bank Management System, streamlines donor registrations, blood stock, hospital requests, and emergency notifications using Express and MongoDB for efficient inventory and request handling.`
+      description: `RaktSetu backend, a Node.js-powered Blood Bank Management System, streamlines donor registrations, blood stock, hospital requests, and emergency notifications using Express and MongoDB for efficient inventory and request handling.`,
     },
     {
       id: 4,
@@ -33,8 +33,8 @@ const Projects = () => {
       link: "https://colossalcodes.vercel.app/",
       code: "https://github.com/jaluiovilash/colossalcodes",
       title: "ColossalCodes",
-      description: `ColossalCodes is a hub for devs exploring TypeScript, Rust & future tech. Learn with tutorials, real-world projects & trend insights. Explore more on our upcoming site. Subscribe now and level up your coding game!`
-    }
+      description: `ColossalCodes is a hub for devs exploring TypeScript, Rust & future tech. Learn with tutorials, real-world projects & trend insights. Explore more on our upcoming site. Subscribe now and level up your coding game!`,
+    },
   ];
 
   return (
@@ -83,7 +83,7 @@ const Projects = () => {
                 href={project.code}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-md font-semibold text-orange-600 hover:text-white"
+                className="text-base font-lg text-portfolio hover:text-white"
               >
                 Source Code
               </a>
