@@ -1,5 +1,6 @@
 import { project1, project2, project3, coming_soon_grey } from "../../assets";
 import { VisitHere } from "../../components/index";
+import { ShinyText } from "../../components/react-bits/index";
 
 const Projects = () => {
   const projectDetails = [
@@ -42,7 +43,7 @@ const Projects = () => {
       {/* Project Title */}
       <div className="py-16 border-b text-center">
         <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto">
-          PROJECTS
+          <ShinyText text="PROJECTS" />
         </h1>
       </div>
 
@@ -75,7 +76,7 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl"
+                className="text-xl font-mono"
               >
                 <VisitHere title="Explore Project" />
               </a>
@@ -87,8 +88,12 @@ const Projects = () => {
               >
                 Source Code
               </a>
-              <h2 className="text-xl font-medium py-4">{project.title}</h2>
-              <p className="descp text-xl py-4">{project.description}</p>
+              <h2 className="text-xl font-medium py-4 font-mono">
+                {project.title}
+              </h2>
+              <p className="descp text-xl py-4 font-mono">
+                {project.description}
+              </p>
             </div>
           </div>
         ))}

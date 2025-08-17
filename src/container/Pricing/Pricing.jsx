@@ -1,6 +1,6 @@
 import { ButtonUsage } from "../../components/index";
 import { square, circle, triangle } from "../../assets/index";
-import { BlurText } from "../../components/react-bits";
+import { ShinyText } from "../../components/react-bits";
 
 const pricingData = [
   {
@@ -11,7 +11,7 @@ const pricingData = [
     price: "₹ 5,000+",
     contactLink:
       "mailto:jaluiovilash@outlook.com?subject=Design Services Inquiry",
-    buttonText: "CONTACT NOW"
+    buttonText: "CONTACT NOW",
   },
   {
     id: 2,
@@ -20,12 +20,12 @@ const pricingData = [
     features: [
       "Fully operational website",
       "Weekly project reviews",
-      "Support and maintenance ongoing"
+      "Support and maintenance ongoing",
     ],
     price: "₹ 15,000+",
     contactLink:
       "mailto:jaluiovilash@outlook.com?subject=Development Services Inquiry",
-    buttonText: "GET IN TOUCH"
+    buttonText: "GET IN TOUCH",
   },
   {
     id: 3,
@@ -34,12 +34,12 @@ const pricingData = [
     features: [
       "Business development strategies",
       "SEO and traffic analytics",
-      "Content and ad campaigns"
+      "Content and ad campaigns",
     ],
     price: "₹ 25,000+",
     contactLink: "https://calendly.com/ovilashjalui/30min",
-    buttonText: "SCHEDULE NOW"
-  }
+    buttonText: "SCHEDULE NOW",
+  },
 ];
 
 const Pricing = () => {
@@ -47,8 +47,8 @@ const Pricing = () => {
     <div id="pricing" className="scroll-mt-20">
       {/* Title Section */}
       <div className="py-16 text-center">
-        <h1 className="font-2 text-4xl md:text-6xl lg:text-7xl font-semibold w-4/5 md:w-3/5 mx-auto">
-          PRICING
+        <h1 className="font-montserrat text-4xl md:text-6xl lg:text-7xl font-semibold w-4/5 md:w-3/5 mx-auto">
+          <ShinyText text="PRICING" />
         </h1>
       </div>
 
@@ -67,14 +67,14 @@ const Pricing = () => {
               className="w-[250px] h-[250px] max-w-[300px] mx-auto"
               loading="lazy"
             />
-            <h3 className="py-8 text-3xl md:text-4xl font-medium">
+            <h3 className="py-8 text-3xl md:text-4xl font-semibold font-montserrat">
               {plan.title}
             </h3>
             <ul>
               {plan.features.map((feature, index) => (
                 <li
                   key={index}
-                  className={`py-4 md:py-4 px-8 md:px-12 ${
+                  className={`py-4 md:py-4 px-8 md:px-12 font-mono ${
                     index === 0
                       ? "border-t"
                       : index === plan.features.length - 1

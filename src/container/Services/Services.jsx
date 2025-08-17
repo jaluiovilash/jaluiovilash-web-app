@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ui_ux, front, bck, mvp, sde, cloud } from "../../assets/index";
+import { ShinyText } from "../../components/react-bits/index";
 
 const servicesArr = [
   {
@@ -7,54 +8,54 @@ const servicesArr = [
     image: ui_ux,
     title: "CUSTOM UX/UI DESIGN",
     hoverText:
-      "We create easy-to-use and attractive designs that match your brand and make your website or app enjoyable for users."
+      "We create easy-to-use and attractive designs that match your brand and make your website or app enjoyable for users.",
   },
   {
     id: "02",
     image: front,
     title: "FRONTEND SOLUTIONS",
     hoverText:
-      "We build fast and responsive websites that look great and work perfectly on all devices, like phones, tablets, and computers."
+      "We build fast and responsive websites that look great and work perfectly on all devices, like phones, tablets, and computers.",
   },
   {
     id: "03",
     image: bck,
     title: "BACKEND ARCHITECTURE",
     hoverText:
-      "We set up strong and secure systems to make sure your website or app runs smoothly and can grow with your business."
+      "We set up strong and secure systems to make sure your website or app runs smoothly and can grow with your business.",
   },
   {
     id: "04",
     image: mvp,
     title: "STARTUP MVP DEVELOPMENT",
     hoverText:
-      "We help startups by quickly creating a basic version of their product to test ideas and show them to users."
+      "We help startups by quickly creating a basic version of their product to test ideas and show them to users.",
   },
   {
     id: "05",
     image: sde,
     title: "SOFTWARE DEVELOPMENT",
     hoverText:
-      "We handle everything from design to coding for your website or app, making sure it works perfectly from start to finish."
+      "We handle everything from design to coding for your website or app, making sure it works perfectly from start to finish.",
   },
   {
     id: "06",
     image: cloud,
     title: "CLOUD ENGINEERING",
     hoverText:
-      "We design, build, and manage scalable cloud infrastructures using AWS and GCP — ensuring performance, security, and reliability for your applications."
-  }
+      "We design, build, and manage scalable cloud infrastructures using AWS and GCP — ensuring performance, security, and reliability for your applications.",
+  },
 ];
 
 const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div id="services" className="scroll-mt-20 md:border-b">
+    <div id="services" className="scroll-mt-20 md:border-b ">
       {/* Services Heading */}
       <div className="py-16 border-b text-center">
         <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
-          SERVICES
+          <ShinyText text="SERVICES" />
         </h1>
       </div>
 
@@ -95,7 +96,7 @@ const Services = () => {
                   onMouseLeave={() => setHoveredIndex(null)}
                   style={{
                     paddingLeft: hoveredIndex === index ? "4rem" : "0rem",
-                    transition: "padding-left 0.5s ease-in-out"
+                    transition: "padding-left 0.5s ease-in-out",
                   }}
                   aria-label={`Service: ${service.title}`}
                 >

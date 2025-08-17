@@ -1,6 +1,6 @@
 const MaintenancePage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-black-100 to-black-300">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-black-100 to-black-300 font-mono">
       <div className="max-w-md p-8 text-center bg-white md:rounded-2xl shadow-xl">
         {/* Icon */}
         <div className="flex justify-center mb-6">

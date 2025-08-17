@@ -1,6 +1,6 @@
 import { square, collaborate_grey, about_us } from "../../assets/index";
 import { ButtonUsage } from "../../components/index";
-import { FadeContent } from "../../components/react-bits/index";
+import { FadeContent, ShinyText } from "../../components/react-bits/index";
 
 const About_Me = () => {
   return (
@@ -10,10 +10,12 @@ const About_Me = () => {
         {/* Left Section (Text) */}
         <div className="left lg:w-3/5 w-full py-8 lg:py-16 px-6 lg:px-28 border-b lg:border-b-0">
           <p className="text-xl sm:text-3xl md:text-4xl lg:text-[39px] font-semibold leading-relaxed lg:leading-[1.6] font-montserrat text-light_white">
-            Empowering businesses with technology. Development isn&apos;t just
-            about writing code, it&apos;s about creating value and delivering
+            <ShinyText
+              text="Empowering businesses with technology. Development isn't just
+            about writing code, it's about creating value and delivering
             results that matter. I focus on building applications that are fast,
-            secure, and optimized for growth.
+            secure, and optimized for growth."
+            />
           </p>
         </div>
 
@@ -57,7 +59,7 @@ const About_Me = () => {
             easing="ease-out"
             initialOpacity={0}
           >
-            <p className="my-6 text-base sm:text-lg font-medium">
+            <p className="my-6 mr-8 text-base sm:text-lg font-mono text-light_white">
               &quot;Let’s collaborate and bring your digital vision to life,
               transforming ideas into solutions that drive success and
               growth!&quot;

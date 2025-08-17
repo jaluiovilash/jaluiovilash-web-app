@@ -2,19 +2,20 @@ import { useState } from "react";
 import { db } from "../../../firebase.config";
 import { collection, addDoc } from "firebase/firestore";
 import { Footer, Navbar } from "../index";
+import { ShinyText } from "../../components/react-bits/index";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
 
   const [formStatus, setFormStatus] = useState({
     isSubmitting: false,
     success: null,
-    error: null
+    error: null,
   });
 
   // Handle input changes
@@ -22,7 +23,7 @@ const Contact = () => {
     const { name, value, type, files } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: type === "file" ? files[0] : value
+      [name]: type === "file" ? files[0] : value,
     }));
   };
 
@@ -62,7 +63,7 @@ const Contact = () => {
         email: formData.email,
         phone: formData.phone,
         message: formData.message,
-        timestamp: new Date()
+        timestamp: new Date(),
       });
 
       // Placeholder for file upload logic
@@ -75,7 +76,7 @@ const Contact = () => {
       setFormStatus({
         isSubmitting: false,
         success: "Message sent successfully!",
-        error: null
+        error: null,
       });
 
       setTimeout(() => {
@@ -86,7 +87,7 @@ const Contact = () => {
       setFormStatus({
         isSubmitting: false,
         error: `Failed to send message: ${err.message}`,
-        success: null
+        success: null,
       });
 
       setTimeout(() => {
@@ -100,30 +101,33 @@ const Contact = () => {
       <div className="navbar">
         <Navbar />
       </div>
-      <div id="contact" className="py-14 sm:py-16 md:py-20 pt-28 lg:pt-36">
+      <div
+        id="contact"
+        className="py-14 sm:py-16 md:py-20 pt-28 lg:pt-36 font-mono"
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full sm:max-w-[620px] md:max-w-[1060px] lg:max-w-[1200px] xl:max-w-[1400px]">
-          <h2 className="text-arka text-center text-lg font-medium py-2 md:mb-10">
-            Contact Us
+          <h2 className="text-center text-lg font-medium py-2 md:mb-10">
+            <ShinyText text="Contact Us" />
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {/* Left Section */}
             <div className="flex flex-col justify-start gap-10">
               <div className="location font-[800] max-w-full md:max-w-[400px] my-8">
-                <p className="text-[2.5rem] sm:text-[3.5rem] md:text-[4rem] mb-8 leading-snug font-times">
+                <p className="text-[2.5rem] sm:text-[3.5rem] md:text-[3rem] mb-8 leading-snug">
                   Got a project in mind? Let&apos;s bring it to life together.
                 </p>
-                <p className="text-gray-500 text-[1.5rem] sm:text-2xl font-times">
+                <p className="text-gray-500 text-[1.5rem] sm:text-2xl">
                   &quot;Your vision, our expertise — let&apos;s make it
                   happen.&quot;
                 </p>
               </div>
               <div className="mail">
-                <p className="text-2xl sm:text-2xl font-semibold mb-4 font-sans">
+                <p className="text-2xl sm:text-2xl font-semibold mb-4">
                   Need Assistance? We&apos;re Here to Help!
                 </p>
                 <a
                   href="mailto:ovilashjalui@gmail.com"
-                  className="text-gray-500 break-all font-sans text-xl"
+                  className="text-gray-500 break-all text-xl"
                 >
                   ovilashjalui@gmail.com
                 </a>

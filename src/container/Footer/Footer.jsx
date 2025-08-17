@@ -24,9 +24,9 @@ const Footer = () => (
         {[
           { label: "Blogs", to: "https://jaluiovilashblogs.hashnode.dev/" },
           { label: "Contact", to: "/contact" },
-          { label: "Ethics", to: "/ethics" },
           { label: "Terms", to: "/terms" },
-          { label: "Privacy", to: "/privacy" }
+          { label: "Privacy", to: "/privacy" },
+          { label: "Ethics", to: "/ethics" },
         ].map(({ label, to }) => (
           <Link key={label} to={to} target="_blank">
             {label}

@@ -21,7 +21,7 @@ const Hero = () => {
         easing="ease-out"
         initialOpacity={0}
       >
-        <div className="w-full md:w-[800px] text-accent p-8 md:p-16 text-xl space-y-6">
+        <div className="w-full md:w-[1000px] text-accent p-8 md:p-16 text-xl font-mono space-y-6">
           <p className="mb-2">Hello !!</p>
           <h1 className="leading-tight text-xl">
             My name is Ovilash Jalui, and I am a Full Stack Developer.
