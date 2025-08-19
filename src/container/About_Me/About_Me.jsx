@@ -11,10 +11,9 @@ const About_Me = () => {
         <div className="left lg:w-3/5 w-full py-8 lg:py-16 px-6 lg:px-28 border-b lg:border-b-0">
           <p className="text-xl sm:text-3xl md:text-4xl lg:text-[39px] font-semibold leading-relaxed lg:leading-[1.6] font-montserrat text-light_white">
             <ShinyText
-              text="Empowering businesses with technology. Development isn't just
-            about writing code, it's about creating value and delivering
-            results that matter. I focus on building applications that are fast,
-            secure, and optimized for growth."
+              text="Turning ideas into systems that inspire. Development isn't just
+            about writing code — it’s about designing intelligent solutions that create value and deliver impact. I focus on building applications that
+are fast, secure, and built to scale."
             />
           </p>
         </div>

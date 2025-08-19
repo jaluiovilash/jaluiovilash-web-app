@@ -24,19 +24,19 @@ const Hero = () => {
         <div className="w-full md:w-[1000px] text-accent p-8 md:p-16 text-xl font-mono space-y-6">
           <p className="mb-2">Hello !!</p>
           <h1 className="leading-tight text-xl">
-            My name is Ovilash Jalui, and I am a Full Stack Developer.
+            I’m Ovilash Jalui — a Software Engineer who codes for fun,
+            challenge, and impact.
           </h1>
           <p>
-            I create web apps that are simple, user friendly, and help
-            businesses grow online. My main focus is building websites for
-            businesses and individuals who want to stand out and connect with
-            more people.
+            I build systems and interfaces that are simple yet intelligent —
+            designed not just to work, but to inspire. My work blends clean UI,
+            solid architecture, and scalable design, making people think deeper
+            about how software should be built.
           </p>
           <p>
-            Whether it’s bringing a startup’s idea to life with apps and digital
-            products or using AI to make them smarter, I use the latest
-            technology and strategies to boost online presence and help
-            businesses grow faster.
+            With a mindset of systems thinking and creative problem-solving, I
+            dedicate my intelligence to crafting solutions that create real
+            value and lasting inspiration.
           </p>
           <div className="my-8 w-1/2 md:w-1/6">
             <a

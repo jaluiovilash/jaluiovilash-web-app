@@ -7,11 +7,10 @@ const pricingData = [
     id: 1,
     image: square,
     title: "DESIGN",
-    features: ["Designs via Figma", "Weekly feedback", "Design & Code"],
+    features: ["Designs via Figma", "Interactive prototypes", "Design & Code"],
     price: "₹ 5,000+",
-    contactLink:
-      "mailto:jaluiovilash@outlook.com?subject=Design Services Inquiry",
-    buttonText: "CONTACT NOW",
+    contactLink: "https://calendly.com/ovilashjalui/30min",
+    buttonText: "BOOK A CALL",
   },
   {
     id: 2,
@@ -23,8 +22,7 @@ const pricingData = [
       "Support and maintenance ongoing",
     ],
     price: "₹ 15,000+",
-    contactLink:
-      "mailto:jaluiovilash@outlook.com?subject=Development Services Inquiry",
+    contactLink: "https://calendly.com/ovilashjalui/30min",
     buttonText: "GET IN TOUCH",
   },
   {
@@ -32,7 +30,7 @@ const pricingData = [
     image: triangle,
     title: "GROW",
     features: [
-      "Business development strategies",
+      "Quality Lead generation",
       "SEO and traffic analytics",
       "Content and ad campaigns",
     ],
@@ -86,7 +84,7 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <h4 className="text-portfolio text-4xl font-medium py-6 px-8 md:px-16">
+            <h4 className="text-portfolio font-montserrat text-4xl font-medium py-6 px-8 md:px-16">
               {plan.price}
             </h4>
             <a
