@@ -23,7 +23,7 @@ are fast, secure, and built to scale."
           <img
             className="w-[350px] md:w-[450px] h-auto object-cover rounded-lg"
             src={about_us}
-            alt="About Us"
+            alt="Illustration symbolizing innovation and full-stack web development"
           />
         </div>
       </div>
@@ -36,7 +36,7 @@ are fast, secure, and built to scale."
             <img
               className="w-full max-w-[300px] h-auto object-cover rounded-lg mx-8"
               src={collaborate_grey}
-              alt="CTA Image"
+              alt="Idea Mapping"
             />
           </div>
 
@@ -45,7 +45,7 @@ are fast, secure, and built to scale."
             <img
               className="w-2/3 md:w-full max-w-[200px] h-auto"
               src={square}
-              alt="Centered Image"
+              alt="Dotted Square"
             />
           </div>
         </div>

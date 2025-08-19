@@ -1,5 +1,6 @@
+# Allow all search engines to crawl the site
 User-agent: *
-Disallow: /admin/
 Allow: /
 
+# Point search engines to your sitemap
 Sitemap: https://jaluiovilash.web.app/sitemap.xml

@@ -10,7 +10,7 @@ const Hero = () => {
         <img
           className="hero-img sm:w-2/3 md:w-4/5 mx-auto h-auto object-cover rounded-lg shadow-lg filter grayscale hover:grayscale-0 transition duration-300"
           src={tornado}
-          alt="hero"
+          alt="3D tornado illustration representing cutting-edge technology"
         />
       </div>
 

@@ -23,26 +23,23 @@ import triangle from "./triangle.svg";
 import tornado from "./tornado.jpg";
 
 export {
-    shoe_product,
-    console_product,
-    project1,
-    project2,
-    project3,
-
-    lion,
-
-    collaborate_grey,
-    coming_soon_grey,
-    about_us,
-    ui_ux,
-    front,
-    bck,
-    mvp,
-    sde,
-    cloud,
-
-    circle,
-    square,
-    triangle,
-    tornado
+  shoe_product,
+  console_product,
+  project1,
+  project2,
+  project3,
+  lion,
+  collaborate_grey,
+  coming_soon_grey,
+  about_us,
+  ui_ux,
+  front,
+  bck,
+  mvp,
+  sde,
+  cloud,
+  circle,
+  square,
+  triangle,
+  tornado,
 };
