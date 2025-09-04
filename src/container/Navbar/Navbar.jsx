@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { ButtonUsage } from "../../components";
-import ResumePDF from "../../assets/Full-Stack-Developer.pdf";
+import { ResumePDF } from "../../assets/index";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 const menuItems = [
@@ -9,7 +9,7 @@ const menuItems = [
   {
     name: "Source Code",
     to: "https://github.com/jaluiovilash/jaluiovilash-web-app/",
-    isExternal: true
+    isExternal: true,
   },
   { name: "GitHub", to: "https://github.com/jaluiovilash", isExternal: true },
   { name: "Projects", to: "/#projects" },
@@ -19,8 +19,8 @@ const menuItems = [
     name: "Let's Talk",
     to: "https://calendly.com/ovilashjalui/30min",
     isExternal: true,
-    isButton: true
-  }
+    isButton: true,
+  },
 ];
 
 const Menu = ({ isMobile, setToggleMenu }) => {
@@ -56,7 +56,7 @@ const Menu = ({ isMobile, setToggleMenu }) => {
               target="_blank"
               rel="noopener noreferrer"
               download={
-                item.isDownload ? "Full-Stack-Developer.pdf" : undefined
+                item.isDownload ? "Associate Software Engineer.pdf" : undefined
               }
             >
               {item.isButton ? <ButtonUsage title={item.name} /> : item.name}

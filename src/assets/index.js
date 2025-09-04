@@ -3,6 +3,7 @@ import console_product from "./console_product.jpg";
 import project1 from "./project1.jpg";
 import project2 from "./project2.png";
 import project3 from "./project3.jpg";
+import ResumePDF from "./Associate-Software-Engineer.pdf";
 
 import lion from "./lion.jpg";
 
@@ -28,6 +29,7 @@ export {
   project1,
   project2,
   project3,
+  ResumePDF,
   lion,
   collaborate_grey,
   coming_soon_grey,
