@@ -8,42 +8,42 @@ const servicesArr = [
     image: ui_ux,
     title: "CUSTOM UX/UI DESIGN",
     hoverText:
-      "We create easy-to-use and attractive designs that match your brand and make your website or app enjoyable for users.",
+      "I craft intuitive, visually engaging, and user-focused designs that perfectly reflect your brand identity and create enjoyable experiences for every user.",
   },
   {
     id: "02",
     image: front,
     title: "FRONTEND SOLUTIONS",
     hoverText:
-      "We build fast and responsive websites that look great and work perfectly on all devices, like phones, tablets, and computers.",
+      "I develop fast, responsive, and visually stunning websites that function seamlessly across devices, ensuring smooth user interactions and exceptional performance everywhere.",
   },
   {
     id: "03",
     image: bck,
     title: "BACKEND ARCHITECTURE",
     hoverText:
-      "We set up strong and secure systems to make sure your website or app runs smoothly and can grow with your business.",
+      "I design and implement robust, secure, and scalable backend systems, ensuring your applications perform reliably while supporting future growth and complex functionalities.",
   },
   {
     id: "04",
     image: mvp,
     title: "STARTUP MVP DEVELOPMENT",
     hoverText:
-      "We help startups by quickly creating a basic version of their product to test ideas and show them to users.",
+      "I help startups launch functional MVPs quickly, enabling rapid idea validation, user feedback collection, and early-stage product testing for successful market entry.",
   },
   {
     id: "05",
     image: sde,
     title: "SOFTWARE DEVELOPMENT",
     hoverText:
-      "We handle everything from design to coding for your website or app, making sure it works perfectly from start to finish.",
+      "I provide comprehensive software development services from design to deployment, ensuring high-quality code, flawless functionality, and seamless integration across your platforms.",
   },
   {
     id: "06",
     image: cloud,
     title: "CLOUD ENGINEERING",
     hoverText:
-      "We design, build, and manage scalable cloud infrastructures using AWS and GCP — ensuring performance, security, and reliability for your applications.",
+      "I design, deploy, and manage scalable cloud infrastructures on AWS and GCP, optimizing security, performance, and reliability for mission-critical applications.",
   },
 ];
 
@@ -54,7 +54,7 @@ const Services = () => {
     <div id="services" className="scroll-mt-20 md:border-b ">
       {/* Services Heading */}
       <div className="py-16 border-b text-center">
-        <h1 className="font-montserrat text-5xl md:text-7xl font-bold w-4/5 mx-auto">
+        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
           <ShinyText text="SERVICES" />
         </h1>
       </div>
