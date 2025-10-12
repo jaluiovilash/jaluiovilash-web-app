@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        times: ['"Times New Roman"', "serif"],
         montserrat: ["Montserrat", "sans-serif"],
         monospace: ["Fira Code", "monospace"],
+        times: ['"Times New Roman"', "serif"],
       },
       colors: {
         primary: "#1c1c1c",

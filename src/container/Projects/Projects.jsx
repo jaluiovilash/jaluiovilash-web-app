@@ -42,7 +42,7 @@ const Projects = () => {
     <div className="scroll-mt-20" id="projects">
       {/* Project Title */}
       <div className="py-16 border-b text-center">
-        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-3/5 mx-auto">
+        <h1 className="font-montserrat text-5xl md:text-7xl font-bold w-3/5 mx-auto">
           <ShinyText text="PROJECTS" />
         </h1>
       </div>

@@ -5,6 +5,7 @@ import {
   About_Me,
   ClientCounts,
   Projects,
+  All_Projects,
   Services,
   Method,
   Pricing,
@@ -14,7 +15,7 @@ import {
   Contact,
   Ethics,
   Terms,
-  Privacy
+  Privacy,
 } from "./container/index";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -43,6 +44,7 @@ const App = () => {
             </div>
           }
         />
+        <Route path="/projects" element={<All_Projects />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/ethics" element={<Ethics />} />

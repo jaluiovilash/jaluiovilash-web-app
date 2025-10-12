@@ -92,7 +92,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center p-6 md:p-5 md:px-10 border-b bg-primary fixed top-0 w-full z-50">
-      <h1 className="text-4xl md:text-5xl font-semibold font-montserrat tracking-wide">
+      <h1 className="text-4xl md:text-5xl font-bold font-montserrat tracking-wide">
         <a href="/" className="hover:text-accent transition-all">
           JO
         </a>

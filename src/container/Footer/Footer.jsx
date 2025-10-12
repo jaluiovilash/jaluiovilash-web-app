@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => (
   <footer className="flex flex-col lg:flex-row justify-center items-center border-t">
     <section className="w-3/5 lg:w-auto text-center lg:text-left">
-      <h1 className="text-4xl lg:text-5xl font-semibold font-montserrat px-6 py-4 lg:py-10 lg:border-r text-primary">
+      <h1 className="text-4xl lg:text-5xl font-bold font-montserrat px-6 py-4 lg:py-10 lg:border-r text-primary">
         <a href="/">JO</a>
       </h1>
     </section>
