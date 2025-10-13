@@ -57,7 +57,7 @@ const Projects = () => {
             }`}
           >
             <h1
-              className={`py-8 px-6 lg:px-24 font-montserrat font-semibold text-7xl md:text-8xl ${
+              className={`py-8 px-6 lg:px-24 font-montserrat font-bold text-7xl md:text-8xl ${
                 index % 2 === 0
                   ? "text-portfolio flex justify-end"
                   : "text-white flex justify-start"
@@ -66,12 +66,17 @@ const Projects = () => {
               {`0${project.id}`}
             </h1>
             <div className="project_content py-8 px-6 lg:px-24 border-t">
-              <img
-                className="my-6 w-auto h-[300px] object-cover rounded-lg"
-                src={project.image}
-                alt={project.title}
-                loading="lazy"
-              />
+              {/* Clickable Image */}
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  className="my-6 w-auto h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                />
+              </a>
+
+              {/* Explore Link */}
               <a
                 href={project.link}
                 target="_blank"
@@ -80,6 +85,8 @@ const Projects = () => {
               >
                 <VisitHere title="Explore Project" />
               </a>
+
+              {/* Source Code */}
               <a
                 href={project.code}
                 target="_blank"
@@ -88,6 +95,7 @@ const Projects = () => {
               >
                 Source Code
               </a>
+
               <h2 className="text-xl font-medium py-4 font-mono">
                 {project.title}
               </h2>
