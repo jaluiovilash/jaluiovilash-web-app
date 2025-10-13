@@ -23,6 +23,8 @@ import square from "./square.svg";
 import triangle from "./triangle.svg";
 import tornado from "./tornado.jpg";
 
+import notfound from "./notfound.jpg";
+
 export {
   shoe_product,
   console_product,
@@ -44,4 +46,5 @@ export {
   square,
   triangle,
   tornado,
+  notfound,
 };

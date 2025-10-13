@@ -15,3 +15,4 @@ export { default as Contact } from "./Contact/Contact";
 export { default as Ethics } from "./Ethics/Ethics";
 export { default as Privacy } from "./Privacy/Privacy";
 export { default as Terms } from "./Terms/Terms";
+export { default as NotFound } from "./NotFound/NotFound";

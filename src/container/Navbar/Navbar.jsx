@@ -11,7 +11,10 @@ const menuItems = [
     to: "https://github.com/jaluiovilash/jaluiovilash-web-app/",
     isExternal: true,
   },
-  { name: "GitHub", to: "https://github.com/jaluiovilash", isExternal: true },
+  {
+    name: "All Projects",
+    to: "/projects",
+  },
   { name: "Projects", to: "/#projects" },
   { name: "Services", to: "/#services" },
   { name: "Pricing", to: "/#pricing" },

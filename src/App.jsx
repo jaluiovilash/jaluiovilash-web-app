@@ -16,6 +16,7 @@ import {
   Ethics,
   Terms,
   Privacy,
+  NotFound,
 } from "./container/index";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/ethics" element={<Ethics />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </Router>
   );
