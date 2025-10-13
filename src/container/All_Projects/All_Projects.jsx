@@ -90,13 +90,13 @@ const All_Projects = () => {
       {/* Projects Section */}
       <div className="scroll-mt-20" id="all-projects">
         {/* Header + Filter */}
-        <div className="py-16 border-b flex flex-col lg:flex-row items-center justify-around px-6 lg:px-24">
-          <h1 className="font-montserrat text-5xl md:text-7xl font-bold">
-            <ShinyText text="PROJECTS" />
+        <div className="py-16 border-b flex flex-col lg:flex-row items-center justify-around px-6 lg:px-24 mx-auto">
+          <h1 className="font-montserrat text-5xl md:text-6xl font-bold">
+            <ShinyText text="PROJECTS SECTION" />
           </h1>
 
           {/* Filter Dropdown */}
-          <div className="mt-6 lg:mt-0">
+          <div className="mt-6 lg:mt-0 ml-auto">
             <FilterDropdown
               categories={categories}
               active={activeFilter}
