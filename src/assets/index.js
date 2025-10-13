@@ -14,7 +14,7 @@ import about_us from "./about_us.png";
 import ui_ux from "./ui_ux.png";
 import front from "./front.jpg";
 import bck from "./bck.jpg";
-import mvp from "./mvp.avif";
+import mvp from "./mvp.jpg";
 import sde from "./sde.jpg";
 import cloud from "./cloud.jpg";
 

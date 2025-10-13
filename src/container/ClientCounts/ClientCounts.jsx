@@ -26,8 +26,8 @@ const ClientCounts = () => {
         <div className="flex flex-col justify-center items-center">
           <div className="flex justify-center items-center font-semibold text-4xl md:text-6xl">
             <CountUp
-              from={700}
-              to={3000}
+              from={2000}
+              to={4000}
               separator=","
               direction="up"
               duration={1}
@@ -60,8 +60,8 @@ const ClientCounts = () => {
         <div className="flex flex-col justify-center items-center">
           <div className="flex justify-center items-center font-semibold text-4xl md:text-6xl">
             <CountUp
-              from={0}
-              to={10}
+              from={12}
+              to={35}
               separator=","
               direction="up"
               duration={1}

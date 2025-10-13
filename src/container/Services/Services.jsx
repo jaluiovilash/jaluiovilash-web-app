@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { ui_ux, front, bck, mvp, sde, cloud } from "../../assets/index";
+import { ui_ux, front, bck, mvp, sde } from "../../assets/index";
 import { ShinyText } from "../../components/react-bits/index";
 
 const servicesArr = [
@@ -8,7 +7,7 @@ const servicesArr = [
     image: ui_ux,
     title: "CUSTOM UX/UI DESIGN",
     hoverText:
-      "I craft intuitive, visually engaging, and user-focused designs that perfectly reflect your brand identity and create enjoyable experiences for every user.",
+      "With years of designing for diverse industries, I create user-centric interfaces that boost engagement, streamline workflows, and translate brand vision into enjoyable digital experiences.",
   },
   {
     id: "02",
@@ -22,7 +21,7 @@ const servicesArr = [
     image: bck,
     title: "BACKEND ARCHITECTURE",
     hoverText:
-      "I design and implement robust, secure, and scalable backend systems, ensuring your applications perform reliably while supporting future growth and complex functionalities.",
+      "Having architected and deployed scalable backend systems for numerous enterprise-level projects, I ensure your applications are robust, secure, and optimized for high performance. I focus on maintainable code, seamless integration with complex services, and future scalability, delivering solutions that reliably support your business growth and evolving technological needs.",
   },
   {
     id: "04",
@@ -36,97 +35,83 @@ const servicesArr = [
     image: sde,
     title: "SOFTWARE DEVELOPMENT",
     hoverText:
-      "I provide comprehensive software development services from design to deployment, ensuring high-quality code, flawless functionality, and seamless integration across your platforms.",
-  },
-  {
-    id: "06",
-    image: cloud,
-    title: "CLOUD ENGINEERING",
-    hoverText:
-      "I design, deploy, and manage scalable cloud infrastructures on AWS and GCP, optimizing security, performance, and reliability for mission-critical applications.",
+      "With hands-on experience across full-stack projects, I deliver end-to-end software solutions that combine clean code, reliability, and seamless functionality tailored to real-world business needs.",
   },
 ];
 
 const Services = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
   return (
-    <div id="services" className="scroll-mt-20 md:border-b ">
+    <div id="services" className="scroll-mt-20">
       {/* Services Heading */}
-      <div className="py-16 border-b text-center">
-        <h1 className="font-montserrat text-5xl md:text-7xl font-semibold w-4/5 mx-auto">
+      <div className="py-16 border-b text-center mb-14">
+        <h1 className="font-montserrat text-5xl md:text-7xl font-bold mx-auto">
           <ShinyText text="SERVICES" />
         </h1>
       </div>
 
-      {/* Desktop Version: Left Side - Image, Right Side - Services List */}
-      <div className="hidden md:flex flex-row">
-        {/* Left Side: Image (Desktop View) */}
-        <div className="md:w-2/5 h-[600px] flex flex-col justify-start md:justify-center items-center p-8 md:p-20">
-          <img
-            className={`grayscale w-auto h-[350px] rounded-lg transition-transform duration-500 ease-in-out ${
-              hoveredIndex !== null
-                ? "rotate-0 scale-100 opacity-100"
-                : "rotate-[60deg] scale-0 opacity-0"
-            }`}
-            src={hoveredIndex !== null ? servicesArr[hoveredIndex].image : ""}
-            alt={hoveredIndex !== null ? servicesArr[hoveredIndex].title : ""}
-            loading="lazy"
-          />
-          <p
-            className={`text-xl mt-16 text-center transition-opacity duration-700 ease-in-out ${
-              hoveredIndex !== null ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {hoveredIndex !== null ? servicesArr[hoveredIndex].hoverText : ""}
-          </p>
+      {/* Layered Grid */}
+      <div className="flex flex-col gap-8 px-6 md:px-32 max-w-[1700px] mx-auto">
+        {/* Layer 1: Big + Small */}
+        <div className="flex flex-col md:flex-row gap-8">
+          {[0, 1].map((i) => (
+            <div
+              key={servicesArr[i].id}
+              className="p-2 border border-gray-600 rounded-2xl"
+            >
+              <div className="bg-black rounded-2xl overflow-hidden">
+                <img
+                  src={servicesArr[i].image}
+                  alt={servicesArr[i].title}
+                  className="w-full h-64 object-cover filter grayscale"
+                />
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-2 text-white">
+                    {servicesArr[i].title}
+                  </h2>
+                  <p className="text-gray-100">{servicesArr[i].hoverText}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* Right Side: Services List */}
-        <div className="pt-8 pb-16 w-full md:w-3/5 md:border-l px-8">
-          <ul className="space-y-2">
-            {servicesArr.map((service, index) => (
-              <li
-                key={service.id}
-                className="relative flex flex-col justify-start items-start"
-              >
-                <span
-                  className={`hover:text-portfolio text-4xl md:text-4xl font-normal my-5 cursor-pointer transition-all duration-700 ease-in-out`}
-                  onMouseEnter={() => setHoveredIndex(index)}
-                  onMouseLeave={() => setHoveredIndex(null)}
-                  style={{
-                    paddingLeft: hoveredIndex === index ? "4rem" : "0rem",
-                    transition: "padding-left 0.5s ease-in-out",
-                  }}
-                  aria-label={`Service: ${service.title}`}
-                >
-                  {service.title}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      {/* Mobile View: Card Layout (width < 400px) */}
-      <div className="md:hidden">
-        <div className="flex flex-col">
-          {servicesArr.map((service) => (
-            <div
-              key={service.id}
-              className="border-b p-6 flex flex-col items-center"
-            >
-              {/* Service Image (Increased width for mobile view) */}
-              <img
-                className="w-auto h-[250px] object-cover mb-4 grayscale"
-                src={service.image}
-                alt={service.title}
-              />
-              {/* Service Title */}
-              <h2 className="text-2xl font-semibold mb-2 text-center">
-                {service.title}
+        {/* Layer 2: Full Width Big */}
+        <div className="p-2 border border-gray-600 rounded-2xl">
+          <div className="bg-black rounded-2xl overflow-hidden">
+            <img
+              src={servicesArr[2].image}
+              alt={servicesArr[2].title}
+              className="w-full h-80 object-cover filter grayscale"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-2 text-white">
+                {servicesArr[2].title}
               </h2>
-              {/* Hover Text (Always visible in mobile view) */}
-              <p className="text-lg text-center">{service.hoverText}</p>
+              <p className="text-gray-100">{servicesArr[2].hoverText}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Layer 3: Small + Big */}
+        <div className="flex flex-col md:flex-row gap-8">
+          {[3, 4].map((i) => (
+            <div
+              key={servicesArr[i].id}
+              className="p-2 border border-gray-600 rounded-2xl"
+            >
+              <div className="bg-black rounded-2xl overflow-hidden">
+                <img
+                  src={servicesArr[i].image}
+                  alt={servicesArr[i].title}
+                  className="w-full h-64 object-cover filter grayscale"
+                />
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-2 text-white">
+                    {servicesArr[i].title}
+                  </h2>
+                  <p className="text-gray-100">{servicesArr[i].hoverText}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
