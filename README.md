@@ -59,7 +59,7 @@ This project includes a full [JSON-LD](https://json-ld.org/) schema for improved
 Feel free to reach out for collaboration, freelance projects, or full-time opportunities.
 
 - 📧 Email: [jaluiovilash@outlook.com](mailto:jaluiovilash@outlook.com)
-- 📞 Phone: +91-63536-69538
+- 📞 Phone: +91-7284974724
 - 🌍 Portfolio: [jaluiovilash.web.app](https://jaluiovilash.web.app)
 - 💼 LinkedIn: [linkedin.com/in/jaluiovilash](https://www.linkedin.com/in/jaluiovilash/)
 - 🐙 GitHub: [github.com/jaluiovilash](https://github.com/jaluiovilash)
