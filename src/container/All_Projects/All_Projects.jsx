@@ -90,9 +90,9 @@ const All_Projects = () => {
       {/* Projects Section */}
       <div className="scroll-mt-20" id="all-projects">
         {/* Header + Filter */}
-        <div className="py-16 border-b flex flex-col lg:flex-row items-center justify-around px-6 lg:px-24 mx-auto">
+        <div className="pt-16 pb-12 border-b flex flex-col lg:flex-row items-center justify-around px-6 lg:px-24 mx-auto">
           <h1 className="font-montserrat text-5xl md:text-6xl font-bold">
-            <ShinyText text="PROJECTS SECTION" />
+            <ShinyText text="PROJECT SECTION" />
           </h1>
 
           {/* Filter Dropdown */}

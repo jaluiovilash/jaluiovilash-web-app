@@ -1,5 +1,6 @@
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import { useEffect } from "react";
 
 const sections = [
   {
@@ -70,6 +71,10 @@ const sections = [
 ];
 
 const TermsSection = ({ id, title, type, content, extra, isFooter }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const Component = isFooter ? "footer" : "article";
   return (
     <Component

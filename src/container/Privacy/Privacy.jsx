@@ -1,5 +1,6 @@
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import { useEffect } from "react";
 
 const sections = [
   {
@@ -135,6 +136,10 @@ const PrivacySection = ({ id, title, type, content, extra, isFooter }) => {
 };
 
 const Privacy = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <div className="navbar">

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 
@@ -105,6 +106,10 @@ const EthicsSection = ({ id, title, type, content, extra, isFooter }) => {
 };
 
 const Ethics = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <div className="navbar">

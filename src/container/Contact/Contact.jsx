@@ -3,8 +3,13 @@ import { db } from "../../../firebase.config";
 import { collection, addDoc } from "firebase/firestore";
 import { Footer, Navbar } from "../index";
 import { ShinyText } from "../../components/react-bits/index";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",

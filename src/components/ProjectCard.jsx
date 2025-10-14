@@ -5,8 +5,13 @@ const ProjectCard = ({ project, variant = "small" }) => {
 
   return (
     <article
-      className={`bg-card rounded-xl p-5 border border-gray-300 shadow-sm transition-none w-full overflow-hidden
-        ${isBig ? "md:min-h-[440px]" : "md:min-h-[360px]"} m-3`}
+      className={`bg-card rounded-xl p-4 sm:p-5 border border-gray-300 shadow-sm transition-none w-full overflow-hidden
+        ${
+          isBig
+            ? "min-h-[360px] sm:min-h-[440px]"
+            : "min-h-[300px] sm:min-h-[360px]"
+        } 
+        m-2 sm:m-3`}
       aria-labelledby={`project-${project.id}-title`}
     >
       {/* Image */}
@@ -21,35 +26,41 @@ const ProjectCard = ({ project, variant = "small" }) => {
           src={project.image || "/placeholder.png"}
           alt={project.title || "project image"}
           loading="lazy"
-          className={`w-full object-cover rounded-md mb-4
-            ${isBig ? "h-64 md:h-80" : "h-48 md:h-64"}`}
+          className={`w-full object-cover rounded-md mb-3 sm:mb-4
+            ${isBig ? "h-48 sm:h-64 md:h-80" : "h-40 sm:h-48 md:h-64"}`}
         />
       </a>
 
       {/* Title */}
       <h3
         id={`project-${project.id}-title`}
-        className={`font-semibold text-foreground mb-2
-          ${isBig ? "text-2xl md:text-3xl" : "text-lg md:text-xl"}`}
+        className={`font-semibold text-foreground mb-1 sm:mb-2
+          ${
+            isBig
+              ? "text-xl sm:text-2xl md:text-3xl"
+              : "text-base sm:text-lg md:text-xl"
+          }`}
       >
         {project.title}
       </h3>
 
       {/* Description */}
       <p
-        className={`text-muted-foreground mt-2
-          ${isBig ? "line-clamp-3 text-lg" : "line-clamp-2 text-md"}`}
+        className={`text-muted-foreground mt-1 sm:mt-2
+          ${
+            isBig ? "line-clamp-3 text-sm sm:text-base" : "line-clamp-2 text-sm"
+          }`}
       >
         {project.description}
       </p>
 
       {/* Tech Stack */}
       {project.tech?.length > 0 && (
-        <div className="flex flex-wrap gap-2 mt-4">
+        <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-3 sm:mt-4">
           {project.tech.map((t, i) => (
             <span
               key={i}
-              className={`text-xs px-2 py-1 rounded-md font-medium
+              className={`text-[10px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md font-medium
                 ${
                   isBig
                     ? "bg-secondary/25 text-secondary-foreground"
@@ -63,12 +74,12 @@ const ProjectCard = ({ project, variant = "small" }) => {
       )}
 
       {/* Links */}
-      <div className="flex items-center justify-between mt-5">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4 sm:mt-5 gap-2 sm:gap-0">
         <a
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xl font-mono"
+          className="text-lg sm:text-xl font-mono"
         >
           <VisitHere title="Explore Project" />
         </a>
@@ -77,12 +88,14 @@ const ProjectCard = ({ project, variant = "small" }) => {
             href={project.code}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-lg text-portfolio hover:text-white"
+            className="text-sm sm:text-base font-medium text-portfolio hover:text-white transition-colors"
           >
             Source Code
           </a>
         ) : (
-          <span className="text-sm text-muted-foreground">No repo</span>
+          <span className="text-xs sm:text-sm text-muted-foreground">
+            No repo
+          </span>
         )}
       </div>
     </article>
