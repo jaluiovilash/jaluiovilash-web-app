@@ -12,7 +12,14 @@ const All_Projects = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  const categories = ["All", "Frontend", "Backend", "Full Stack"];
+  const categories = [
+    "All",
+    "Frontend",
+    "Backend",
+    "Full Stack",
+    "Machine Learning",
+    "Data Analyst",
+  ];
   const [activeFilter, setActiveFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 8;
@@ -110,7 +117,7 @@ const All_Projects = () => {
           {layers.length > 0 ? (
             layers
           ) : (
-            <p className="text-center text-muted-foreground mt-10">
+            <p className="h-[40vh] flex justify-center items-center text-muted-foreground mt-10 text-xl text-gray-300">
               No projects found for this category.
             </p>
           )}
