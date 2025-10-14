@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import ProjectCard from "../../components/ProjectCard";
@@ -18,7 +19,7 @@ const All_Projects = () => {
     "Backend",
     "Full Stack",
     "Machine Learning",
-    "Data Analyst",
+    "Data Analytics",
   ];
   const [activeFilter, setActiveFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
@@ -89,6 +90,81 @@ const All_Projects = () => {
 
   return (
     <>
+      {/* 🧭 SEO Metadata */}
+      <Helmet>
+        <title>
+          Ovilash Jalui - Project Section | Intelligent Systems & Scalable
+          Interfaces
+        </title>
+        <meta
+          name="description"
+          content="Explore the professional project collection of Ovilash Jalui — intelligent, scalable, and creative solutions built using React, TypeScript, Node.js, and modern architecture."
+        />
+        <meta
+          name="keywords"
+          content="Ovilash Jalui, Ovilash Jalui Projects, Software Engineer Projects, React, TypeScript, Node.js, ColossalCodes, Intelligent Systems, UI/UX, Full Stack Developer"
+        />
+        <meta name="author" content="Ovilash Jalui" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Ovilash Jalui - Projects" />
+        <meta
+          property="og:description"
+          content="Discover innovative software projects by Ovilash Jalui — building intelligent, scalable, and creative interfaces."
+        />
+        <meta
+          property="og:image"
+          content="https://jaluiovilash.web.app/dodo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://jaluiovilash.web.app/projects"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Projects by Ovilash Jalui - Intelligent Systems & Scalable Interfaces"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore Ovilash Jalui's innovative, scalable, and creative projects in React, TypeScript, and Node.js."
+        />
+        <meta
+          name="twitter:image"
+          content="https://jaluiovilash.web.app/dodo.jpg"
+        />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://jaluiovilash.web.app/projects" />
+
+        {/* JSON-LD Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "Projects by Ovilash Jalui",
+            url: "https://jaluiovilash.web.app/projects",
+            image: "https://jaluiovilash.web.app/dodo.jpg",
+            author: {
+              "@type": "Person",
+              name: "Ovilash Jalui",
+              url: "https://jaluiovilash.web.app",
+              sameAs: [
+                "https://www.linkedin.com/in/jaluiovilash/",
+                "https://x.com/jaluiovilash",
+                "https://github.com/jaluiovilash",
+              ],
+            },
+            description:
+              "Explore Ovilash Jalui’s professional software engineering projects — intelligent, scalable, and designed to create real impact.",
+          })}
+        </script>
+      </Helmet>
+
       {/* Navbar */}
       <div className="navbar mb-20">
         <Navbar />

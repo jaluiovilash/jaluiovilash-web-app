@@ -84,6 +84,15 @@ export const allProjects = [
   },
   {
     id: 10,
+    title: "Duplicate Finder Tool",
+    description: ``,
+    image: coming_soon_grey,
+    link: "https://github.com/jaluiovilash/duplicatefinder-python",
+    code: "https://github.com/jaluiovilash/duplicatefinder-python",
+    type: "Data Analytics",
+  },
+  {
+    id: 10,
     title: "Nexpay Dashboard",
     description: `The Nexpay Dashboard is a comprehensive tool for managing and monitoring payment transactions. It provides real-time transaction statuses, API key generation, detailed reports, and more, ensuring a seamless integration and user experience for developers and merchants.`,
     image: coming_soon_grey,
