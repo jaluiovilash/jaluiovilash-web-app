@@ -1,4 +1,9 @@
-import { project1, project2, project3, coming_soon_grey } from "../../assets";
+import {
+  iphone15,
+  supportdesk,
+  raktsetu,
+  coming_soon_grey,
+} from "../../assets";
 import { VisitHere } from "../../components/index";
 import { ShinyText } from "../../components/react-bits/index";
 
@@ -6,7 +11,7 @@ const Projects = () => {
   const projectDetails = [
     {
       id: 1,
-      image: project1,
+      image: iphone15,
       link: "https://apple-iphone15.web.app/",
       code: "https://github.com/jaluiovilash/iphone15-website",
       title: "iPhone 15 Website Clone",
@@ -14,7 +19,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      image: project2,
+      image: supportdesk,
       link: "https://jo-supportdesk.vercel.app/",
       code: "https://github.com/jaluiovilash/supportdesk",
       title: "SupportDesk - A Ticketing System",
@@ -22,7 +27,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      image: project3,
+      image: raktsetu,
       link: "https://github.com/jaluiovilash/RaktSetu-Backend.git",
       code: "https://github.com/jaluiovilash/RaktSetu-Backend.git",
       title: "RaktSetu - Blood Bank Management System Backend",

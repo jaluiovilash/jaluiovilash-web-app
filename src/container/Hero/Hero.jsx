@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row border-b">
       {/* Left Section (Image) */}
-      <div className="w-full md:w-2/5 border-b md:border-b-0 md:border-r p-8 md:p-16">
+      <div className="flex justify-center items-center w-full md:w-2/5 border-b md:border-b-0 md:border-r p-8 md:p-16">
         <img
           className="hero-img sm:w-2/3 md:w-4/5 mx-auto h-auto object-cover rounded-lg shadow-lg filter grayscale hover:grayscale-0 transition duration-300"
           src={tornado}
