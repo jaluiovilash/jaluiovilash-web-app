@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { db } from "../../../firebase.config";
 import { collection, addDoc } from "firebase/firestore";
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   FaProjectDiagram,
   FaGithub,
@@ -58,12 +58,12 @@ const socialLinks = [
   },
 ];
 
-// ✅ Modern FooterLink component — clear separation for internal/external links
+// ✅ Clean internal/external link handler
 const FooterLink = ({ to, children }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleInternalNav = (e) => {
+  const handleScrollOrNavigate = (e) => {
     e.preventDefault();
 
     if (to.startsWith("/#")) {
@@ -80,7 +80,6 @@ const FooterLink = ({ to, children }) => {
     }
   };
 
-  // External link
   if (to.startsWith("http")) {
     return (
       <a
@@ -94,18 +93,19 @@ const FooterLink = ({ to, children }) => {
     );
   }
 
-  // Internal link
+  // Internal routes handled by React Router
   return (
-    <button
-      onClick={handleInternalNav}
-      className="text-gray-400 hover:text-white transition-all duration-300 cursor-pointer bg-transparent border-0 p-0 text-left"
+    <Link
+      to={to}
+      onClick={to.startsWith("/#") ? handleScrollOrNavigate : undefined}
+      className="text-gray-400 hover:text-white transition-all duration-300 cursor-pointer"
     >
       {children}
-    </button>
+    </Link>
   );
 };
 
-// ✅ Social icons with accessibility labels
+// ✅ Accessible social icons
 const SocialIcon = ({ icon, link, label }) => (
   <a
     href={link}
@@ -167,7 +167,7 @@ const Footer = () => {
 
   return (
     <footer className="text-white border-t py-16 px-6 lg:px-20">
-      {/* ✅ SEO: JSON-LD Structured Data */}
+      {/* ✅ SEO Structured Data */}
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -192,6 +192,7 @@ const Footer = () => {
         </script>
       </Helmet>
 
+      {/* ✅ Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.5fr_0.5fr_0.5fr_0.8fr_1.1fr] gap-6 md:gap-10">
         {/* Brand */}
         <div>
