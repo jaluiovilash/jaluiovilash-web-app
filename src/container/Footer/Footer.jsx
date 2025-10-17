@@ -1,8 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { db } from "../../../firebase.config";
 import { collection, addDoc } from "firebase/firestore";
-import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
+  FaProjectDiagram,
   FaGithub,
   FaLinkedin,
   FaTwitter,
@@ -11,42 +14,102 @@ import {
 } from "react-icons/fa";
 
 const exploreLinks = [
+  { label: "Projects", to: "/projects" },
+  { label: "Services", to: "/#services" },
+  { label: "Pricing", to: "/#pricing" },
+];
+
+const resourcesLinks = [
   { label: "Blog", to: "https://jaluiovilashblogs.hashnode.dev/" },
+  {
+    label: "Repositories",
+    to: "https://github.com/jaluiovilash?tab=repositories",
+  },
   { label: "Contact", to: "/contact" },
-  { label: "Ethics", to: "/ethics" },
-  { label: "Terms", to: "/terms" },
+];
+
+const legalNoticeLinks = [
   { label: "Privacy", to: "/privacy" },
+  { label: "Terms", to: "/terms" },
+  { label: "Ethics", to: "/ethics" },
 ];
 
 const socialLinks = [
-  { icon: <FaGithub />, link: "https://github.com/jaluiovilash" },
-  { icon: <FaLinkedin />, link: "https://linkedin.com/in/jaluiovilash" },
-  { icon: <FaTwitter />, link: "https://x.com/jaluiovilash" },
-  { icon: <FaInstagram />, link: "https://instagram.com/jaluiovilash" },
+  {
+    icon: <FaGithub />,
+    link: "https://github.com/jaluiovilash",
+    label: "GitHub",
+  },
+  {
+    icon: <FaLinkedin />,
+    link: "https://linkedin.com/in/jaluiovilash",
+    label: "LinkedIn",
+  },
+  {
+    icon: <FaProjectDiagram />,
+    link: "https://colossalcodes.vercel.app/",
+    label: "Company",
+  },
+  { icon: <FaTwitter />, link: "https://x.com/jaluiovilash", label: "Twitter" },
+  {
+    icon: <FaInstagram />,
+    link: "https://instagram.com/jaluiovilash",
+    label: "Instagram",
+  },
 ];
 
-const FooterLink = ({ to, children }) =>
-  to.startsWith("http") ? (
-    <a
-      href={to}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-400 hover:text-white transition-all duration-300"
-    >
-      {children}
-    </a>
-  ) : (
-    <Link
-      className="text-gray-400 hover:text-white transition-all duration-300"
-      to={to}
-    >
-      {children}
-    </Link>
-  );
+// ✅ Modern FooterLink component — clear separation for internal/external links
+const FooterLink = ({ to, children }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
 
-const SocialIcon = ({ icon, link }) => (
+  const handleInternalNav = (e) => {
+    e.preventDefault();
+
+    if (to.startsWith("/#")) {
+      const sectionId = to.replace("/#", "");
+      if (location.pathname === "/") {
+        document
+          .getElementById(sectionId)
+          ?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        navigate("/", { state: { scrollTo: sectionId } });
+      }
+    } else {
+      navigate(to);
+    }
+  };
+
+  // External link
+  if (to.startsWith("http")) {
+    return (
+      <a
+        href={to}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-400 hover:text-white transition-all duration-300 cursor-pointer"
+      >
+        {children}
+      </a>
+    );
+  }
+
+  // Internal link
+  return (
+    <button
+      onClick={handleInternalNav}
+      className="text-gray-400 hover:text-white transition-all duration-300 cursor-pointer bg-transparent border-0 p-0 text-left"
+    >
+      {children}
+    </button>
+  );
+};
+
+// ✅ Social icons with accessibility labels
+const SocialIcon = ({ icon, link, label }) => (
   <a
     href={link}
+    aria-label={label}
     target="_blank"
     rel="noopener noreferrer"
     className="text-gray-500 hover:text-white hover:scale-110 transition-all duration-300"
@@ -62,6 +125,14 @@ const Footer = () => {
     success: null,
     error: null,
   });
+
+  const resetStatus = () =>
+    setStatus({ isSubmitting: false, success: null, error: null });
+
+  const setError = (message) => {
+    setStatus({ isSubmitting: false, success: null, error: message });
+    setTimeout(resetStatus, 3000);
+  };
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
@@ -83,33 +154,54 @@ const Footer = () => {
         success: "Subscribed successfully!",
         error: null,
       });
-      setTimeout(() => setStatus((prev) => ({ ...prev, success: null })), 3000);
+      setTimeout(resetStatus, 3000);
     } catch (err) {
       console.error("Firestore subscription error:", err);
       const message = err.code
         ? `Failed to subscribe: ${err.code}`
         : "Failed to subscribe. Try again!";
       setStatus({ isSubmitting: false, success: null, error: message });
-      setTimeout(() => setStatus((prev) => ({ ...prev, error: null })), 5000);
+      setTimeout(resetStatus, 5000);
     }
-  };
-
-  const setError = (message) => {
-    setStatus({ isSubmitting: false, success: null, error: message });
-    setTimeout(() => setStatus((prev) => ({ ...prev, error: null })), 3000);
   };
 
   return (
     <footer className="text-white border-t py-16 px-6 lg:px-20">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-20">
+      {/* ✅ SEO: JSON-LD Structured Data */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "jaluiovilash",
+            url: "https://jaluiovilash.web.app",
+            sameAs: [
+              "https://github.com/jaluiovilash",
+              "https://linkedin.com/in/jaluiovilash",
+              "https://x.com/jaluiovilash",
+              "https://instagram.com/jaluiovilash",
+            ],
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                email: "ovilashjalui@gmail.com",
+                contactType: "customer support",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.5fr_0.5fr_0.5fr_0.8fr_1.1fr] gap-6 md:gap-10">
         {/* Brand */}
         <div>
           <h1 className="text-4xl font-bold font-montserrat bg-gradient-to-r from-gray-100 to-gray-400 bg-clip-text text-transparent mb-3 tracking-wide">
-            <Link to="/">JO</Link>
+            <FooterLink to="/">JO</FooterLink>
           </h1>
           <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-            Crafting intelligent software systems and futuristic learning tools
-            that empower the next generation of developers.
+            Systems-driven Software Engineer crafting scalable, user-centric web
+            solutions through clean UIs, optimized APIs, and holistic
+            architecture.
           </p>
         </div>
 
@@ -118,6 +210,34 @@ const Footer = () => {
           <h2 className="text-lg font-semibold mb-4 text-gray-200">Explore</h2>
           <ul className="space-y-3">
             {exploreLinks.map(({ label, to }) => (
+              <li key={label}>
+                <FooterLink to={to}>{label}</FooterLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Resources */}
+        <div>
+          <h2 className="text-lg font-semibold mb-4 text-gray-200">
+            Resources
+          </h2>
+          <ul className="space-y-3">
+            {resourcesLinks.map(({ label, to }) => (
+              <li key={label}>
+                <FooterLink to={to}>{label}</FooterLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Legal Notice */}
+        <div>
+          <h2 className="text-lg font-semibold mb-4 text-gray-200">
+            Legal Notice
+          </h2>
+          <ul className="space-y-3">
+            {legalNoticeLinks.map(({ label, to }) => (
               <li key={label}>
                 <FooterLink to={to}>{label}</FooterLink>
               </li>
@@ -139,8 +259,8 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex gap-5 text-2xl pt-2">
-              {socialLinks.map(({ icon, link }, idx) => (
-                <SocialIcon key={idx} icon={icon} link={link} />
+              {socialLinks.map(({ icon, link, label }, idx) => (
+                <SocialIcon key={idx} icon={icon} link={link} label={label} />
               ))}
             </li>
           </ul>

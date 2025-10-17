@@ -220,8 +220,8 @@ export const allProjects = [
     title: "Portfolio Website",
     description: `A personal portfolio website created using HTML and CSS, showcasing skills, projects, and experience. Designed for simplicity, it highlights core competencies and offers a user-friendly, responsive interface for professional presentation.`,
     image: first_portfolio,
-    link: "https://github.com/jaluiovilash/CODSOFT_TASK-2",
-    code: "https://github.com/jaluiovilash/CODSOFT_TASK-2",
+    link: "https://jaluiovilash.github.io/portfolio-full-stack-developer/",
+    code: "https://github.com/jaluiovilash/portfolio-full-stack-developer/",
     type: "Frontend",
   },
   {

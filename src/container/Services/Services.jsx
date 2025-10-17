@@ -1,5 +1,6 @@
 import { ui_ux, front, bck, mvp, sde } from "../../assets/index";
 import { ShinyText } from "../../components/react-bits/index";
+import { useEffect } from "react";
 
 const servicesArr = [
   {
@@ -40,11 +41,18 @@ const servicesArr = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div id="services" className="scroll-mt-20">
       {/* Services Heading */}
       <div className="py-16 border-b text-center mb-14">
-        <h1 className="font-montserrat text-5xl md:text-7xl font-bold mx-auto">
+        <h1
+          className="font-montserrat text-5xl md:text-7xl font-bold mx-auto"
+          id="services"
+        >
           <ShinyText text="SERVICES" />
         </h1>
       </div>

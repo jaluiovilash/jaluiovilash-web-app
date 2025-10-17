@@ -109,11 +109,6 @@ button {
   transition: background-color 0.25s, border-color 0.25s;
 }
 
-button:hover {
-  background-color: var(--portfolio);
-  border-color: var(--portfolio);
-}
-
 img {
   pointer-events: none;
   user-select: none;
