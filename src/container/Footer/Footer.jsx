@@ -25,7 +25,7 @@ const resourcesLinks = [
     label: "Repositories",
     to: "https://github.com/jaluiovilash?tab=repositories",
   },
-  { label: "Contact", to: "/contact" },
+  { label: "Quick Chat", to: "/contact" },
 ];
 
 const legalNoticeLinks = [
@@ -37,12 +37,12 @@ const legalNoticeLinks = [
 const socialLinks = [
   {
     icon: <FaGithub />,
-    link: "https://github.com/jaluiovilash",
+    link: "https://github.com/jaluiovilash/",
     label: "GitHub",
   },
   {
     icon: <FaLinkedin />,
-    link: "https://linkedin.com/in/jaluiovilash",
+    link: "https://linkedin.com/in/jaluiovilash/",
     label: "LinkedIn",
   },
   {
@@ -50,15 +50,19 @@ const socialLinks = [
     link: "https://colossalcodes.vercel.app/",
     label: "Company",
   },
-  { icon: <FaTwitter />, link: "https://x.com/jaluiovilash", label: "Twitter" },
+  {
+    icon: <FaTwitter />,
+    link: "https://x.com/jaluiovilash/",
+    label: "Twitter",
+  },
   {
     icon: <FaInstagram />,
-    link: "https://instagram.com/jaluiovilash",
+    link: "https://instagram.com/jaluiovilash/",
     label: "Instagram",
   },
 ];
 
-// ✅ Clean internal/external link handler
+// Clean internal/external link handler
 const FooterLink = ({ to, children }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -105,7 +109,7 @@ const FooterLink = ({ to, children }) => {
   );
 };
 
-// ✅ Accessible social icons
+// Accessible social icons
 const SocialIcon = ({ icon, link, label }) => (
   <a
     href={link}
@@ -167,7 +171,7 @@ const Footer = () => {
 
   return (
     <footer className="text-white border-t py-16 px-6 lg:px-20">
-      {/* ✅ SEO Structured Data */}
+      {/* SEO Structured Data */}
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -192,7 +196,7 @@ const Footer = () => {
         </script>
       </Helmet>
 
-      {/* ✅ Grid Layout */}
+      {/* Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.5fr_0.5fr_0.5fr_0.8fr_1.1fr] gap-6 md:gap-10">
         {/* Brand */}
         <div>

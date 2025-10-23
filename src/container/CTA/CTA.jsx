@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 const flipUpVariants = {
   hidden: { rotateX: 180, opacity: 0 },
-  visible: { rotateX: 0, opacity: 1, transition: { duration: 0.8 } }
+  visible: { rotateX: 0, opacity: 1, transition: { duration: 0.8 } },
 };
 
 const flipDownVariants = {
   hidden: { rotateX: -180, opacity: 0 },
-  visible: { rotateX: 0, opacity: 1, transition: { duration: 0.8 } }
+  visible: { rotateX: 0, opacity: 1, transition: { duration: 0.8 } },
 };
 
 const CTA = () => {
@@ -49,7 +49,7 @@ const CTA = () => {
           LET&apos;S DO IT TOGETHER!
         </motion.h2>
         <a
-          href="https://calendly.com/ovilashjalui/30min"
+          href={import.meta.env.VITE_MEET_ON}
           target="_blank"
           rel="noopener noreferrer"
         >

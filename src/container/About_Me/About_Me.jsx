@@ -65,7 +65,7 @@ are fast, secure, and built to scale."
             </p>
           </FadeContent>
           <a
-            href="https://calendly.com/ovilashjalui/30min"
+            href={import.meta.env.VITE_MEET_ON}
             target="_blank"
             rel="noopener noreferrer"
           >

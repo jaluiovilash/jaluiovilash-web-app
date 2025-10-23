@@ -21,7 +21,7 @@ const menuItems = [
   { name: "Pricing", to: "/#pricing" },
   {
     name: "Let's Talk",
-    to: "https://calendly.com/ovilashjalui/30min",
+    to: import.meta.env.VITE_MEET_ON,
     isExternal: true,
     isButton: true,
   },

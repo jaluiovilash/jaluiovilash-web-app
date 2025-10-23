@@ -2,14 +2,21 @@ import { ButtonUsage } from "../../components/index";
 import { square, circle, triangle } from "../../assets/index";
 import { ShinyText } from "../../components/react-bits";
 
+// Single environment variable for contact link
+const CONTACT_LINK = import.meta.env.VITE_MEET_ON;
+
 const pricingData = [
   {
     id: 1,
     image: square,
     title: "DESIGN",
-    features: ["Designs via Figma", "Interactive prototypes", "Design & Code"],
-    price: "₹ 5,000+",
-    contactLink: "https://calendly.com/ovilashjalui/30min",
+    features: [
+      "Custom UX/UI interfaces",
+      "Interactive Figma prototypes",
+      "Responsive design across devices",
+      "User-centric workflow optimization",
+    ],
+    price: "₹ 8,000+",
     buttonText: "BOOK A CALL",
   },
   {
@@ -17,25 +24,25 @@ const pricingData = [
     image: circle,
     title: "BUILD",
     features: [
-      "Fully operational website",
-      "Weekly project reviews",
-      "Support and maintenance ongoing",
+      "Frontend & backend development",
+      "Scalable, maintainable code",
+      "Weekly project reviews & testing",
+      "Ongoing support & integration",
     ],
-    price: "₹ 15,000+",
-    contactLink: "https://calendly.com/ovilashjalui/30min",
+    price: "₹ 25,000+",
     buttonText: "GET IN TOUCH",
   },
   {
     id: 3,
     image: triangle,
-    title: "GROW",
+    title: "DEPLOY",
     features: [
-      "Quality Lead generation",
-      "SEO and traffic analytics",
-      "Content and ad campaigns",
+      "Startup MVP deployment",
+      "Cloud hosting & CI/CD setup",
+      "Performance monitoring & analytics",
+      "Security & optimization best practices",
     ],
-    price: "₹ 25,000+",
-    contactLink: "https://calendly.com/ovilashjalui/30min",
+    price: "₹ 40,000+",
     buttonText: "SCHEDULE NOW",
   },
 ];
@@ -87,11 +94,7 @@ const Pricing = () => {
             <h4 className="text-portfolio font-montserrat text-4xl font-medium py-6 px-8 md:px-16">
               {plan.price}
             </h4>
-            <a
-              href={plan.contactLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={CONTACT_LINK} target="_blank" rel="noopener noreferrer">
               <ButtonUsage title={plan.buttonText} />
             </a>
           </div>

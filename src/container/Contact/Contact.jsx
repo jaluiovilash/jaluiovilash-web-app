@@ -112,7 +112,7 @@ const Contact = () => {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full sm:max-w-[620px] md:max-w-[1060px] lg:max-w-[1200px] xl:max-w-[1400px]">
           <h2 className="text-center text-lg font-medium py-2 md:mb-10">
-            <ShinyText text="Contact Us" />
+            <ShinyText text="Direct Message" />
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {/* Left Section */}
