@@ -42,7 +42,7 @@ import sde from "./images/sde.jpg";
 import circle from "./images/circle.svg";
 import square from "./images/square.svg";
 import triangle from "./images/triangle.svg";
-import tornado from "./images/tornado.jpg";
+import ovidobi from "./images/ovidobi.jpg";
 
 import notfound from "./images/notfound.jpg";
 
@@ -85,6 +85,6 @@ export {
   circle,
   square,
   triangle,
-  tornado,
+  ovidobi,
   notfound,
 };

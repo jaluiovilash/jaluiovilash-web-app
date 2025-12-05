@@ -17,7 +17,6 @@ import {
   gericht,
   gpt_three,
   chirpnet,
-  // portfolio_heroku,
   sushi,
   techzap,
   first_portfolio,
@@ -56,7 +55,7 @@ export const allProjects = [
   {
     id: 4,
     title: "Duplicate Finder Tool",
-    description: ``,
+    description: `A secure full-stack dashboard for uploading, analyzing, and detecting duplicate student records with intelligent matching, auto-grouping, analytics, inline editing, and export features built on a robust React–Node–Mongo stack.`,
     image: duplicatedashboard,
     link: "https://github.com/jaluiovilash/duplicatefinder-tool",
     code: "https://github.com/jaluiovilash/duplicatefinder-tool",

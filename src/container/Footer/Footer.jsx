@@ -201,7 +201,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h1 className="text-4xl font-bold font-montserrat bg-gradient-to-r from-gray-100 to-gray-400 bg-clip-text text-transparent mb-3 tracking-wide">
-            <FooterLink to="/">JO</FooterLink>
+            <a href="/">JO</a>
           </h1>
           <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
             Systems-driven Software Engineer crafting scalable, user-centric web

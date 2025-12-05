@@ -8,17 +8,16 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 const menuItems = [
   { name: "Resume", to: ResumePDF, isExternal: true, isDownload: true },
   {
+    name: "Projects",
+    to: "/projects",
+  },
+  { name: "Services", to: "/#services" },
+  { name: "Pricing", to: "/#pricing" },
+  {
     name: "Source Code",
     to: "https://github.com/jaluiovilash/jaluiovilash-web-app/",
     isExternal: true,
   },
-  {
-    name: "All Projects",
-    to: "/projects",
-  },
-  { name: "Projects", to: "/#projects" },
-  { name: "Services", to: "/#services" },
-  { name: "Pricing", to: "/#pricing" },
   {
     name: "Let's Talk",
     to: import.meta.env.VITE_MEET_ON,

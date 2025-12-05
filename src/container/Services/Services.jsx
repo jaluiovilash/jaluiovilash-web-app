@@ -64,7 +64,7 @@ const Services = () => {
           {[0, 1].map((i) => (
             <div
               key={servicesArr[i].id}
-              className="p-2 border border-gray-600 rounded-2xl"
+              className="p-2 border border-white rounded-2xl"
             >
               <div className="bg-black rounded-2xl overflow-hidden">
                 <img
@@ -84,7 +84,7 @@ const Services = () => {
         </div>
 
         {/* Layer 2: Full Width Big */}
-        <div className="p-2 border border-gray-600 rounded-2xl">
+        <div className="p-2 border border-white rounded-2xl">
           <div className="bg-black rounded-2xl overflow-hidden">
             <img
               src={servicesArr[2].image}
@@ -105,7 +105,7 @@ const Services = () => {
           {[3, 4].map((i) => (
             <div
               key={servicesArr[i].id}
-              className="p-2 border border-gray-600 rounded-2xl"
+              className="p-2 border border-white rounded-2xl"
             >
               <div className="bg-black rounded-2xl overflow-hidden">
                 <img

@@ -1,47 +1,282 @@
-import {
-  iphone15,
-  supportdesk,
-  raktsetu,
-  coming_soon_grey,
-} from "../../assets";
-import { VisitHere } from "../../components/index";
-import { ShinyText } from "../../components/react-bits/index";
+// src/sections/Projects/Projects.jsx
 
-const Projects = () => {
-  const projectDetails = [
-    {
-      id: 1,
-      image: iphone15,
-      link: "https://apple-iphone15.web.app/",
-      code: "https://github.com/jaluiovilash/iphone15-website",
-      title: "iPhone 15 Website Clone",
-      description: `This is a clone of Apple’s iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP (Greensock Animations) and Three.js for displaying iPhone 15 Pro models in various colors and shapes.`,
-    },
-    {
-      id: 2,
-      image: supportdesk,
-      link: "https://jo-supportdesk.vercel.app/",
-      code: "https://github.com/jaluiovilash/supportdesk",
-      title: "SupportDesk - A Ticketing System",
-      description: `SupportDesk is a final year college project—a MERN stack ticketing system with role-based authentication, allowing users to create tickets and admins to manage, update, or delete them efficiently.`,
-    },
-    {
-      id: 3,
-      image: raktsetu,
-      link: "https://github.com/jaluiovilash/RaktSetu-Backend.git",
-      code: "https://github.com/jaluiovilash/RaktSetu-Backend.git",
-      title: "RaktSetu - Blood Bank Management System Backend",
-      description: `RaktSetu backend, a Node.js-powered Blood Bank Management System, streamlines donor registrations, blood stock, hospital requests, and emergency notifications using Express and MongoDB for efficient inventory and request handling.`,
-    },
-    {
-      id: 4,
-      image: coming_soon_grey,
-      link: "https://colossalcodes.vercel.app/",
-      code: "https://github.com/jaluiovilash/colossalcodes",
-      title: "ColossalCodes",
-      description: `ColossalCodes is a hub for devs exploring TypeScript, Rust & future tech. Learn with tutorials, real-world projects & trend insights. Explore more on our upcoming site. Subscribe now and level up your coding game!`,
-    },
-  ];
+import { ShinyText } from "../../components/react-bits/index";
+import VisitHere from "../../components/VisitHere";
+import { allProjects } from "../../assets/data/all_projects";
+
+// mode can be: "glass" | "parallax" | "split" | "cinematic"
+const Projects = ({ mode = "glass" }) => {
+  // 👉 Choose which 4 projects to show
+  const visibleProjectIds = [1, 3, 4, 6];
+
+  // 👉 Fetch only selected projects
+  const selectedProjects = allProjects.filter((project) =>
+    visibleProjectIds.includes(project.id)
+  );
+
+  const renderCard = (project, index) => {
+    const isEven = index % 2 === 0;
+
+    // 🌫️ 1) GLASS MODE
+    if (mode === "glass") {
+      return (
+        <article className="relative group">
+          {/* subtle glow behind */}
+          <div className="pointer-events-none absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-white/10 via-white/0 to-white/5 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
+
+          <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 via-white/5 to-white/0 backdrop-blur-xl p-6 md:p-7 shadow-[0_18px_60px_rgba(0,0,0,0.35)]">
+            {/* Bigger Image */}
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-xl"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                loading="lazy"
+                className="w-full h-72 md:h-96 object-cover rounded-xl transform transition-transform duration-500 group-hover:scale-[1.03]"
+              />
+            </a>
+
+            <div className="mt-5 space-y-3">
+              <h2 className="text-xl md:text-2xl font-semibold tracking-tight">
+                {project.title}
+              </h2>
+
+              {project.description && (
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {project.description}
+                </p>
+              )}
+
+              {/* Type */}
+              {project.type && (
+                <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs uppercase tracking-wide text-gray-100/80">
+                  {project.type}
+                </span>
+              )}
+
+              {/* Links – stacked */}
+              <div className="mt-6 flex flex-col gap-3">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-mono"
+                >
+                  <VisitHere title="Explore Project" />
+                </a>
+                {project.code && (
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm md:text-base font-medium text-portfolio hover:text-white transition-colors"
+                  >
+                    Source Code
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    }
+
+    // 🎚️ 2) PARALLAX MODE
+    if (mode === "parallax") {
+      return (
+        <article className="group perspective-[1200px]">
+          <div className="relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 via-white/5 to-white/0 backdrop-blur-xl p-6 md:p-7 shadow-[0_18px_60px_rgba(0,0,0,0.4)] transform-gpu transition-transform duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_28px_80px_rgba(0,0,0,0.6)]">
+            {/* Bigger Image */}
+            <div className="relative overflow-hidden rounded-xl transform-gpu transition-transform duration-500 group-hover:rotate-[0.7deg] group-hover:scale-[1.03]">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  className="w-full h-72 md:h-96 object-cover"
+                />
+              </a>
+            </div>
+
+            <div className="mt-5 space-y-3">
+              <h2 className="text-xl md:text-2xl font-semibold tracking-tight">
+                {project.title}
+              </h2>
+
+              {project.description && (
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {project.description}
+                </p>
+              )}
+
+              {/* Links – stacked */}
+              <div className="mt-6 flex flex-col gap-3">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-mono"
+                >
+                  <VisitHere title="Explore Project" />
+                </a>
+                {project.code && (
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm md:text-base font-medium text-portfolio hover:text-white transition-colors"
+                  >
+                    Source Code
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    }
+
+    // 🪟 3) SPLIT MODE
+    if (mode === "split") {
+      const imageFirst = isEven;
+      return (
+        <article className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 via-white/5 to-transparent backdrop-blur-xl p-6 md:p-8 shadow-[0_18px_60px_rgba(0,0,0,0.4)]">
+          <div
+            className={`flex flex-col md:flex-row gap-6 md:gap-10 items-center ${
+              imageFirst ? "" : "md:flex-row-reverse"
+            }`}
+          >
+            {/* Bigger Image */}
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full md:w-1/2 block overflow-hidden rounded-xl"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                loading="lazy"
+                className="w-full h-72 md:h-96 object-cover rounded-xl transform transition-transform duration-500 hover:scale-[1.03]"
+              />
+            </a>
+
+            {/* Content */}
+            <div className="w-full md:w-1/2 space-y-3">
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+                {project.title}
+              </h2>
+
+              {project.description && (
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {project.description}
+                </p>
+              )}
+
+              {project.type && (
+                <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs uppercase tracking-wide text-gray-100/80">
+                  {project.type}
+                </span>
+              )}
+
+              {/* Links – stacked */}
+              <div className="mt-6 flex flex-col gap-3">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-mono"
+                >
+                  <VisitHere title="Explore Project" />
+                </a>
+                {project.code && (
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm md:text-base font-medium text-portfolio hover:text-white transition-colors"
+                  >
+                    Source Code
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    }
+
+    // 🎬 4) CINEMATIC MODE
+    return (
+      <article className="rounded-3xl overflow-hidden border border-white/10 bg-black/40 shadow-[0_22px_70px_rgba(0,0,0,0.7)]">
+        <div className="relative">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            {/* Bigger cinematic height here */}
+            <img
+              src={project.image}
+              alt={project.title}
+              loading="lazy"
+              className="w-full h-96 md:h-[30rem] object-cover transform-gpu transition-transform duration-[900ms] hover:scale-[1.04]"
+            />
+
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+          </a>
+
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-8 md:right-8">
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-white drop-shadow-lg">
+              {project.title}
+            </h2>
+
+            {project.type && (
+              <p className="mt-1 text-xs uppercase tracking-[0.2em] text-gray-300/90">
+                {project.type}
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Bottom panel: description → links stacked */}
+        <div className="px-6 md:px-8 py-5 md:py-6 flex flex-col gap-4 bg-gradient-to-r from-white/5 via-white/3 to-white/5">
+          {project.description && (
+            <p className="text-sm md:text-base text-gray-200/90 md:max-w-xl">
+              {project.description}
+            </p>
+          )}
+
+          <div className="flex flex-col gap-3">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-mono"
+            >
+              <VisitHere title="Explore Project" />
+            </a>
+
+            {project.code && (
+              <a
+                href={project.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm md:text-base font-medium text-portfolio hover:text-white transition-colors"
+              >
+                Source Code
+              </a>
+            )}
+          </div>
+        </div>
+      </article>
+    );
+  };
 
   return (
     <div className="scroll-mt-20" id="projects">
@@ -54,13 +289,14 @@ const Projects = () => {
 
       {/* Project Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto">
-        {projectDetails.map((project, index) => (
+        {selectedProjects.map((project, index) => (
           <div
             key={project.id}
             className={`border-b lg:border-r ${
               index % 2 === 0 ? "lg:border-r" : "lg:border-r-0"
             }`}
           >
+            {/* Big index number */}
             <h1
               className={`py-8 px-6 lg:px-24 font-montserrat font-bold text-7xl md:text-8xl ${
                 index % 2 === 0
@@ -68,45 +304,12 @@ const Projects = () => {
                   : "text-white flex justify-start"
               }`}
             >
-              {`0${project.id}`}
+              {`0${index + 1}`}
             </h1>
+
+            {/* Render card */}
             <div className="project_content py-8 px-6 lg:px-24 border-t">
-              {/* Clickable Image */}
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  className="my-6 w-auto h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300"
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                />
-              </a>
-
-              {/* Explore Link */}
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xl font-mono"
-              >
-                <VisitHere title="Explore Project" />
-              </a>
-
-              {/* Source Code */}
-              <a
-                href={project.code}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-base font-lg text-portfolio hover:text-white"
-              >
-                Source Code
-              </a>
-
-              <h2 className="text-xl font-medium py-4 font-mono">
-                {project.title}
-              </h2>
-              <p className="descp text-xl py-4 font-mono">
-                {project.description}
-              </p>
+              {renderCard(project, index)}
             </div>
           </div>
         ))}
